@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Dancing_Script } from "next/font/google";
+import { Geist, Geist_Mono, Dancing_Script, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -17,6 +17,11 @@ const DancingScript = Dancing_Script({
   subsets: ["latin"],
 })
 
+const Jakarta = Plus_Jakarta_Sans({
+  variable: "--font-jakarta",
+  subsets: ["latin"]
+})
+
 export const metadata: Metadata = {
   title: "Activeboost",
   description: "Ghid pentru controlul glicemiei",
@@ -30,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${DancingScript.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${DancingScript.variable} ${Jakarta.variable} antialiased`}
       >
         {children}
       </body>

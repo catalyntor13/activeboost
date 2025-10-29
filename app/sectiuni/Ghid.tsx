@@ -1,37 +1,38 @@
+"use client"
 import Image from "next/image"
 import { FaCheckSquare, FaCheckCircle } from "react-icons/fa";
-
+import Link from "next/link";
 const Ghid = () => {
   return (
 
      <div className='bg-[#f6f7f3] w-full py-10 '>
     <div className='lg:max-w-6xl  lg:mx-auto'>
-      <h1 className='text-center text-3xl font-bold lg:mb-15 sm:mb-10 tracking-tight'>Îți Prezint Ghidul Care <span className='text-green-500 font-semibold'>Schimbă Totul:</span> </h1>
+      <h1 className='text-center text-4xl font-bold mb-10 tracking-tight text-[#4b4c4b] font-jakarta'>Îți Prezint Ghidul Care <span className='text-green-500 font-semibold'>Schimbă Totul:</span> </h1>
 
       <div className='grid grid-cols-1 p-5 lg:grid-cols-2 sm:grid-cols-2 sm:gap-4 sm:items-center'>
         <div className="border-solid border-4 shadow-[2px_2px_2px_0_#707070] border-white mx-auto">
           <Image src='/third.webp'
            alt="thirdPhoto"
-           width={500}
-           height={500}
+           width={400}
+           height={400}
            />
         </div>
-        <div className="my-5">
-          <p className="mb-5 text-xl lg:text-2xl tracking-tight">Am condensat <span className="text-green-500 font-semibold">informații din ani de cercetare științifică</span> și le-am filtrat prin <span className="text-green-500 font-semibold">experiența mea personală</span> într-un ghid digital simplu, pas cu pas: "<span className="text-green-500 font-semibold">10 Hack-uri Simple Pentru o Glicemie Stabilă".</span>
+        <div className="my-5 ">
+          <p className="mb-5 text-xl tracking-tight font-sans">Am condensat <span className="text-green-500 font-semibold">informații din ani de cercetare științifică</span> și le-am filtrat prin <span className="text-green-500 font-semibold">experiența mea personală</span> într-un ghid digital simplu, pas cu pas: "<span className="text-green-500 font-semibold">10 Hack-uri Simple Pentru o Glicemie Stabilă".</span>
 
 </p>
-<p className="text-xl lg:text-2xl tracking-tight">Acesta nu este o altă dietă complicată. Este un <span className="text-green-500 font-semibold">set de "unelte"</span> practice pe care le poți folosi începând de azi pentru a prelua controlul asupra energiei, a greutății și a poftelor tale, mâncând în continuare alimente delicioase.</p>
+<p className="text-xl  tracking-tight font-sans">Acesta nu este o altă dietă complicată. Este un <span className="text-green-500 font-semibold">set de "unelte"</span> practice pe care le poți folosi începând de azi pentru a prelua controlul asupra energiei, a greutății și a poftelor tale, mâncând în continuare alimente delicioase.</p>
         </div>
       </div>
 
       <div className="p-5 lg:p-0">
         <div className="mt-15">
-              <h2 className="text-center  text-2xl lg:text-4xl font-semibold tracking-tight">Iată Doar O Mică Parte </h2>
-        <p className="text-center text-2xl lg:text-4xl font-semibold tracking-tight">Din <span className="text-green-500 font-semibold">Secretele</span> pe care le vei descoperi în ghid:</p>
+              <h2 className="text-center  text-2xl lg:text-4xl font-semibold tracking-tight text-[#4b4c4b] font-jakarta">Iată Doar O Mică Parte </h2>
+        <p className="text-center text-2xl lg:text-4xl font-semibold tracking-tight text-[#4b4c4b] font-jakarta">Din <span className="text-green-500 font-semibold">Secretele</span> pe care le vei descoperi în ghid:</p>
         </div>
     
 
-      <ul className="my-10 space-y-5 text-xl ">
+      <ul className="my-5 space-y-5 text-xl font-sans text-[#4b4c4b] ">
         
     <li className="flex gap-2 tracking-tight items-start">
     <FaCheckSquare className="text-green-400 text-xl flex-none mt-1" /> 
@@ -69,7 +70,7 @@ const Ghid = () => {
             </li>
       </ul>
       <div className='flex flex-col justify-center items-center mb-4 lg:w-xl w-full mx-auto'>
-        <button  className="font-semibold text-2xl bg-[#8ecb40ff] shadow-[2px_2px_2px_0_#707070] p-4 transition-all duration-300 ease-out hover:-translate-y-2 shadow-2xl hover:shadow-lg border-2 border-[#8ecb40ff] border-solid mt-5 mb-2 cursor-pointer text-gray-700">Cumpara eBook-ul la doar 49 RON</button>
+       <Link href='/checkout'><button  className="font-semibold text-2xl bg-[#8ecb40ff] shadow-[2px_2px_2px_0_#707070] p-4 transition-all duration-300 ease-out hover:-translate-y-2 shadow-2xl hover:shadow-lg border-2 border-[#8ecb40ff] border-solid mt-5 mb-2 cursor-pointer text-gray-700">Cumpara eBook-ul la doar 49 RON</button></Link> 
         <p className='font-light text-sm tracking-tighter '>Achiziție 100% Sigură și Garantată. Primești eBook-ul pe email în 2 minute.</p>
       </div>
        <div className='my-5 flex justify-center items-center'>
@@ -78,8 +79,8 @@ const Ghid = () => {
       </div>
 
       <div className="bg-[#eef3ed] border-solid border-1 rounded-md shadow-md border-[#444444] p-5 m-4">
-        <h2 className="text-center lg:text-4xl text-2xl font-semibold mb-5">Acest Ghid Este Pentru Tine Daca...</h2>
-        <ul className="space-y-5 p-5">
+        <h2 className="text-center lg:text-4xl text-2xl font-semibold mb-5 font-jakarta text-[#4b4c4b]">Acest Ghid Este Pentru Tine Daca...</h2>
+        <ul className="space-y-5 p-5 font-sans text-[#4b4c4b]">
           
           <li className="flex items-start gap-1">
             <FaCheckCircle className="text-green-600 flex-none mt-1 text-xl" />

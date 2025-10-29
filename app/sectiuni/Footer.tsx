@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className='lg:w-5xl w-xs sm:w-2xl  lg:mx-auto'>
       
-      <h1 className='font-bold text-3xl text-center my-10'>Garanția Noastră 100% <span className='text-green-500 '>"Fără Riscuri"</span></h1>
+      <h1 className='font-bold text-3xl text-center my-10 font-jakarta text-[#4b4c4b]'>Garanția Noastră 100% <span className='text-green-500 '>"Fără Riscuri"</span></h1>
        
        <div className='flex flex-col lg:flex-row items-center justify-between my-10'>
         <div className="lg:w-2xl flex justify-center">
@@ -16,7 +16,7 @@ const Footer = () => {
           />
         </div>
         <div className="lg:w-2xl">
-          <p className="text-xl tracking-tight">Sunt atât de încrezător în valoarea pe care o vei primi, încât îți ofer o garanție completă. Dacă în termen de 14 zile de la achiziție consideri că ghidul nu te-a ajutat, trimite-mi un email și îți voi returna 100% din suma plătită, fără întrebări suplimentare. Nu ai absolut nimic de pierdut.</p>
+          <p className="text-xl tracking-tight font-sans">Sunt atât de încrezător în valoarea pe care o vei primi, încât îți ofer o garanție completă. Dacă în termen de 14 zile de la achiziție consideri că ghidul nu te-a ajutat, trimite-mi un email și îți voi returna 100% din suma plătită, fără întrebări suplimentare. Nu ai absolut nimic de pierdut.</p>
         </div>
        </div>
 
@@ -68,7 +68,7 @@ const Footer = () => {
        </div>
 
        <div className="lg:w-4xl mx-auto">
-        <div className="flex flex-col lg:flex-row justify-center gap-4">
+        <div className="flex flex-col lg:flex-row justify-evenly gap-4">
           <div className="mx-auto">
             <Link href='https://consumer-redress.ec.europa.eu/index_ro'>
             <Image src='/litigi.webp' alt="Ligitii" width={250} height={250} />
@@ -84,8 +84,8 @@ const Footer = () => {
 
        <div className="lg:w-3xl w-full mx-auto my-5">
         <div className="flex justify-center gap-5">
-         <Link  href='www.google.com'><p className="text-blue-500 font-semibold">POLITICA DE CONFIDENȚIALITATE </p></Link>
-         <Link href='www.google.com'><span className="text-blue-500 font-semibold">TERMENI ȘI CONDIȚII</span></Link>
+         <Link  href='/politica_de_confidentialitate'><p className="text-blue-500 font-bold hover:underline font-sans">POLITICA DE CONFIDENȚIALITATE </p></Link>
+         <Link href='/termeni_si_conditii'><span className="text-blue-500 font-bold hover:underline font-sans">TERMENI ȘI CONDIȚII</span></Link>
         </div>
        </div>
 
