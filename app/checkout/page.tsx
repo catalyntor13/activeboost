@@ -1,32 +1,116 @@
-"use client"
-import Image from "next/image"
+'use client'; 
 
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
+import { z } from 'zod'
+import { zodResolver } from '@hookform/resolvers/zod'
+import { useForm, SubmitHandler, Controller } from "react-hook-form"  
+import Image from "next/image"
+import { Loader2Icon } from 'lucide-react';
+import Link from 'next/link';
 import { FaCheckCircle } from "react-icons/fa";
 
 import { Checkbox } from "@/components/ui/checkbox"
 
-
 export default function CheckoutPage() {
-    return (
+  const router = useRouter();
+  const [error, setError] = useState<string | null>(null);
+ 
 
+  // Validare Date Nume si Email cu Zod
+
+  const registerSchema = z.object({
+    nume: z.string().min(2, "Numele este obligatoriu (min. 2 caractere)"),
+    email: z.string().email("Te rugăm să introduci un email valid"),
+
+   terms: z.boolean().refine(val => val === true, {
+    message: "Trebuie să fii de acord cu termenii și condițiile pentru a continua."
+  }),
+
+  })
+
+  // Infer the type from the schema
+type RegisterFormValues = z.infer<typeof registerSchema>
+
+ // Datele produsului (de obicei, acestea vin din context sau props)
+  const product = {
+    id: 'prod_digital_1',
+    description: '10 Hack-uri Simple Pentru o Glicemie Stabilă',
+    amount: '49.00', // ATENȚIE: String cu 2 zecimale
+  };
+
+ // Initam react hook form si zod
+  const {
+    register,
+    handleSubmit,
+    control,
+    formState: { errors, isSubmitting },
+  } = useForm<RegisterFormValues>({
+    resolver: zodResolver(registerSchema),
+    defaultValues: {
+      nume: "",
+      email: "", 
+      terms: false, // <-- VALOAREA IMPLICITĂ
+    },
+  })
+
+ 
+
+  const onSubmit: SubmitHandler<RegisterFormValues> = async (data) => {
+    setError(null);
+
+    try {
+      const response = await fetch('/api/orders/create', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: data.nume,
+          email: data.email,
+          amount: product.amount,
+          description: product.description,
+          productId: product.id,
+        }),
+      });
+      
+      if(!response) {
+        throw new Error('Eroare la crearea comenzii pe server');
+      }
+
+      const result = (await response.json()) as { checkoutUrl ?: string; error?: string};
+
+      if(result.checkoutUrl) {
+        router.push(result.checkoutUrl);
+      } else {
+        setError(result.error || 'Nu am primit URL de checkout');
+      }
+ 
+    } catch (err) {
+      setError(err instanceof Error ? err.message: "O erroare necunoscuta");
+    }
+
+  }
+
+   return (
        <div>
         <div className="lg:w-6xl mx-auto">
             <div className="flex flex-col lg:flex-row items-start my-10">
                 <div className="p-5 lg:p-0">
                     <Image className="mx-auto" src='/checkoutfoto.webp' alt="Checkout Photo" width={600} height={600} />
                       
-                      <p className="font-sans text-center text-2xl my-5">Valoare Totală: <span className="text-red-500 font-bold line-through">148 RON</span></p>
+                      <p className="font-sans text-center text-2xl my-5">Valoare Totală: <span className="text-red-500 font-bold line-through">149 RON</span></p>
   
 
                     <div className="text-center font-bold font-sans text-2xl">
                        <h2>🔥 Prețul Tău Azi </h2>
-                       <h2>(Ofertă Limitată): <span className="text-green-400">49 RON!</span></h2>
+                       <h2>(Ofertă Limitată): <span className="text-green-400">{product.amount} RON!</span></h2>
                     </div>
 
                     <div className="my-5 text-lg font-sans">
                         <h2 className="font-bold  font-sans mb-3 text-xl">Sumarul Comenzii:</h2>
 
-                        <p className="font-bold flex"> <FaCheckCircle className="text-green-400 text-xl flex-none mt-1 mr-2" /> Ghidul Principal: <span className="text-green-400 mx-1"> "10 Hack-uri Simple Pentru o Glicemie Stabilă" </span></p>
+                        <p className="font-bold flex"> <FaCheckCircle className="text-green-400 text-xl flex-none mt-1 mr-2" /> Ghidul Principal: <span className="text-green-400 mx-1"> {product.description}</span></p>
                         <p>Planul tău complet, pas cu pas, pentru a prelua controlul asupra energiei și a poftelor.</p>
 
                     </div>
@@ -37,13 +121,39 @@ export default function CheckoutPage() {
                     </div>
                 </div>
                 <div className="w-sm">
+                  <form onSubmit={handleSubmit(onSubmit)}>
                     <div className="border-2 border-solid rounded-md p-6">
                         <h2 className="text-blue-400 font-semibold font-sans text-center">Unde Îți Trimitem Ghidul?</h2>
                         <h3 className="text-xs font-extralight font-sans text-center mb-4">Acces pe Viață (Plată Unică)</h3>
                           
                           <div className="flex flex-col gap-3">
-                        <input className="border-2 border-solid p-2 rounded-md" type="text" name="yourname" placeholder="Numele Tau..."></input>
-                        <input className="border-2 border-solid p-2 rounded-md" type="email" name="youremail" placeholder="Adresa de Email.."></input>
+                        <input 
+                           {...register('nume')}
+                        className={ errors.email? "border-2 border-solid p-2 rounded-md border-red-500" : "border-2 border-solid p-2 rounded-md"} type="text" name="nume" placeholder="Numele Tau..."></input>
+
+                              {/* Errori Mesaje */}
+
+                               {errors.nume && (
+                <p className="text-sm text-red-500 flex items-center gap-1">
+                 
+                  {errors.nume.message}
+                </p>
+              )}
+     {/* Errori Mesaje */}
+                        <input 
+                         {...register('email')}
+                        className={ errors.email? "border-2 border-solid p-2 rounded-md border-red-500" : "border-2 border-solid p-2 rounded-md"} type="email" name="email" placeholder="Adresa de Email.."></input>
+
+                             {/* Errori Mesaje */}
+
+                               {errors.email && (
+                <p className="text-sm text-red-500 flex items-center gap-1">
+                 
+                  {errors.email.message}
+                </p>
+              )}
+     {/* Errori Mesaje */}
+
                         </div>
 
                         <div className="flex items-center mt-4">
@@ -117,16 +227,33 @@ export default function CheckoutPage() {
     </div>
 </div>                    
 <div className="flex justify-center">
-    <button className="border-2 border-solid w-2/4 cursor-pointer bg-green-500 text-white font-bold">Plateste</button>
+    
+        <button type='submit' className='p-2 w-[250px] cursor-pointer hover:bg-green-400 bg-[#8ecb40] font-bold' disabled={isSubmitting}>
+          {isSubmitting ? <Loader2Icon className="animate-spin"> Se proceseaza </Loader2Icon> : 'Plătește Acum'}
+        </button>
+
+        {error && <p style={{ color: 'red', marginTop: '10px' }}>{error}</p>}
 </div>
 <div className="flex items-start my-5 gap-2 ">
-    <Checkbox className="mt-1"/>
-    <p className=" font-sans text-[14px] ">Am citit și sunt de acord cu Termenii și Condițiile și cu Politica de Confidențialitate a site-ului.</p>
+  <Controller name='terms' control={control} render={({ field}) => (
+
+    <Checkbox className="mt-1 border-2 border-gray-400"
+     checked={field.value}
+     onCheckedChange={field.onChange}
+
+    />
+
+  )} />
+    
+    
+    <p className=" font-opensans text-[14px] ">Am citit și sunt de acord cu <Link href='/termeni_si_conditii' className='text-blue-500 underline'>Termenii și Condițiile </Link>și cu <Link className='text-blue-500 underline' href="/politica_de_confidentialitate">Politica de Confidențialitate</Link> a site-ului.</p>
 </div>
+{error && <p style={{ color: 'red', marginTop: '10px' }}>{error}</p>}
 
 <p className="text-xs text-center font-sans font-extralight">Achiziție 100% Sigură și Garantată. Primești eBook-ul pe email în 2 minute.</p>
                         
                     </div>
+                    </form>
                 </div>
             </div>
         </div>

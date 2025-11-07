@@ -78,6 +78,7 @@
   --sidebar-ring: oklch(0.708 0 0);
   --font-dancing-script: var(--font-dancing-script);
   --font-jakarta: var(--font-jakarta);
+  --font-opensans: var(--font-opensas);
 }
 
 .dark {
@@ -130,4 +131,8 @@
 
 .font-jakarta {
   font-family: var(--font-jakarta);
+}
+
+.font-opensans {
+  font-family: var(--font-opensans);
 }

@@ -50,9 +50,12 @@ const Testimoniale = () => {
 
   return (
    <div className='lg:w-6xl w-full  lg:mx-auto'>
-    <div className="h-1 w-26 bg-green-500 mx-auto mb-2 " />
-    <h1 className='text-center text-3xl font-bold font-jakarta text-[#4b4c4b]'>Ce Spun Cei Care <span className='text-green-500'>Au Încercat Deja Metoda:</span></h1>
-     <div className="h-1 w-26 bg-green-500 mx-auto mt-2" />
+    <div className="my-10">
+       <div className="h-1 w-[10%] bg-[#8ecb40] mx-auto mb-2 mt-10 lg:mt-0  " />
+    <h1 className='text-center text-3xl font-bold font-jakarta text-[#4b4c4b] '>Ce Spun Cei Care <span className='text-[#8ecb40]'>Au Încercat Deja Metoda:</span></h1>
+     <div className="h-1 w-[10%] bg-[#8ecb40] mx-auto mt-3" />
+    </div>
+   
      <div className='grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 justify-items-center my-15 gap-4'>
      
        { PeopleReviews.map((peopleReview) => {
@@ -80,7 +83,7 @@ const Testimoniale = () => {
       <div className="flex flex-col">
         <span className="font-bold">{peopleReview.nume}</span>
         <span>{peopleReview.socialRef}</span>
-        <span className="font-sans text-[#4b4c4b] ">{peopleReview.dataRecenzie}</span>
+        <span className="font-opensans text-[#4b4c4b] ">{peopleReview.dataRecenzie}</span>
       </div>
      </div>
     <div>
@@ -128,11 +131,11 @@ const Testimoniale = () => {
      <div className="bg-[#fbf9f3] border-2 border-solid rounded-md lg:py-15 lg:px-20 p-3 m-2 sm:m-20 sm:p-15">
         <div className="text-center text-2xl lg:text-3xl font-bold mb-5 font-jakarta text-[#4b4c4b]">
           <p>Este Timpul Pentru un</p>
-          <p><span className="underline text-green-500 font-semibold">RESET TOTAL</span> al Corpului Tau!</p>
+          <p><span className="underline text-[#8ecb40]font-semibold">RESET TOTAL</span> al Corpului Tau!</p>
         </div>
 
-        <div className="text-[17px] lg:text-xl space-y-4 font-sans text-[#4b4c4b]">
-          <p>Primești acces instantaneu la <span className="font-bold">Ghidul Principal </span> <span className="text-green-500 font-bold">"10 Hack-uri Pentru o Glicemie Stabilă"</span>
+        <div className="text-[17px] lg:text-xl space-y-4 font-opensans font-medium text-[#4b4c4b]">
+          <p>Primești acces instantaneu la <span className="font-bold">Ghidul Principal </span> <span className="text-[#8ecb40] font-bold">"10 Hack-uri Pentru o Glicemie Stabilă"</span>
 
 plus <span className="font-bold">Bonusul</span> <span className="text-blue-500 font-bold">"Arta Hidratării".</span></p>
 
@@ -142,12 +145,12 @@ plus <span className="font-bold">Bonusul</span> <span className="text-blue-500 f
         </div>
          <div className='flex flex-col justify-center items-center mb-4 lg:w-xl w-full mx-auto'>
        <Link href='/checkout'> <button  className="font-semibold text-xl lg:text-2xl bg-[#8ecb40ff] shadow-[2px_2px_2px_0_#707070] p-4 transition-all duration-300 ease-out hover:-translate-y-2 shadow-2xl hover:shadow-lg border-2 border-[#8ecb40ff] border-solid mt-5 mb-2 cursor-pointer text-gray-700">DA, Vreau Acces Acum la Doar 49 RON!</button></Link>
-        <p className='font-light lg:text-sm text-xs text-center tracking-tighter font-sans'>Achiziție 100% Sigură și Garantată. Primești eBook-ul pe email în 2 minute.</p>
+        <p className='font-light lg:text-sm text-[9px] text-center tracking-tighter font-sans'>Achiziție 100% Sigură și Garantată. Primești eBook-ul pe email în 2 minute.</p>
       </div>
          
         
           <div className='my-5 flex justify-center items-center'>
-                 <Image src='/neptopia.png' alt='Neptopia' width={350} height={350} />
+                 <Image src='/visa.png' alt='Visa' width={200} height={200} />
               </div>
      </div>
    </div>

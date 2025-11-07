@@ -7,18 +7,18 @@ import Link from 'next/link'
 const Header = () => {
   return (
     <div className='bg-[#f6f7f3] w-full'>
-    <div className='lg:w-6xl p-5 lg:p-0 mx-auto'>
+    <div className='lg:w-6xl p-4 lg:p-0 mx-auto'>
       <Image
        alt='Activeboost Logo'
        src='/activeboost.png'
        width={200}
        height={200}
-       className='mx-auto'
+       className='mx-auto '
       
       />
-     <h1 className='lg:text-5xl text-[#4b4c4b] font-jakarta sm:text-5xl text-xl lg:max-w-3xl sm:max-w-4xl mx-auto mb-6 font-bold  text-center tracking-tighter'>Simți că nicio masă nu e completă fără <span className='text-green-500'>"ceva dulce"</span> la final?</h1>
-     <h2 className='text-xl lg:w-5xl mb-3  text-center mx-auto font-semibold tracking-tighter font-sans '>Hai să îți prezint <span className='text-green-500'>10 Hack-uri Simple </span>care îți elimină definitiv pofta de dulce și te ajută să slăbești natural.</h2>
-     <h3 className=' text-sm lg:text-2xl sm:text-xl my-6 text-center tracking-tighter font-sans '>…fără diete restrictive, exerciții fizice extreme sau număratul caloriilor.</h3>
+     <h1 className='lg:text-5xl  text-[#4b4c4b] font-jakarta sm:text-5xl text-2xl lg:max-w-3xl sm:max-w-4xl mx-auto mb-6 font-extrabold  text-center tracking-tighter'>Simți că nicio masă nu e completă fără <span className='text-[#8ecb40]'>"ceva dulce"</span> la final?</h1>
+     <h2 className='text-base lg:text-2xl font-medium lg:w-5xl mb-3 text-center mx-auto tracking-tighter font-sans text-[#4b4c4b] '>Hai să îți prezint <span className='text-[#8ecb40] font-semibold'>10 Hack-uri Simple </span>care îți elimină definitiv pofta de dulce și te ajută să slăbești natural.</h2>
+     <h3 className='text-sm lg:text-xl sm:text-xl my-6 text-center tracking-tighter font-sans '>…fără diete restrictive, exerciții fizice extreme sau număratul caloriilor.</h3>
 
      <video 
      className='lg:w-3xl sm:w-xl mx-auto' src='/video2.mp4' controls
@@ -27,8 +27,8 @@ const Header = () => {
      </video>
       
       <div className='flex flex-col justify-center items-center mb-4 '>
-        <Link href='/checkout'><button  className="font-semibold text-2xl bg-[#8ecb40ff] shadow-[2px_2px_2px_0_#707070] p-4 transition-all duration-300 ease-out hover:-translate-y-2 shadow-2xl hover:shadow-lg border-2 border-[#8ecb40ff] border-solid mt-5 mb-2 cursor-pointer text-gray-700">Cumpara eBook-ul la doar 49 RON</button></Link>
-        <p className='font-light lg:text-sm text-xs tracking-tighter font-sans '>Achiziție 100% Sigură și Garantată. Primești eBook-ul pe email în 2 minute.</p>
+        <Link href='/checkout'><button  className="font-semibold text-xl bg-[#8ecb40ff] shadow-[2px_2px_2px_0_#707070] p-4 transition-all duration-300 ease-out hover:-translate-y-2 shadow-2xl hover:shadow-lg border-2 border-[#8ecb40ff] border-solid mt-5 mb-2 cursor-pointer text-gray-700">Cumpara eBook-ul la doar 49 RON</button></Link>
+        <p className='font-light lg:text-sm text-[9px] tracking-tighter font-sans text-center'>Achiziție 100% Sigură și Garantată. Primești eBook-ul pe email în 2 minute.</p>
       </div>
      
      
@@ -37,12 +37,12 @@ const Header = () => {
       <CountdownTimer/>
      </div>
      <div className='my-5 flex justify-center items-center'>
-        <Image src='/neptopia.png' alt='Neptopia' width={350} height={350} />
+        <Image src='/visa.png' alt='Visa' width={200} height={200} />
      </div>
     <div className='border-solid border-3 shadow-md bg-[#eef3ed] lg:p-7 p-4 lg:w-4xl  w-full mx-auto'>
      <p className='text-xl lg:text-2xl text-start lg:text-center font-bold text-[#4b4c4b] font-jakarta '>Prins în același cerc vicios?</p>
      <p className='text-xl lg:text-2xl lg:text-center font-bold  mb-5 text-[#4b4c4b] font-jakarta'>Oboseală, pofte necontrolate și creștere în greutate...😔</p>
-     <ul className='text-start text-[15px] lg:text-xl lg:space-y-2 space-y-4 font-sans ' >
+     <ul className='text-start font-normal text-[16px] lg:text-xl lg:space-y-2 space-y-4 font-sans ' >
       <li>⛔ Te simți obosit și fără energie, mai ales după masa de prânz?</li>
       <li>⛔ Balonarea și disconfortul abdominal sunt o prezență constantă în viața ta?</li>
       <li>⛔ Simți că nu ai control asupra poftei de dulce, oricât ai încerca?</li>
@@ -50,10 +50,10 @@ const Header = () => {
      </ul>
    </div>
 
-   <div className='my-4'>
+   <div className='my-4 lg:my-2'>
  
-    <p className=' text-xl lg:text-3xl font-bold lg:my-5 my-15 text-center text-[#4b4c4b] font-jakarta'>Dar Dacă Ai Putea <span className='underline underline-offset-1'>Să Scapi Definitiv</span> De <span className='text-red-600'>Pofta de Dulce</span> De După Masă, Să Te Simți <span className='text-green-500'>Plin De Energie</span> și Mai <span className='text-green-500'>Sănătos Ca Niciodată</span>?</p>
-   <p className=' font-semibold  text-xl tracking-tighter text-center font-sans'>...Totul fără diete extreme, ore nesfârșite la sală sau sentimentul că ești mereu privat de ceva?</p>
+    <p className='text-xl p-2 lg:text-3xl font-extrabold lg:my-5 my-10 text-center text-[#4b4c4b] font-jakarta'>Dar Dacă Ai Putea <span className='underline underline-offset-1'>Să Scapi Definitiv</span> De <span className='text-red-600'>Pofta de Dulce</span> De După Masă, Să Te Simți <span className='text-[#8ecb40]'>Plin De Energie</span> și Mai <span className='text-[#8ecb40]'>Sănătos Ca Niciodată</span>?</p>
+   <p className=' font-normal  text-xl tracking-tighter text-center font-sans'>...Totul fără diete extreme, ore nesfârșite la sală sau sentimentul că ești mereu privat de ceva?</p>
    </div>
     </div>
     </div>
