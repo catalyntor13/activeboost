@@ -14,7 +14,7 @@ export default function PoliticaConfidentialitate() {
         </div>
         
         <div className="lg:w-6xl mx-auto">
-            <h1 className="text-3xl font-jakarta font-bold ">Politică de Confidențialitate Online</h1>
+            <h1 className="text-xl lg:text-3xl font-jakarta font-bold ">Politică de Confidențialitate Online</h1>
               
               <div className="space-y-5 mt-5">
             <p className="text-lg"><span className="font-bold">IDTORO SRL</span> („Compania”) respectă preocupările legate de confidențialitatea utilizatorilor website-ului său, <span className="font-bold">www.activeboost.ro</span>, și a serviciilor furnizate prin intermediul acestuia („Site-ul”). Compania furnizează astfel această declarație de confidențialitate pentru a explica ce informații sunt colectate în timpul unei vizite pe Site și cum pot fi utilizate aceste informații.</p>

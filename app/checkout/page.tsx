@@ -104,17 +104,21 @@ type RegisterFormValues = z.infer<typeof registerSchema>
 
                     <div className="text-center font-bold font-sans text-2xl">
                        <h2>🔥 Prețul Tău Azi </h2>
-                       <h2>(Ofertă Limitată): <span className="text-green-400">{product.amount} RON!</span></h2>
+                       <h2>(Ofertă Limitată): <span className="text-[#8ecb40]">{product.amount} RON!</span></h2>
                     </div>
 
-                    <div className="my-5 text-lg font-sans">
-                        <h2 className="font-bold  font-sans mb-3 text-xl">Sumarul Comenzii:</h2>
-
-                        <p className="font-bold flex"> <FaCheckCircle className="text-green-400 text-xl flex-none mt-1 mr-2" /> Ghidul Principal: <span className="text-green-400 mx-1"> {product.description}</span></p>
+                    <div className="my-5 text-lg font-opensans">
+                        <h2 className="font-bold  font-opensans mb-3 text-xl">Sumarul Comenzii:</h2>
+                         <div className='flex items-start'>
+                          <FaCheckCircle className="text-[#8ecb40] lg:text-xl text-3xl mt-1 mr-2" />
+                          <p className="font-bold">  Ghidul Principal: <span className="text-[#8ecb40] mx-1"> {product.description}</span></p>
+                        
+                         </div>
                         <p>Planul tău complet, pas cu pas, pentru a prelua controlul asupra energiei și a poftelor.</p>
 
                     </div>
-                     <div className="my-5 text-lg font-sans">
+                    
+                     <div className="my-5 text-lg font-opensans">
                         <h2 className="font-bold mb-3 text-xl">Bonusul Gratuit:</h2>
                          <p className="font-bold flex items-start"><FaCheckCircle className="text-blue-400 text-xl  rounded-full flex-none mt-1 mr-2" />Mini-Ghidul: <span className="text-blue-400 mx-1">"Arta Hidratării" </span></p>
                          <p>Ghidul tău practic pentru a-ți optimiza hidratarea, un element cheie pentru un metabolism sănătos.</p>
@@ -183,7 +187,10 @@ type RegisterFormValues = z.infer<typeof registerSchema>
                 <p className="font-bold text-sm leading-tight">10 Hack-uri Simple Pentru o Glicemie Stabilă</p>
             </div>
             <span className="w-1/5 text-right text-sm">1</span>
-            <span className="w-1/5 text-right font-semibold text-blue-700 text-sm">RON49.00</span>
+             <div className="w-1/5 text-right text-sm font-semibold text-blue-700 leading-tight">
+                <span className="block">RON</span>
+                <span className="block">49.00</span>
+            </div>
         </div>
     </div>
 
@@ -226,31 +233,41 @@ type RegisterFormValues = z.infer<typeof registerSchema>
         <span className="text-blue-700">RON49.00</span>
     </div>
 </div>                    
-<div className="flex justify-center">
+<div className="flex flex-col justify-center">
     
-        <button type='submit' className='p-2 w-[250px] cursor-pointer hover:bg-green-400 bg-[#8ecb40] font-bold' disabled={isSubmitting}>
+        <button type='submit' className='p-2 w-full cursor-pointer hover:bg-green-400 bg-[#8ecb40] font-bold' disabled={isSubmitting}>
           {isSubmitting ? <Loader2Icon className="animate-spin"> Se proceseaza </Loader2Icon> : 'Plătește Acum'}
         </button>
-
+         <p className="text-[11px] my-2 text-center font-sans font-extralight">Achiziție 100% Sigură și Garantată. Primești eBook-ul pe email în 2 minute.</p>
         {error && <p style={{ color: 'red', marginTop: '10px' }}>{error}</p>}
 </div>
 <div className="flex items-start my-5 gap-2 ">
   <Controller name='terms' control={control} render={({ field}) => (
 
-    <Checkbox className="mt-1 border-2 border-gray-400"
+    <Checkbox  className={errors.terms? 'mt-1 border-2 border-red-400' : 'mt-1 border-2 border-gray-400'}
      checked={field.value}
      onCheckedChange={field.onChange}
 
     />
-
+    
   )} />
     
     
     <p className=" font-opensans text-[14px] ">Am citit și sunt de acord cu <Link href='/termeni_si_conditii' className='text-blue-500 underline'>Termenii și Condițiile </Link>și cu <Link className='text-blue-500 underline' href="/politica_de_confidentialitate">Politica de Confidențialitate</Link> a site-ului.</p>
+
+
+    
 </div>
+
+{errors.terms && (
+                <p className="text-sm text-center text-red-500 flex items-center gap-1">
+                 
+                  {errors.terms.message}
+                </p>
+              )}
 {error && <p style={{ color: 'red', marginTop: '10px' }}>{error}</p>}
 
-<p className="text-xs text-center font-sans font-extralight">Achiziție 100% Sigură și Garantată. Primești eBook-ul pe email în 2 minute.</p>
+
                         
                     </div>
                     </form>

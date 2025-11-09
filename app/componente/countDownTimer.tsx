@@ -42,8 +42,8 @@ export default function CountdownTimer() {
     <div className="flex items-center justify-center gap-10  py-8 text-center">
       {Object.entries(timeLeft).map(([label, value]) => (
         <div key={label} className="flex flex-col items-center">
-          <span className="text-3xl font-semibold text-black">{value}</span>
-          <span className="text-sm uppercase tracking-wide text-gray-600">
+          <span className="text-sm font-semibold text-black">{value}</span>
+          <span className="text-xs uppercase tracking-wide text-gray-600">
             {label}
           </span>
         </div>

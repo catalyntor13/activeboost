@@ -13,10 +13,10 @@ const Header = () => {
        src='/activeboost.png'
        width={200}
        height={200}
-       className='mx-auto '
+       className='mx-auto'
       
       />
-     <h1 className='lg:text-5xl  text-[#4b4c4b] font-jakarta sm:text-5xl text-2xl lg:max-w-3xl sm:max-w-4xl mx-auto mb-6 font-extrabold  text-center tracking-tighter'>Simți că nicio masă nu e completă fără <span className='text-[#8ecb40]'>"ceva dulce"</span> la final?</h1>
+     <h1 className='lg:text-5xl text-[#4b4c4b] font-jakarta sm:text-5xl text-2xl lg:max-w-3xl sm:max-w-4xl mx-auto mb-6 font-extrabold  text-center tracking-tighter'>Simți că nicio masă nu e completă fără <span className='text-[#8ecb40]'>"ceva dulce"</span> la final?</h1>
      <h2 className='text-base lg:text-2xl font-medium lg:w-5xl mb-3 text-center mx-auto tracking-tighter font-sans text-[#4b4c4b] '>Hai să îți prezint <span className='text-[#8ecb40] font-semibold'>10 Hack-uri Simple </span>care îți elimină definitiv pofta de dulce și te ajută să slăbești natural.</h2>
      <h3 className='text-sm lg:text-xl sm:text-xl my-6 text-center tracking-tighter font-sans '>…fără diete restrictive, exerciții fizice extreme sau număratul caloriilor.</h3>
 
@@ -27,8 +27,8 @@ const Header = () => {
      </video>
       
       <div className='flex flex-col justify-center items-center mb-4 '>
-        <Link href='/checkout'><button  className="font-semibold text-xl bg-[#8ecb40ff] shadow-[2px_2px_2px_0_#707070] p-4 transition-all duration-300 ease-out hover:-translate-y-2 shadow-2xl hover:shadow-lg border-2 border-[#8ecb40ff] border-solid mt-5 mb-2 cursor-pointer text-gray-700">Cumpara eBook-ul la doar 49 RON</button></Link>
-        <p className='font-light lg:text-sm text-[9px] tracking-tighter font-sans text-center'>Achiziție 100% Sigură și Garantată. Primești eBook-ul pe email în 2 minute.</p>
+        <Link href='/checkout'><button  className="font-semibold text-lg lg:text-xl bg-[#8ecb40ff] shadow-[2px_2px_2px_0_#707070] p-4 transition-all duration-300 ease-out hover:-translate-y-2 shadow-2xl hover:shadow-lg border-2 border-[#8ecb40ff] border-solid mt-5 mb-2 cursor-pointer text-gray-700">Cumpara eBook-ul la doar 49 RON</button></Link>
+        <p className='font-light lg:text-xs text-[11px] tracking-tighter font-opensans text-center'>Achiziție 100% Sigură și Garantată. Primești eBook-ul pe email în 2 minute.</p>
       </div>
      
      
@@ -37,7 +37,7 @@ const Header = () => {
       <CountdownTimer/>
      </div>
      <div className='my-5 flex justify-center items-center'>
-        <Image src='/visa.png' alt='Visa' width={200} height={200} />
+        <Image src='/visa.png' alt='Visa' width={150} height={150} />
      </div>
     <div className='border-solid border-3 shadow-md bg-[#eef3ed] lg:p-7 p-4 lg:w-4xl  w-full mx-auto'>
      <p className='text-xl lg:text-2xl text-start lg:text-center font-bold text-[#4b4c4b] font-jakarta '>Prins în același cerc vicios?</p>

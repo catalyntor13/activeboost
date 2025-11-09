@@ -16,13 +16,13 @@ const Footer = () => {
           />
         </div>
         <div className="lg:w-2xl">
-          <p className="text-sm lg:text-xl tracking-tight font-opensans">Sunt atât de încrezător în valoarea pe care o vei primi, încât îți ofer o garanție completă. Dacă în termen de 14 zile de la achiziție consideri că ghidul nu te-a ajutat, trimite-mi un email și îți voi returna 100% din suma plătită, fără întrebări suplimentare. Nu ai absolut nimic de pierdut.</p>
+          <p className="text-sm lg:text-xl tracking-tight font-opensans my-5">Sunt atât de încrezător în valoarea pe care o vei primi, încât îți ofer o garanție completă. Dacă în termen de 14 zile de la achiziție consideri că ghidul nu te-a ajutat, trimite-mi un email și îți voi returna 100% din suma plătită, fără întrebări suplimentare. Nu ai absolut nimic de pierdut.</p>
         </div>
        </div>
 
        <div className="grid lg:grid-cols-3 grid-cols-1 lg:justify-items-start justify-items-center gap-4 space-y-5 mb-15 lg:mb-0">
          <div>
-          <Image src='/activeboost.png' alt="Activeboost" width={250} height={150}  />
+          <Image src='/activeboost.png' alt="Activeboost" width={200} height={150}  />
          </div>
 
          <div className="flex flex-col lg:text-sm text-[12px] font-light justify-center items-center text-center font-opensans ">

@@ -15,7 +15,7 @@ export default function TermenisiConditii() {
            </div>
            
            <div className="lg:w-6xl mx-auto">
-               <h1 className="text-3xl font-jakarta font-bold ">TERMENI ȘI CONDIȚII DE UTILIZARE</h1>
+               <h1 className="text-xl lg:text-3xl font-jakarta font-bold ">TERMENI ȘI CONDIȚII DE UTILIZARE</h1>
                  
                  <div className="space-y-5 mt-5">
                <p className="text-lg">VĂ RUGĂM SĂ CITIȚI ACEȘTI TERMENI DE UTILIZARE CU ATENȚIE ÎNAINTE DE A UTILIZA ACEST WEBSITE. Prin utilizarea acestui website, vă exprimați consimțământul față de acești termeni de utilizare. Dacă nu sunteți de acord cu acești Termeni de Utilizare, vă rugăm să nu utilizați website-ul.</p>

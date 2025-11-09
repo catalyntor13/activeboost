@@ -50,10 +50,10 @@ const CePrimesti = () => {
         </div>
  <div className='flex flex-col justify-center items-center mb-4 lg:w-xl mx-auto mt-10'>
         <Link href='/checkout'><button  className="font-semibold lg:text-2xl text-xl bg-[#8ecb40ff] shadow-[2px_2px_2px_0_#707070] p-4 transition-all duration-300 ease-out hover:-translate-y-2 shadow-2xl hover:shadow-lg border-2 border-[#8ecb40ff] border-solid mt-5 mb-2 cursor-pointer text-gray-700">Cumpara eBook-ul la doar 49 RON</button></Link>
-        <p className='font-light lg:text-sm text-[9px] text-center tracking-tighter font-opensans '>Achiziție 100% Sigură și Garantată. Primești eBook-ul pe email în 2 minute.</p>
+        <p className='font-light lg:text-sm text-[11px] text-center tracking-tighter font-opensans '>Achiziție 100% Sigură și Garantată. Primești eBook-ul pe email în 2 minute.</p>
       </div>
 <div className='my-5 flex justify-center items-center'>
-        <Image src='/visa.png' alt='Neptopia' width={200} height={200} />
+        <Image src='/visa.png' alt='Neptopia' width={150} height={150} />
      </div>
       </div>
     </div>
