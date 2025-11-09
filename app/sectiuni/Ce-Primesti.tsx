@@ -5,7 +5,7 @@ import Link from "next/link"
 const CePrimesti = () => {
   return (
     <div className="lg:w-6xl lg:mx-auto ">
-      <h1 className='text-center lg:text-4xl text-2xl p-3 font-semibold my-10 font-jakarta'>Ce Primești Imediat ce Comanzi:</h1>
+      <h1 className='text-center lg:text-4xl text-2xl p-3 font-bold text-[#4b4c4b] my-10 font-jakarta'>Ce Primești Imediat <span className="text-[#8ecb40]">Ce Comanzi:</span></h1>
 
       <div className='grid grid-cols-1 lg:grid-cols-2 p-3 justify-items-center gap-10'>
         <div className="border-solid border-4 shadow-[2px_2px_2px_0_#707070] border-white">
