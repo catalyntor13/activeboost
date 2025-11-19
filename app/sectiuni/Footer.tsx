@@ -20,7 +20,7 @@ const Footer = () => {
         </div>
        </div>
 
-       <div className="grid lg:grid-cols-3 grid-cols-1 lg:justify-items-start justify-items-center gap-4 space-y-5 mb-15 lg:mb-0">
+       <div className="grid lg:grid-cols-3 grid-cols-1 lg:justify-items-start justify-items-center gap-4 space-y-5 mb-15 mt:0 lg:mt-15 lg:mb-0">
          <div>
           <Image src='/activeboost.png' alt="Activeboost" width={200} height={150}  />
          </div>

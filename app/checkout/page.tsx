@@ -109,9 +109,9 @@ type RegisterFormValues = z.infer<typeof registerSchema>
 
                     <div className="my-5 text-lg font-opensans">
                         <h2 className="font-bold  font-opensans mb-3 text-xl">Sumarul Comenzii:</h2>
-                         <div className='flex items-start'>
-                          <FaCheckCircle className="text-[#8ecb40] lg:text-xl text-3xl mr-2" />
-                          <p className="font-bold">  Ghidul Principal: <span className="text-[#8ecb40] mx-1">"{product.description}" </span></p>
+                         <div className='flex items-start lg:items-center'>
+                          <FaCheckCircle className="text-[#8ecb40] lg:text-xl text-3xl mr-2 " />
+                           <p className="font-bold">  Ghidul Principal: <span className="text-[#8ecb40] mx-1">"{product.description}" </span></p>
                         
                          </div>
                         <p>Planul tău complet, pas cu pas, pentru a prelua controlul asupra energiei și a poftelor.</p>

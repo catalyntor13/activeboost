@@ -95,7 +95,7 @@ const Testimoniale = () => {
 
 {/* 🔹 Modal global pentru text complet */}
       <Dialog open={open} onOpenChange={setOpen}>
-        <DialogContent className="max-w-lg ">
+        <DialogContent className="max-w-lg max-h-[80vh] overflow-y-auto ">
           <DialogHeader>
 
             { selectedReview && (
