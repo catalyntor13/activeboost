@@ -1,5 +1,6 @@
 'use client'; // E o componentă de client (are interacțiune)
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 export default function CookieBanner() {
   const [showBanner, setShowBanner] = useState(false);
@@ -27,9 +28,9 @@ export default function CookieBanner() {
           Folosim cookie-uri strict necesare pentru a asigura securitatea plăților și funcționarea site-ului. 
           Continuarea navigării implică acceptul tău. Vezi{' '}
           {/* Link către politica clientului, dacă o ai pe o pagină separată, sau ancorează spre footer */}
-          <a href="/termeni" className="underline text-blue-400 hover:text-blue-300">
+          <Link href="/termeni_si_conditii" className="underline text-blue-400 hover:text-blue-300">
             Politica de Confidențialitate
-          </a>.
+          </Link>.
         </p>
       </div>
       <button
