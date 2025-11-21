@@ -5,6 +5,9 @@ import { NextRequest } from 'next/server';
 import { PaymentStatus } from '@mollie/api-client';
 import { render } from '@react-email/render';
 import { EmailConfirmarePlata } from '@/emails/EmailConfirmarePlata'
+import { renderToStream } from '@react-pdf/renderer';
+import { InvoicePDF } from '@/components/Invoice';
+
 
 // Importăm transporterul nostru ---
 import { transporter } from '@/lib/nodemailer';
@@ -35,10 +38,11 @@ export async function POST(request: NextRequest) {
     if (payment.status === PaymentStatus.paid) {
       console.log(`Plata reușită pentru comanda: ${orderId}`);
 
+  
       // 1. Verificăm starea comenzii
       const { data: order, error: orderError } = await supabaseServer
         .from('clienti')
-        .select('id, nume_client, email_client, status, email_sent')
+        .select('id, nume_client, email_client, adresa_client, status, email_sent')
         .eq('id', orderId)
         .single();
 
@@ -62,6 +66,31 @@ export async function POST(request: NextRequest) {
         throw new Error('Link-urile PDF (PDF_LINK_1 / PDF_LINK_2) nu sunt setate în .env');
       }
 
+      const dataAzi = new Date().toLocaleDateString('ro-RO');
+      const pretTotal = `${payment.amount.value} ${payment.amount.currency}`;
+
+      const invoiceProps = {
+        orderId: order.id.toString(), // Convertim ID-ul în string dacă e număr
+        date: dataAzi,
+        numeClient: order.nume_client,
+        emailClient: order.email_client,
+        adresaClient: order.adresa_client,
+        amount: pretTotal,
+        produs: "Pachet Ghiduri Active Boost"
+      };
+
+      const pdfStream = await renderToStream(
+        <InvoicePDF {...invoiceProps} />
+      );
+
+      const chunks: Uint8Array[] = [];
+      for await (const chunk of pdfStream) {
+        chunks.push(chunk as Uint8Array);
+      }
+
+      const pdfBuffer = Buffer.concat(chunks);
+
+
       // --- MODIFICARE 2: Folosim transporter.sendMail ---
       const htmlBody = await render(
         <EmailConfirmarePlata
@@ -74,10 +103,17 @@ export async function POST(request: NextRequest) {
       );
 
       await transporter.sendMail({
-        from: `"Active boost" <${process.env.SMTP_USER}>`, // Emailul tău (expeditorul)
+        from: `"Active Boost" <${process.env.SMTP_USER}>`, // Emailul tău (expeditorul)
         to: order.email_client, // Emailul clientului
         subject: `Felicitări! Ghidul tău Active Boost a sosit! 🔥`,
         html: htmlBody,
+        attachments: [
+          {
+            filename: `Factura_ActiveBoost_${orderId}.pdf`,
+            content: pdfBuffer,
+            contentType: 'application/pdf'
+          }
+        ]
       });
       // --- Sfârșitul modificării ---
 

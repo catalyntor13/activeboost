@@ -28,7 +28,8 @@ export default function CookieBanner() {
           Folosim cookie-uri strict necesare pentru a asigura securitatea plăților și funcționarea site-ului. 
           Continuarea navigării implică acceptul tău. Vezi{' '}
           {/* Link către politica clientului, dacă o ai pe o pagină separată, sau ancorează spre footer */}
-          <Link href="/termeni_si_conditii" className="underline text-blue-400 hover:text-blue-300">
+          <Link target="_blank" 
+  rel="noopener noreferrer" href="/termeni_si_conditii" className="underline text-blue-400 hover:text-blue-300">
             Politica de Confidențialitate
           </Link>.
         </p>

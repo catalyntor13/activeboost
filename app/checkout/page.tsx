@@ -22,6 +22,7 @@ export default function CheckoutPage() {
   const registerSchema = z.object({
     nume: z.string().min(2, "Numele este obligatoriu (min. 2 caractere)"),
     email: z.string().email("Te rugăm să introduci un email valid"),
+    adresa_client: z.string().min(2, "Adresa dumneavostra e obligatorie"),
 
    terms: z.boolean().refine(val => val === true, {
     message: "Trebuie să fii de acord cu termenii și condițiile pentru a continua."
@@ -35,7 +36,7 @@ type RegisterFormValues = z.infer<typeof registerSchema>
  // Datele produsului (de obicei, acestea vin din context sau props)
   const product = {
     id: 'prod_digital_1',
-    description: '10 Hack-uri Simple Pentru o Glicemie Stabilă',
+    description: '10 Hack-uri Simple Pentru o Glicemie Stabilă + Ebook: Arta Hidratarii ',
     amount: '49.00', // ATENȚIE: String cu 2 zecimale
   };
 
@@ -50,6 +51,7 @@ type RegisterFormValues = z.infer<typeof registerSchema>
     defaultValues: {
       nume: "",
       email: "", 
+      adresa_client: "",
       terms: false, // <-- VALOAREA IMPLICITĂ
     },
   })
@@ -68,6 +70,7 @@ type RegisterFormValues = z.infer<typeof registerSchema>
         body: JSON.stringify({
           name: data.nume,
           email: data.email,
+          addresa: data.adresa_client,
           amount: product.amount,
           description: product.description,
           productId: product.id,
@@ -111,7 +114,7 @@ type RegisterFormValues = z.infer<typeof registerSchema>
                         <h2 className="font-bold  font-opensans mb-3 text-xl">Sumarul Comenzii:</h2>
                          <div className='flex items-start lg:items-center'>
                           <FaCheckCircle className="text-[#8ecb40] lg:text-xl text-3xl mr-2 " />
-                           <p className="font-bold">  Ghidul Principal: <span className="text-[#8ecb40] mx-1">"{product.description}" </span></p>
+                           <p className="font-bold">  Ghidul Principal: <span className="text-[#8ecb40] mx-1">"10 Hack-uri Simple Pentru o Glicemie Stabilă" </span></p>
                         
                          </div>
                         <p>Planul tău complet, pas cu pas, pentru a prelua controlul asupra energiei și a poftelor.</p>
@@ -154,6 +157,30 @@ type RegisterFormValues = z.infer<typeof registerSchema>
                 <p className="text-sm text-red-500 flex items-center gap-1">
                  
                   {errors.email.message}
+                </p>
+              )}
+                      
+
+                          <div className="flex items-center mt-4">
+    {/* Textul - Lățime minimă, dar nu se extinde */}
+    <div className="uppercase text-sm font-sans font-semibold text-[#4b4c4b] whitespace-nowrap pr-2">
+        Date facturare
+    </div>
+    
+    {/* Linia - Ocupă tot spațiul rămas (flex-1) */}
+    <div className="border-t border-gray-300 w-full flex-1"></div>
+</div>
+                   <input 
+                           {...register('adresa_client')}
+                        className={ errors.adresa_client? "border-2 border-solid p-2 rounded-md border-red-500" : "border-2 border-solid p-2 rounded-md"} type="text" name="adresa_client" placeholder="Adresa dumneavoastra"></input>
+
+                              {/* Errori Mesaje */}
+
+
+                               {errors.adresa_client && (
+                <p className="text-sm text-red-500 flex items-center gap-1">
+                 
+                  {errors.adresa_client.message}
                 </p>
               )}
      {/* Errori Mesaje */}

@@ -84,9 +84,11 @@ const Footer = () => {
         
         <div className="flex">
        <div className="mx-auto space-x-2 my-5">
-         <Link className="w-full text-[9px] lg:text-base uppercase font-bold text-blue-500" href='/politica_de_confidentialitate'>Politica de Confidentialitate</Link>
+         <Link className="w-full text-[9px] lg:text-base uppercase font-bold text-blue-500" target="_blank" 
+  rel="noopener noreferrer" href='/politica_de_confidentialitate'>Politica de Confidentialitate</Link>
          <strong className="text-[9px] lg:text-base">|</strong>
-         <Link className="w-full text-[9px] lg:text-base flex-2 uppercase font-bold text-blue-500" href='/termeni_si_conditii'>Termeni si conditii</Link>
+         <Link className="w-full text-[9px] lg:text-base flex-2 uppercase font-bold text-blue-500" target="_blank" 
+  rel="noopener noreferrer" href='/termeni_si_conditii'>Termeni si conditii</Link>
        </div>
 </div>
        <div className="lg:w-xl mx-auto my-2">

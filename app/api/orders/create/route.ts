@@ -2,9 +2,10 @@ import { NextRequest, NextResponse } from 'next/server';
 import { supabaseServer } from '@/lib/supabaseServer';
 import mollieClient from '@/lib/mollie';
 
+
 export async function POST(request: NextRequest) {
   try {
-    const { name, email, amount, description, productId } = await request.json();
+    const { name, email, addresa, amount, description, productId } = await request.json();
 
     // 1. Creează comanda în Supabase cu status 'pending'
     const { data: order, error: supabaseError } = await supabaseServer
@@ -12,6 +13,7 @@ export async function POST(request: NextRequest) {
       .insert({
         nume_client: name,
         email_client: email,
+        adresa_client: addresa,
         produs_id: productId,
         status: 'pending',
         email_sent: false,
