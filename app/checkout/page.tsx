@@ -23,8 +23,7 @@ export default function CheckoutPage() {
     nume: z.string().min(2, "Numele este obligatoriu (min. 2 caractere)"),
     email: z.string().email("Te rugăm să introduci un email valid"),
     adresa_client: z.string().min(2, "Adresa dumneavostra e obligatorie"),
-
-   terms: z.boolean().refine(val => val === true, {
+    terms: z.boolean().refine(val => val === true, {
     message: "Trebuie să fii de acord cu termenii și condițiile pentru a continua."
   }),
 
