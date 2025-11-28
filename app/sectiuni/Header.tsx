@@ -1,7 +1,6 @@
 "use client"
 import Image from 'next/image'
 
-import CountdownTimer from '../componente/countDownTimer'
 import Link from 'next/link'
 
 const Header = () => {
@@ -33,9 +32,7 @@ const Header = () => {
      
      
      <h2 className='font-bold text-center font-sans  '>🔥 OFERTĂ SPECIALĂ DE LANSARE! Ghidul tău la 49 RON (redus de la 69 RON).</h2>
-     <div>
-      <CountdownTimer/>
-     </div>
+    
      <div className='my-5 flex justify-center items-center'>
         <Image src='/visa.png' alt='Visa' width={150} height={150} />
      </div>
