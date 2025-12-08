@@ -15,9 +15,9 @@ const Header = () => {
        className='mx-auto'
       
       />
-     <h1 className='lg:text-5xl text-[#4b4c4b] font-jakarta sm:text-5xl text-2xl lg:max-w-3xl sm:max-w-4xl mx-auto mb-6 font-extrabold  text-center tracking-tighter'>Simți că nicio masă nu e completă fără <span className='text-[#8ecb40]'>"ceva dulce"</span> la final?</h1>
-     <h2 className='text-base lg:text-2xl font-medium lg:w-5xl mb-3 text-center mx-auto tracking-tighter font-sans text-[#4b4c4b] '>Hai să îți prezint <span className='text-[#8ecb40] font-semibold'>10 Hack-uri Simple </span>care îți elimină definitiv pofta de dulce și te ajută să slăbești natural.</h2>
-     <h3 className='text-sm lg:text-xl sm:text-xl my-6 text-center tracking-tighter font-sans '>…fără diete restrictive, exerciții fizice extreme sau număratul caloriilor.</h3>
+     <h1 className='lg:text-4xl text-[#4b4c4b] font-jakarta sm:text-5xl text-2xl lg:max-w-3xl sm:max-w-4xl mx-auto mb-6 font-extrabold  text-center tracking-tighter'>Ești mereu pe fugă dimineața, iar micul tău dejun constă în sandwich-uri, covrigi sau produse de patiserie? <span className='font-bold text-red-500'>OPREȘTE-TE!</span></h1>
+     <h2 className='text-base lg:text-2xl font-medium lg:w-5xl mb-3 text-center mx-auto tracking-tighter font-sans text-[#4b4c4b] '>Am o alternativă pentru tine, mult mai sănătoasă, care îți oferă 24g proteine, vitamine, minerale, fibre și doar 215 calorii. Pe lângă toate astea, îl poți lua cu tine să îl bei în drum spre serviciu.</h2>
+     <h3 className='text-sm lg:text-xl sm:text-xl my-6 text-center tracking-tighter font-sans font-semibold text-[#8ecb40] '>Îți prezint Programul START ACTIV: Un Mic Dejun Sănătos gata în 30 secunde </h3>
 
      <video 
      className='lg:w-3xl sm:w-xl mx-auto' src='/video2.mp4' controls
