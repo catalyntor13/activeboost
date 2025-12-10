@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Sparkles, CheckCircle, ArrowRight, X } from "lucide-react"
+import Footer from "../sectiuni/Footer"
+import Image from "next/image"
 
 export default function Home() {
   return (
@@ -10,10 +12,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-lg bg-[#8ecb40] flex items-center justify-center">
-                <Sparkles className="w-6 h-6 text-white" />
-              </div>
-              <span className="text-xl font-bold text-[#4b4c4b]">START ACTIV</span>
+              <Image alt="Active Boost Logo" width={100} height={100} style={{
+          width: '200px', // Sau 'auto' dacă vrei să fie fluid
+          height: 'auto', // Asta e cheia! Păstrează proporția corectă
+        }} src='/activeboost.png'/>
             </div>
             <nav className="hidden md:flex items-center gap-8">
               <a href="#beneficii" className="text-[#4b4c4b] hover:text-[#8ecb40] transition-colors">
@@ -37,16 +39,14 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Left Column - Text */}
             <div>
-              <div className="inline-block px-4 py-2 bg-[#8ecb40]/10 rounded-full mb-6">
-                <span className="text-[#8ecb40] font-semibold text-sm">⚡ Energie în 30 de secunde</span>
-              </div>
+              
 
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#4b4c4b] mb-6 leading-tight text-balance">
+              <h1 className="text-4xl lg:text-5xl font-bold text-[#4b4c4b] mb-6 leading-tight text-balance">
                 Ești mereu pe fugă dimineața și ajungi să mănânci doar covrigi sau patiserie?{" "}
-                <span className="text-[#8ecb40]">STOP!</span>
+                <span className="text-red-500">STOP!</span>
               </h1>
 
-              <h2 className="text-xl md:text-2xl text-[#4b4c4b]/80 mb-8 leading-relaxed text-pretty">
+              <h2 className="text-xl lg:text-2xl text-[#4b4c4b]/80 mb-8 leading-relaxed text-pretty">
                 Descoperă alternativa care îți hrănește corpul, nu doar îți păcălește foamea. Primești{" "}
                 <span className="font-bold text-[#8ecb40]">24g proteine</span>, vitamine, fibre și energie pură în doar{" "}
                 <span className="font-bold">215 calorii</span>.
@@ -76,24 +76,13 @@ export default function Home() {
             {/* Right Column - Image */}
             <div className="relative">
               <div className="aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-[#8ecb40]/20 to-[#8ecb40]/5">
-                <img
-                  src="/healthy-green-protein-shake-smoothie-in-modern-gla.jpg"
-                  alt="START ACTIV Protein Shake"
-                  className="w-full h-full object-cover"
-                />
+               <Image width={600} height={550} alt="photo" src='/photo.jpeg'
+                
+               />
+
+               
               </div>
-              {/* Floating Stats */}
-              <div className="absolute -left-4 top-1/4 bg-white rounded-xl shadow-lg p-4 animate-float">
-                <div className="text-3xl font-bold text-[#8ecb40]">24g</div>
-                <div className="text-sm text-[#4b4c4b]">Proteine</div>
-              </div>
-              <div
-                className="absolute -right-4 bottom-1/4 bg-white rounded-xl shadow-lg p-4 animate-float"
-                style={{ animationDelay: "1s" }}
-              >
-                <div className="text-3xl font-bold text-[#8ecb40]">30s</div>
-                <div className="text-sm text-[#4b4c4b]">Preparare</div>
-              </div>
+             
             </div>
           </div>
         </div>
@@ -289,41 +278,47 @@ export default function Home() {
               Începe transformarea ta cu un aport complet pentru o lună întreagă.
             </p>
 
-            <div className="text-5xl font-bold mb-2 text-[#4b4c4b]">
-              XXX RON <span className="text-lg text-[#4b4c4b]/50 font-normal">/ pachet</span>
+            <div className="text-5xl font-bold mb-6 text-[#4b4c4b]">
+              520 RON <span className="text-lg text-[#4b4c4b]/50 font-normal ">/ pachet</span>
             </div>
-            <p className="text-sm text-[#4b4c4b]/60 mb-10">Transport gratuit pentru comenzi peste 200 RON</p>
+
 
             <div className="grid text-left gap-4 max-w-sm mx-auto mb-10">
               <div className="flex items-center gap-3">
                 <div className="w-5 h-5 rounded-full bg-[#8ecb40]/20 flex items-center justify-center shrink-0">
                   <CheckCircle className="w-3 h-3 text-[#8ecb40]" />
                 </div>
-                <span className="text-[#4b4c4b] text-sm">30 de porții individuale START ACTIV</span>
+                <span className="text-[#4b4c4b] text-sm">Mic Dejun Start Activ 21 de Porții</span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-5 h-5 rounded-full bg-[#8ecb40]/20 flex items-center justify-center shrink-0">
                   <CheckCircle className="w-3 h-3 text-[#8ecb40]" />
                 </div>
-                <span className="text-[#4b4c4b] text-sm">Shaker profesional GRATUIT</span>
+                <span className="text-[#4b4c4b] text-sm">Shaker + Lingură de Dozaj</span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-5 h-5 rounded-full bg-[#8ecb40]/20 flex items-center justify-center shrink-0">
                   <CheckCircle className="w-3 h-3 text-[#8ecb40]" />
                 </div>
-                <span className="text-[#4b4c4b] text-sm">Ghid cu 10 rețete delicioase inclus</span>
+                <span className="text-[#4b4c4b] text-sm">eBook: 10 Hack-uri pentru o Glicemie Stabilǎ</span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-5 h-5 rounded-full bg-[#8ecb40]/20 flex items-center justify-center shrink-0">
                   <CheckCircle className="w-3 h-3 text-[#8ecb40]" />
                 </div>
-                <span className="text-[#4b4c4b] text-sm">Plan nutrițional personalizat pentru 30 de zile</span>
+                <span className="text-[#4b4c4b] text-sm">eBook: Arta Hidratǎrii</span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-5 h-5 rounded-full bg-[#8ecb40]/20 flex items-center justify-center shrink-0">
                   <CheckCircle className="w-3 h-3 text-[#8ecb40]" />
                 </div>
-                <span className="text-[#4b4c4b] text-sm">Garanție de returnare 30 de zile</span>
+                <span className="text-[#4b4c4b] text-sm">Transport Gratuit</span>
+              </div>
+               <div className="flex items-center gap-3">
+                <div className="w-5 h-5 rounded-full bg-[#8ecb40]/20 flex items-center justify-center shrink-0">
+                  <CheckCircle className="w-3 h-3 text-[#8ecb40]" />
+                </div>
+                <span className="text-[#4b4c4b] text-sm">Garanție de Returnare - 30 de Zile</span>
               </div>
             </div>
 
@@ -333,10 +328,7 @@ export default function Home() {
             >
               Comandă Acum <ArrowRight className="w-5 h-5" />
             </Button>
-            <p className="mt-4 text-xs text-[#4b4c4b]/60">
-              Stoc limitat: Acceptăm doar un număr limitat de comenzi pe săptămână pentru a asigura prospețimea
-              produsului.
-            </p>
+            
           </div>
         </div>
       </section>
@@ -357,64 +349,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer id="contact" className="bg-white border-t py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div className="md:col-span-2">
-              <div className="flex items-center gap-2 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-[#8ecb40] flex items-center justify-center">
-                  <Sparkles className="w-6 h-6 text-white" />
-                </div>
-                <span className="text-xl font-bold text-[#4b4c4b]">START ACTIV</span>
-              </div>
-              <p className="text-[#4b4c4b]/70 mb-4">Micul tău dejun sănătos, gata în 30 de secunde</p>
-            </div>
-            <div>
-              <h4 className="font-bold text-[#4b4c4b] mb-4">Produse</h4>
-              <ul className="space-y-2 text-[#4b4c4b]/70">
-                <li>
-                  <a href="#" className="hover:text-[#8ecb40]">
-                    START ACTIV Classic
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-[#8ecb40]">
-                    START ACTIV Chocolate
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-[#8ecb40]">
-                    START ACTIV Vanilla
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold text-[#4b4c4b] mb-4">Contact</h4>
-              <ul className="space-y-2 text-[#4b4c4b]/70">
-                <li>
-                  <a href="#" className="hover:text-[#8ecb40]">
-                    Email
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-[#8ecb40]">
-                    Telefon
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-[#8ecb40]">
-                    Facebook
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t mt-8 pt-8 text-center text-[#4b4c4b]/60">
-            <p>&copy; 2025 START ACTIV. Toate drepturile rezervate.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer/>
     </div>
   )
 }
