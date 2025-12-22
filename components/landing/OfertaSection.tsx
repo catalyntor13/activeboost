@@ -1,129 +1,122 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { Card} from "@/components/ui/card"
-import { CheckCircle, ArrowRight, } from "lucide-react"
-
-
+import { Card } from "@/components/ui/card"
+import { Check, ArrowRight, ShieldCheck, Gift, Truck } from "lucide-react"
 
 const OfertaSection = () => {
   return (
-    <>
-     <section className="py-24 bg-background">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Card className="border-2 border-primary/30 rounded-3xl overflow-hidden shadow-2xl">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/10 pointer-events-none"></div>
+    <section className="py-16 lg:py-24 bg-secondary/20 overflow-hidden">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* Main Card Container - Split Layout on Desktop */}
+        <Card className="rounded-[2rem] border-0 shadow-2xl overflow-hidden bg-background ring-1 ring-border/50">
+          <div className="grid lg:grid-cols-12 min-h-[600px]">
+            
+            {/* LEFT SIDE: Value Proposition & Content (7 Cols) */}
+            <div className="lg:col-span-7 p-8 md:p-12 lg:p-14 flex flex-col justify-center relative">
+               {/* Background decoration */}
+               <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#8ecb40]/5 to-transparent pointer-events-none" />
 
-            <div className="relative">
-              <div className="h-2 bg-gradient-to-r from-primary/50 via-primary to-primary/50"></div>
-
-              <div className="p-10 text-center space-y-8">
-                <div className="inline-block px-4 py-2 rounded-full bg-primary border border-primary/30 text-secondary text-sm font-bold uppercase tracking-wide">
-                  Ofertă Specială
-                </div>
-
+              <div className="relative z-10 space-y-8">
                 <div className="space-y-4">
-                  <h2 className="text-3xl md:text-4xl font-bold text-foreground leading-tight">
+               
+                  
+                  <h2 className="text-3xl md:text-5xl font-extrabold text-foreground tracking-tight leading-tight">
                     Mic Dejun <span className="text-[#8ecb40]">START ACTIV</span>
                   </h2>
-                  <p className="text-lg text-muted-foreground">Provizii pentru 21 de Zile</p>
-                  <p className="text-base text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                    Începe-ți diminețile cu un mic dejun complet, simplu și eficient
+                  <p className="text-lg md:text-xl text-muted-foreground font-medium">
+                    Provizii complete pentru 21 de Zile
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed max-w-lg">
+                    Transformă-ți diminețile haotice în momente de energie pură. Simplu, eficient și nutritiv.
                   </p>
                 </div>
 
-                <div className="py-6">
-                  <div className="text-6xl font-bold text-foreground mb-2">
-                    520 <span className="text-2xl">RON</span>
-                  </div>
-                  <p className="text-sm text-muted-foreground">≈ 24,7 RON / mic dejun</p>
+                {/* Feature Grid - More compact */}
+                <div className="grid sm:grid-cols-2 gap-y-4 gap-x-6 pt-4">
+                  {[
+                    { text: "21 Porții Start Activ", icon: Check },
+                    { text: "Shaker Premium CADOU", icon: Gift },
+                    { text: "Lingură dozaj inclusă", icon: Check },
+                    { text: "eBook: Hack-uri Glicemie", icon: Gift },
+                    { text: "eBook: Arta Hidratării", icon: Gift },
+                    { text: "Transport Gratuit", icon: Truck },
+                  ].map((item, idx) => (
+                    <div key={idx} className="flex items-start gap-3 group">
+                      <div className="w-5 h-5 mt-1 rounded-full bg-[#8ecb40]/20 flex items-center justify-center shrink-0 group-hover:bg-[#8ecb40] transition-colors duration-300">
+                        <item.icon className="w-3 h-3 text-[#8ecb40] group-hover:text-white transition-colors" />
+                      </div>
+                      <span className="text-sm font-medium text-foreground/90">{item.text}</span>
+                    </div>
+                  ))}
                 </div>
 
-                <div className="grid gap-4 max-w-md mx-auto text-left">
-                  <div className="flex items-center gap-3 p-3 rounded-lg bg-muted/50">
-                    <div className="w-6 h-6 rounded-full bg-[#8ecb40] flex items-center justify-center shrink-0">
-                      <CheckCircle className="w-4 h-4 text-primary" />
-                    </div>
-                    <span className="text-sm font-medium text-foreground">Mic Dejun Start Activ 21 de Porții</span>
-                  </div>
-
-                  <div className="flex items-center gap-3 p-3 rounded-lg bg-muted/50">
-                    <div className="w-6 h-6 rounded-full bg-[#8ecb40] flex items-center justify-center shrink-0">
-                      <CheckCircle className="w-4 h-4 text-primary" />
-                    </div>
-                    <span className="text-sm font-medium text-foreground">Garanție de Returnare - 30 de Zile</span>
-                  </div>
-
-                  <div className="flex items-center gap-3 p-3 rounded-lg bg-muted/50">
-                    <div className="w-6 h-6 rounded-full bg-[#8ecb40] flex items-center justify-center shrink-0">
-                      <CheckCircle className="w-4 h-4 text-primary" />
-                    </div>
-                    <span className="text-sm font-medium text-foreground">Shaker + lingură de dozaj CADOU</span>
-                  </div>
-
-                  <div className="flex items-center gap-3 p-3 rounded-lg bg-muted/50">
-                    <div className="w-6 h-6 rounded-full bg-[#8ecb40] flex items-center justify-center shrink-0">
-                      <CheckCircle className="w-4 h-4 text-primary" />
-                    </div>
-                    <span className="text-sm font-medium text-foreground">
-                      eBook CADOU: 10 Hack-uri Glicemie Stabilă
-                    </span>
-                  </div>
-
-                  <div className="flex items-center gap-3 p-3 rounded-lg bg-muted/50">
-                    <div className="w-6 h-6 rounded-full bg-[#8ecb40] flex items-center justify-center shrink-0">
-                      <CheckCircle className="w-4 h-4 text-primary" />
-                    </div>
-                    <span className="text-sm font-medium text-foreground">eBook CADOU: Arta Hidratării</span>
-                  </div>
-
-                  <div className="flex items-center gap-3 p-3 rounded-lg bg-muted/50">
-                    <div className="w-6 h-6 rounded-full bg-[#8ecb40] flex items-center justify-center shrink-0">
-                      <CheckCircle className="w-4 h-4 text-primary" />
-                    </div>
-                    <span className="text-sm font-medium text-foreground">Transport gratuit</span>
-                  </div>
-                </div>
-
-                <div className="pt-6 space-y-4">
-                  <p className="text-sm text-muted-foreground">
-                    Comanzi fără riscuri. Dacă nu ești mulțumit, poți returna produsele în 30 de zile.
-                  </p>
-
-                  <Button
-                    size="lg"
-                    className="w-full md:w-auto px-12 cursor-pointer py-7 bg-[#8ecb40] hover:bg-[#8ecb40]/90 text-primary-foreground font-bold text-lg shadow-2xl shadow-primary/30 hover:shadow-primary/50 transition-all"
-                  >
-                    Comandă Acum
-                    <ArrowRight className="w-6 h-6 ml-2" />
-                  </Button>
-
-                  <p className="text-xs text-muted-foreground">Stoc limitat • Livrare rapidă • Plată sigură</p>
+                <div className="hidden lg:block pt-6">
+                   <div className="flex items-center gap-2 text-sm text-muted-foreground bg-secondary/50 p-3 rounded-lg w-fit">
+                      <ShieldCheck className="w-4 h-4 text-[#8ecb40]" />
+                      <span>Garanție de returnare 30 de zile. Fără întrebări.</span>
+                   </div>
                 </div>
               </div>
             </div>
-          </Card>
-        </div>
-      </section>
 
-        <section className="py-24 bg-[#8ecb40]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
-          <h2 className="text-4xl font-bold text-secondary leading-tight text-balance tracking-tight">
-            Transformă-ți dimineața începând de mâine
-          </h2>
-          <p className="text-xl text-secondary-foreground/80 leading-relaxed text-pretty max-w-2xl mx-auto">
-            Alătură-te miilor de profesioniști care au descoperit secretul unui mic dejun sănătos și rapid
+            {/* RIGHT SIDE: Pricing & Action (5 Cols) */}
+            <div className="lg:col-span-5 bg-muted/30 p-8 md:p-12 flex flex-col justify-center border-t lg:border-t-0 lg:border-l border-border/50 relative">
+               
+              <div className="space-y-8 text-center lg:text-left relative z-10">
+                
+                {/* Pricing Block */}
+                <div className="space-y-2">
+                  <p className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">Investiția ta în sănătate</p>
+                  <div className="flex items-baseline justify-center lg:justify-start gap-2">
+                    <span className="text-6xl font-black text-foreground tracking-tighter">520</span>
+                    <span className="text-2xl font-bold text-muted-foreground">RON</span>
+                  </div>
+                  <p className="text-sm text-muted-foreground font-medium">≈ 24,7 RON / mic dejun complet</p>
+                </div>
+
+                {/* Divider */}
+                <div className="h-px w-full bg-border/60"></div>
+
+                {/* CTA Block */}
+                <div className="space-y-4">
+                  <Button 
+                    size="lg" 
+                    className="w-full  cursor-pointer h-14 bg-[#8ecb40] hover:bg-[#8ecb40]/90 text-white font-bold text-lg shadow-xl shadow-[#8ecb40]/20 hover:shadow-[#8ecb40]/40 transition-all duration-300 rounded-xl"
+                  >
+                    Comandă Pachetul
+                    <ArrowRight className="w-5 h-5 ml-2" />
+                  </Button>
+                  
+                  <p className="text-xs text-center text-muted-foreground">
+                    Plată sigură • Livrare 24/48h • Stoc limitat
+                  </p>
+                </div>
+                
+                {/* Mobile Guarantee (shown only on small screens) */}
+                <div className="lg:hidden flex justify-center pt-4">
+                   <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                      <ShieldCheck className="w-4 h-4 text-[#8ecb40]" />
+                      <span>Garanție de returnare 30 de zile</span>
+                   </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </Card>
+
+        {/* Bottom hook - cleaner */}
+        <div className="mt-12 text-center space-y-4 max-w-2xl mx-auto">
+          <h3 className="text-2xl font-bold text-foreground">Încă stai pe gânduri?</h3>
+          <p className="text-muted-foreground">
+            Alătură-te celor peste 5,000 de clienți care și-au transformat diminețile.
           </p>
-          <Button
-            size="lg"
-            className="bg-primary hover:bg-primary/80 cursor-pointer text-primary-foreground font-bold text-lg px-12 py-7 shadow-2xl shadow-primary/30 hover:shadow-primary/50 transition-all"
-          >
-            Începe acum
-            <ArrowRight className="w-6 h-6 ml-2" />
-          </Button>
         </div>
-      </section>
-    </>
+
+      </div>
+    </section>
   )
 }
 

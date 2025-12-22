@@ -76,7 +76,7 @@ const FaqSection = () => {
 
   return (
     <>
-    <section id="faq" className="py-24 bg-gradient-to-b from-background to-muted/30">
+    <section id="faq" className="py-16 bg-gradient-to-b from-background to-muted/30">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 space-y-4">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground leading-tight tracking-tight">

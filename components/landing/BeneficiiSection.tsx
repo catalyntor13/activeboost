@@ -7,7 +7,7 @@ import {  X, Sparkles, Clock, Zap, Shield } from "lucide-react"
 const BeneficiiSection = () => {
   return (
     <> 
-    <section id="beneficii" className="bg-gradient-to-b from-muted/50 to-background py-24 border-y border-border/40">
+    <section id="beneficii" className="bg-gradient-to-b from-muted/50 to-background py-16 border-y border-border/40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* Problem Side */}

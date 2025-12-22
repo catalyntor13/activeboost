@@ -5,7 +5,7 @@ import { CheckCircle2, ArrowRight, Zap, Coffee, Clock, Utensils, CalendarDays, B
 
 const CumSeIntegreaza = () => {
   return (
-    <section className="relative py-24 overflow-hidden bg-background" id="integrare-program">
+    <section className="relative py-16 overflow-hidden bg-background" id="integrare-program">
       {/* Background decoration elements - subtil */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-full opacity-30 pointer-events-none">
         <div className="absolute top-20 left-20 w-72 h-72 bg-primary/20 rounded-full blur-[100px]" />
@@ -101,12 +101,17 @@ const CumSeIntegreaza = () => {
                 ))}
               </ul>
             </CardContent>
-            
-            <CardFooter className="mt-auto pt-6 border-t border-border/50 bg-secondary/30">
-                <p className="text-sm text-muted-foreground flex items-center gap-2 italic">
-                  <Utensils className="w-4 h-4" />
-                  Mănâncă normal, fără reguli stricte și fără vinovăție.
-                </p>
+
+
+              <CardFooter className="block p-0">
+               <div className="bg-secondary/40 text-primary p-6 m-1 rounded-b-lg md:rounded-lg md:m-4 flex flex-col sm:flex-row items-center gap-4 justify-between shadow-lg">
+                  
+                    <p className="text-sm text-muted-foreground flex items-center gap-2 italic"> <Utensils className="w-4 h-4" />Mănâncă normal, fără reguli stricte și fără vinovăție.</p>
+                  
+                  <div className="bg-white/20 p-2 rounded-full">
+                    <CheckCircle2 className="w-6 h-6" />
+                  </div>
+               </div>
             </CardFooter>
           </Card>
         </div>
