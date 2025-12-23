@@ -402,7 +402,9 @@
     --color-red-600: #e40014;
     --color-orange-100: #ffedd5;
     --color-orange-600: #f05100;
+    --color-green-100: #dcfce7;
     --color-green-400: #05df72;
+    --color-green-600: #00a544;
     --color-blue-100: #dbeafe;
     --color-blue-300: #90c5ff;
     --color-blue-400: #54a2ff;
@@ -412,6 +414,7 @@
     --color-slate-100: #f1f5f9;
     --color-slate-500: #62748e;
     --color-slate-900: #0f172b;
+    --color-gray-50: #f9fafb;
     --color-gray-200: #e5e7eb;
     --color-gray-300: #d1d5dc;
     --color-gray-400: #99a1af;
@@ -489,7 +492,9 @@
       --color-red-600: lab(48.4493% 77.4328 61.5452);
       --color-orange-100: lab(94.7127% 3.58391 14.3151);
       --color-orange-600: lab(57.1026% 64.2584 89.8886);
+      --color-green-100: lab(96.186% -13.8464 6.52362);
       --color-green-400: lab(78.503% -64.9265 39.7492);
+      --color-green-600: lab(59.0978% -58.6621 41.2579);
       --color-blue-100: lab(92.0301% -2.24757 -11.6453);
       --color-blue-300: lab(77.5052% -6.4629 -36.42);
       --color-blue-400: lab(65.0361% -1.42062 -56.9803);
@@ -499,6 +504,7 @@
       --color-slate-100: lab(96.286% -.852466 -2.46847);
       --color-slate-500: lab(48.0876% -2.03595 -16.5814);
       --color-slate-900: lab(7.78673% 1.82346 -15.0537);
+      --color-gray-50: lab(98.2596% -.247031 -.706708);
       --color-gray-200: lab(91.6229% -.159085 -2.26791);
       --color-gray-300: lab(85.1236% -.612259 -3.7138);
       --color-gray-400: lab(65.9269% -.832707 -8.17474);
@@ -829,6 +835,10 @@
 
   .top-4 {
     top: calc(var(--spacing) * 4);
+  }
+
+  .top-8 {
+    top: calc(var(--spacing) * 8);
   }
 
   .top-20 {
@@ -1176,6 +1186,10 @@
     height: calc(var(--spacing) * 14);
   }
 
+  .h-24 {
+    height: calc(var(--spacing) * 24);
+  }
+
   .h-64 {
     height: calc(var(--spacing) * 64);
   }
@@ -1254,6 +1268,10 @@
 
   .w-12 {
     width: calc(var(--spacing) * 12);
+  }
+
+  .w-20 {
+    width: calc(var(--spacing) * 20);
   }
 
   .w-72 {
@@ -1382,6 +1400,10 @@
 
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .grid-cols-5 {
@@ -1657,6 +1679,15 @@
     border-style: solid;
   }
 
+  .border-\[\#8ecb40\] {
+    border-color: #8ecb40;
+  }
+
+  .border-\[\#8ecb40\]\/20 {
+    border-color: #8ecb4033;
+    border-color: lab(75.5395% -36.1129 59.3971 / .2);
+  }
+
   .border-\[\#8ecb40ff\] {
     border-color: #8ecb40;
   }
@@ -1759,6 +1790,16 @@
     background-color: #8ecb40;
   }
 
+  .bg-\[\#8ecb40\]\/5 {
+    background-color: #8ecb400d;
+    background-color: lab(75.5395% -36.1129 59.3971 / .05);
+  }
+
+  .bg-\[\#8ecb40\]\/10 {
+    background-color: #8ecb401a;
+    background-color: lab(75.5395% -36.1129 59.3971 / .1);
+  }
+
   .bg-\[\#8ecb40\]\/20 {
     background-color: #8ecb4033;
     background-color: lab(75.5395% -36.1129 59.3971 / .2);
@@ -1836,6 +1877,10 @@
     }
   }
 
+  .bg-border {
+    background-color: var(--border);
+  }
+
   .bg-border\/60 {
     background-color: var(--border);
   }
@@ -1874,12 +1919,34 @@
     }
   }
 
+  .bg-foreground {
+    background-color: var(--foreground);
+  }
+
+  .bg-gray-50\/50 {
+    background-color: #f9fafb80;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-gray-50\/50 {
+      background-color: color-mix(in oklab, var(--color-gray-50) 50%, transparent);
+    }
+  }
+
   .bg-gray-800 {
     background-color: var(--color-gray-800);
   }
 
   .bg-gray-900 {
     background-color: var(--color-gray-900);
+  }
+
+  .bg-green-100 {
+    background-color: var(--color-green-100);
+  }
+
+  .bg-muted {
+    background-color: var(--muted);
   }
 
   .bg-muted-foreground\/40 {
@@ -2151,12 +2218,20 @@
     background-clip: text;
   }
 
+  .object-contain {
+    object-fit: contain;
+  }
+
   .object-cover {
     object-fit: cover;
   }
 
   .p-0 {
     padding: calc(var(--spacing) * 0);
+  }
+
+  .p-1 {
+    padding: calc(var(--spacing) * 1);
   }
 
   .p-2 {
@@ -2233,6 +2308,10 @@
 
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
+  }
+
+  .py-12 {
+    padding-block: calc(var(--spacing) * 12);
   }
 
   .py-16 {
@@ -2520,6 +2599,10 @@
     color: #8ecb40;
   }
 
+  .text-background {
+    color: var(--background);
+  }
+
   .text-black {
     color: var(--color-black);
   }
@@ -2592,6 +2675,10 @@
 
   .text-gray-800 {
     color: var(--color-gray-800);
+  }
+
+  .text-green-600 {
+    color: var(--color-green-600);
   }
 
   .text-muted-foreground {
@@ -2788,6 +2875,11 @@
     filter: var(--tw-blur, ) var(--tw-brightness, ) var(--tw-contrast, ) var(--tw-grayscale, ) var(--tw-hue-rotate, ) var(--tw-invert, ) var(--tw-saturate, ) var(--tw-sepia, ) var(--tw-drop-shadow, );
   }
 
+  .grayscale {
+    --tw-grayscale: grayscale(100%);
+    filter: var(--tw-blur, ) var(--tw-brightness, ) var(--tw-contrast, ) var(--tw-grayscale, ) var(--tw-hue-rotate, ) var(--tw-invert, ) var(--tw-saturate, ) var(--tw-sepia, ) var(--tw-drop-shadow, );
+  }
+
   .backdrop-blur {
     --tw-backdrop-blur: blur(8px);
     -webkit-backdrop-filter: var(--tw-backdrop-blur, ) var(--tw-backdrop-brightness, ) var(--tw-backdrop-contrast, ) var(--tw-backdrop-grayscale, ) var(--tw-backdrop-hue-rotate, ) var(--tw-backdrop-invert, ) var(--tw-backdrop-opacity, ) var(--tw-backdrop-saturate, ) var(--tw-backdrop-sepia, );
@@ -2974,6 +3066,18 @@
   }
 
   @media (hover: hover) {
+    .hover\:border-muted-foreground\/30:hover {
+      border-color: var(--muted-foreground);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:border-muted-foreground\/30:hover {
+        border-color: color-mix(in oklab, var(--muted-foreground) 30%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
     .hover\:border-primary\/40:hover {
       border-color: var(--primary);
     }
@@ -3032,12 +3136,6 @@
   @media (hover: hover) {
     .hover\:bg-green-400:hover {
       background-color: var(--color-green-400);
-    }
-  }
-
-  @media (hover: hover) {
-    .hover\:bg-muted:hover {
-      background-color: var(--muted);
     }
   }
 
@@ -3278,6 +3376,22 @@
     .aria-invalid\:ring-destructive\/20[aria-invalid="true"] {
       --tw-ring-color: color-mix(in oklab, var(--destructive) 20%, transparent);
     }
+  }
+
+  .data-\[orientation\=horizontal\]\:h-px[data-orientation="horizontal"] {
+    height: 1px;
+  }
+
+  .data-\[orientation\=horizontal\]\:w-full[data-orientation="horizontal"] {
+    width: 100%;
+  }
+
+  .data-\[orientation\=vertical\]\:h-full[data-orientation="vertical"] {
+    height: 100%;
+  }
+
+  .data-\[orientation\=vertical\]\:w-px[data-orientation="vertical"] {
+    width: 1px;
   }
 
   .data-\[state\=checked\]\:border-primary[data-state="checked"] {
@@ -3796,6 +3910,12 @@
   @media (min-width: 64rem) {
     .lg\:justify-items-start {
       justify-items: start;
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .lg\:gap-12 {
+      gap: calc(var(--spacing) * 12);
     }
   }
 

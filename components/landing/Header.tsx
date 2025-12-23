@@ -35,7 +35,7 @@ const navItems = [
         <nav className="hidden md:flex items-center gap-8">
            { navItems.map((navItem) =>(
 
-            <div>
+            <div key={navItem.name}>
             <a href={navItem.href} className="text-slate-900 font-medium hover:text-slate-500 cursor-pointer" key={navItem.name}>
               {navItem.name}
             </a>

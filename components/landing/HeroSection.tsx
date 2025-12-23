@@ -54,7 +54,7 @@ const HeroSection = () => {
                 <Link href='/checkout'>
                 <Button
                   size="lg"
-                  className="bg-[#8ecb40] hover:bg-[#8ecb40]/80 cursor-pointer text-primary-foreground text-base px-8 py-6 shadow-xl shadow-primary/20 hover:shadow-2xl hover:shadow-primary/30 transition-all"
+                  className="bg-[#8ecb40] w-full hover:bg-[#8ecb40]/80 cursor-pointer text-primary-foreground text-base px-8 py-6 shadow-xl shadow-primary/20 hover:shadow-2xl hover:shadow-primary/30 transition-all"
                 >
                   Cumpără acum
                   <ArrowRight className="w-5 h-5 ml-2" />

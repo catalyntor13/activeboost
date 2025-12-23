@@ -95,7 +95,7 @@ type RegisterFormValues = z.infer<typeof registerSchema>
   }
 
    return (
-       <div>
+      <>
         <div className="lg:w-6xl mx-auto">
             <div className="flex flex-col lg:flex-row items-start my-10">
                 <div className="p-5 lg:p-0">
@@ -300,6 +300,6 @@ type RegisterFormValues = z.infer<typeof registerSchema>
                 </div>
             </div>
         </div>
-       </div>
+      </>
     )
 }
