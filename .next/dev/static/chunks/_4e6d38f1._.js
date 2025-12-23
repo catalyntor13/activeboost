@@ -2104,10 +2104,13 @@ const HeroSection = ()=>{
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "bg-gradient-to-br from-primary/5 via-primary/10 to-primary/5 border border-primary/20 p-6 rounded-2xl backdrop-blur-sm",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-base text-foreground font-medium leading-relaxed",
-                                            children: "Dacă dimineața sari peste micul dejun sau alegi covrigi, patiserie ori sandvișuri pe fugă, Start Activ este alternativa simplă și sănătoasă pentru tine."
+                                        className: "relative lg:hidden md:hidden aspect-square rounded-3xl overflow-hidden shadow-2xl border border-border/50",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                            width: 600,
+                                            height: 600,
+                                            alt: "START ACTIV Product",
+                                            src: "/photo.jpeg",
+                                            className: "object-cover  w-full h-full"
                                         }, void 0, false, {
                                             fileName: "[project]/components/landing/HeroSection.tsx",
                                             lineNumber: 36,
@@ -2116,6 +2119,21 @@ const HeroSection = ()=>{
                                     }, void 0, false, {
                                         fileName: "[project]/components/landing/HeroSection.tsx",
                                         lineNumber: 35,
+                                        columnNumber: 17
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "bg-gradient-to-br from-primary/5 via-primary/10 to-primary/5 border border-primary/20 p-6 rounded-2xl backdrop-blur-sm",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-base text-foreground font-medium leading-relaxed",
+                                            children: "Dacă dimineața sari peste micul dejun sau alegi covrigi, patiserie ori sandvișuri pe fugă, Start Activ este alternativa simplă și sănătoasă pentru tine."
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/landing/HeroSection.tsx",
+                                            lineNumber: 46,
+                                            columnNumber: 17
+                                        }, ("TURBOPACK compile-time value", void 0))
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/landing/HeroSection.tsx",
+                                        lineNumber: 45,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2130,13 +2148,13 @@ const HeroSection = ()=>{
                                                         className: "w-5 h-5 ml-2"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/landing/HeroSection.tsx",
-                                                        lineNumber: 48,
+                                                        lineNumber: 58,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/landing/HeroSection.tsx",
-                                                lineNumber: 43,
+                                                lineNumber: 53,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -2146,13 +2164,13 @@ const HeroSection = ()=>{
                                                 children: "Află mai multe"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/landing/HeroSection.tsx",
-                                                lineNumber: 50,
+                                                lineNumber: 60,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/landing/HeroSection.tsx",
-                                        lineNumber: 42,
+                                        lineNumber: 52,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
@@ -2168,31 +2186,31 @@ const HeroSection = ()=>{
                                         className: "absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent rounded-3xl blur-3xl"
                                     }, void 0, false, {
                                         fileName: "[project]/components/landing/HeroSection.tsx",
-                                        lineNumber: 61,
+                                        lineNumber: 71,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "relative aspect-square rounded-3xl overflow-hidden shadow-2xl border border-border/50",
+                                        className: "relative hidden lg:flex aspect-square rounded-3xl overflow-hidden shadow-2xl border border-border/50",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                             width: 600,
                                             height: 600,
                                             alt: "START ACTIV Product",
                                             src: "/photo.jpeg",
-                                            className: "object-cover w-full h-full"
+                                            className: "object-cover  w-full h-full"
                                         }, void 0, false, {
                                             fileName: "[project]/components/landing/HeroSection.tsx",
-                                            lineNumber: 63,
+                                            lineNumber: 73,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/components/landing/HeroSection.tsx",
-                                        lineNumber: 62,
+                                        lineNumber: 72,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/landing/HeroSection.tsx",
-                                lineNumber: 60,
+                                lineNumber: 70,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
@@ -2220,17 +2238,17 @@ const HeroSection = ()=>{
                         children: "De ce micul dejun clasic nu îți oferă energia de care ai nevoie"
                     }, void 0, false, {
                         fileName: "[project]/components/landing/HeroSection.tsx",
-                        lineNumber: 78,
+                        lineNumber: 88,
                         columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0))
                 }, void 0, false, {
                     fileName: "[project]/components/landing/HeroSection.tsx",
-                    lineNumber: 77,
+                    lineNumber: 87,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/components/landing/HeroSection.tsx",
-                lineNumber: 76,
+                lineNumber: 86,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]

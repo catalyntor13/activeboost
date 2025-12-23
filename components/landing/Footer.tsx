@@ -17,7 +17,7 @@ const Footer = () => {
           <p className="font-normal">Copyright © IDTORO S.R.L. | Active Boost</p>
           <p ><span className="font-semibold">CUI:</span> RO51431636</p>
           <p><span className="font-normal">Nr. Reg. Com.:</span> J2024051439004</p>
-          <p>Bld. Dem Radulescu 15, Bloc X2, Scara A, Etaj 5, Ap. 37</p>
+          <p>Bld. Dem Radulescu 15</p>
           <p>Mun. Ramnicu Valcea, Județ Valcea, România</p>
           <p><span className="font-normal">Email:</span><span className="ml-1">activeboostfitclub@gmail.com</span></p>
           <p><span className="font-normal">Telefon:</span><span className="ml-1">0748904680</span></p>

@@ -32,6 +32,16 @@ const HeroSection = () => {
                 <span className="font-semibold text-foreground">215 calorii</span>.
               </p>
 
+                <div className="relative lg:hidden md:hidden aspect-square rounded-3xl overflow-hidden shadow-2xl border border-border/50">
+                <Image
+                  width={600}
+                  height={600}
+                  alt="START ACTIV Product"
+                  src="/photo.jpeg"
+                  className="object-cover  w-full h-full"
+                />
+              </div>
+
               <div className="bg-gradient-to-br from-primary/5 via-primary/10 to-primary/5 border border-primary/20 p-6 rounded-2xl backdrop-blur-sm">
                 <p className="text-base text-foreground font-medium leading-relaxed">
                   Dacă dimineața sari peste micul dejun sau alegi covrigi, patiserie ori sandvișuri pe fugă, Start Activ
@@ -59,13 +69,13 @@ const HeroSection = () => {
 
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent rounded-3xl blur-3xl"></div>
-              <div className="relative aspect-square rounded-3xl overflow-hidden shadow-2xl border border-border/50">
+              <div className="relative hidden lg:flex aspect-square rounded-3xl overflow-hidden shadow-2xl border border-border/50">
                 <Image
                   width={600}
                   height={600}
                   alt="START ACTIV Product"
                   src="/photo.jpeg"
-                  className="object-cover w-full h-full"
+                  className="object-cover  w-full h-full"
                 />
               </div>
             </div>
