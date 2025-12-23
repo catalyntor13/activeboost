@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Check, ArrowRight, ShieldCheck, Gift, Truck } from "lucide-react"
+import Link from "next/link"
 
 const OfertaSection = () => {
   return (
@@ -81,6 +82,7 @@ const OfertaSection = () => {
 
                 {/* CTA Block */}
                 <div className="space-y-4">
+                  <Link href='/checkout'>
                   <Button 
                     size="lg" 
                     className="w-full  cursor-pointer h-14 bg-[#8ecb40] hover:bg-[#8ecb40]/90 text-white font-bold text-lg shadow-xl shadow-[#8ecb40]/20 hover:shadow-[#8ecb40]/40 transition-all duration-300 rounded-xl"
@@ -88,7 +90,7 @@ const OfertaSection = () => {
                     Comandă Pachetul
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
-                  
+                  </Link>
                   <p className="text-xs text-center text-muted-foreground">
                     Plată sigură • Livrare 24/48h • Stoc limitat
                   </p>

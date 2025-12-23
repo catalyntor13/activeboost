@@ -4,6 +4,7 @@ import Image from "next/image"
 
 import { Button } from "../ui/button"
 import { ArrowRight, Sparkles } from "lucide-react"
+import Link from "next/link"
 const HeroSection = () => {
   return (
       <>
@@ -50,6 +51,7 @@ const HeroSection = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                <Link href='/checkout'>
                 <Button
                   size="lg"
                   className="bg-[#8ecb40] hover:bg-[#8ecb40]/80 cursor-pointer text-primary-foreground text-base px-8 py-6 shadow-xl shadow-primary/20 hover:shadow-2xl hover:shadow-primary/30 transition-all"
@@ -57,13 +59,7 @@ const HeroSection = () => {
                   Cumpără acum
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="text-foreground border-2 cursor-pointer border-border hover:bg-muted text-base px-8 py-6 bg-transparent"
-                >
-                  Află mai multe
-                </Button>
+               </Link>
               </div>
             </div>
 

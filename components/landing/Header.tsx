@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 import Link from "next/link"
 import { useState } from "react"
+import Image from "next/image"
 import {
   Sheet,
   SheetContent,
@@ -22,10 +23,12 @@ const navItems = [
   return (
     <>
       <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
           <div className="flex items-center justify-between mx-5 lg:mx-0 ">
             <div className="flex items-center gap-2">
-              Acitveboost Logo
+              <Image width={130} height={130} alt="Active Boost - Logo" src='/logo.png'>
+                  
+              </Image>
             </div>
               
                 {/* Desktop Nav */}
