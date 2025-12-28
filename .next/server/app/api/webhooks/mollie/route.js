@@ -1,0 +1,10 @@
+var R=require("../../../../chunks/[turbopack]_runtime.js")("server/app/api/webhooks/mollie/route.js")
+R.c("server/chunks/[root-of-the-server]__42588254._.js")
+R.c("server/chunks/[root-of-the-server]__f625010c._.js")
+R.c("server/chunks/[root-of-the-server]__78b8c27b._.js")
+R.c("server/chunks/[root-of-the-server]__725e72e2._.js")
+R.c("server/chunks/[root-of-the-server]__fdcc748b._.js")
+R.c("server/chunks/[root-of-the-server]__1f19be1e._.js")
+R.c("server/chunks/_next-internal_server_app_api_webhooks_mollie_route_actions_3b302de8.js")
+R.m(76765)
+module.exports=R.m(76765).exports

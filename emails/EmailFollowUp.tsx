@@ -15,13 +15,13 @@ import {
 
 // 1. Definim ce date (props) va primi email-ul nostru
 export interface EmailFollowUpProps {
-  numeClient: string;
+  customer_firstName: string;
  
 }
 
 const LOGO_URL = 'https://www.activeboost.ro/activeboost.png'; 
 
-export const EmailFollowUp: React.FC<EmailFollowUpProps> = ({ numeClient}) => {
+export const EmailFollowUp: React.FC<EmailFollowUpProps> = ({ customer_firstName }) => {
 
     return (
         <Html lang='ro'>
@@ -37,7 +37,7 @@ export const EmailFollowUp: React.FC<EmailFollowUpProps> = ({ numeClient}) => {
                                 </Section>
 
                                 <Heading className="text-3xl font-bold text-black text-center">
-                                              Salut, {numeClient}!
+                                              Salut, {customer_firstName}!
                                             </Heading>
                                              
 

@@ -47,15 +47,6 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
 }
 
 
-// Validate ../../../app/cec/page.tsx
-{
-  type __IsExpected<Specific extends AppPageConfig<"/cec">> = Specific
-  const handler = {} as typeof import("../../../app/cec/page.js")
-  type __Check = __IsExpected<typeof handler>
-  // @ts-ignore
-  type __Unused = __Check
-}
-
 // Validate ../../../app/checkout/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/checkout">> = Specific
@@ -101,28 +92,10 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   type __Unused = __Check
 }
 
-// Validate ../../../app/waitlist-success/page.tsx
-{
-  type __IsExpected<Specific extends AppPageConfig<"/waitlist-success">> = Specific
-  const handler = {} as typeof import("../../../app/waitlist-success/page.js")
-  type __Check = __IsExpected<typeof handler>
-  // @ts-ignore
-  type __Unused = __Check
-}
-
 // Validate ../../../app/api/cron/followup/route.tsx
 {
   type __IsExpected<Specific extends RouteHandlerConfig<"/api/cron/followup">> = Specific
   const handler = {} as typeof import("../../../app/api/cron/followup/route.js")
-  type __Check = __IsExpected<typeof handler>
-  // @ts-ignore
-  type __Unused = __Check
-}
-
-// Validate ../../../app/api/join-waitlist/route.ts
-{
-  type __IsExpected<Specific extends RouteHandlerConfig<"/api/join-waitlist">> = Specific
-  const handler = {} as typeof import("../../../app/api/join-waitlist/route.js")
   type __Check = __IsExpected<typeof handler>
   // @ts-ignore
   type __Unused = __Check

@@ -1,0 +1,13 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/cron/followup/route": "app/api/cron/followup/route.js",
+  "/api/orders/create/route": "app/api/orders/create/route.js",
+  "/api/webhooks/mollie/route": "app/api/webhooks/mollie/route.js",
+  "/checkout/page": "app/checkout/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/page": "app/page.js",
+  "/politica_de_confidentialitate/page": "app/politica_de_confidentialitate/page.js",
+  "/termeni_si_conditii/page": "app/termeni_si_conditii/page.js",
+  "/thank-you/[orderId]/page": "app/thank-you/[orderId]/page.js"
+}

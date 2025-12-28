@@ -1,0 +1,13 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/api/cron/followup/route": "/api/cron/followup",
+  "/api/orders/create/route": "/api/orders/create",
+  "/api/webhooks/mollie/route": "/api/webhooks/mollie",
+  "/checkout/page": "/checkout",
+  "/favicon.ico/route": "/favicon.ico",
+  "/page": "/",
+  "/politica_de_confidentialitate/page": "/politica_de_confidentialitate",
+  "/termeni_si_conditii/page": "/termeni_si_conditii",
+  "/thank-you/[orderId]/page": "/thank-you/[orderId]"
+}

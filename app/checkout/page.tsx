@@ -4,302 +4,339 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { useForm, SubmitHandler, Controller } from "react-hook-form"  
+import { useForm, SubmitHandler} from "react-hook-form"  
 import Image from "next/image"
 import { Loader2Icon } from 'lucide-react';
-import Link from 'next/link';
-import { FaCheckCircle } from "react-icons/fa";
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
+import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
+import { Separator } from "@/components/ui/separator"
+import { Check, ShieldCheck, Lock, Gift, Truck } from "lucide-react"
 
-import { Checkbox } from "@/components/ui/checkbox"
-
-export default function CheckoutPage() {
+const CheckoutPage = () => {
   const router = useRouter();
   const [error, setError] = useState<string | null>(null);
- 
 
-  // Validare Date Nume si Email cu Zod
+  // 1. Creare schema
 
-  const registerSchema = z.object({
-    nume: z.string().min(2, "Numele este obligatoriu (min. 2 caractere)"),
+  const paymentSchema = z.object({
+    firstName: z.string().min(2, "Prenumele este obligatoriu"),
+    lastName: z.string().min(2, "Numele este obligatoriu"),
     email: z.string().email("Te rugăm să introduci un email valid"),
-    adresa_client: z.string().min(2, "Adresa dumneavostra e obligatorie"),
-    terms: z.boolean().refine(val => val === true, {
-    message: "Trebuie să fii de acord cu termenii și condițiile pentru a continua."
-  }),
-
+    adresa: z.string().min(5, "Adresa e prea scurta"),
+    localitate: z.string().min(2, "Localitatea este obligatorie"),
+    judet: z.string().min(2, "Judetul este obligatoriu"),
+    phone: z.string().min(10, 'Telefon Invalid'),
+    flavor: z.string().min(1, "Te rugăm să alegi o aromă"),
+    
   })
 
-  // Infer the type from the schema
-type RegisterFormValues = z.infer<typeof registerSchema>
 
- // Datele produsului (de obicei, acestea vin din context sau props)
-  const product = {
-    id: 'prod_digital_1',
-    description: '10 Hack-uri Simple Pentru o Glicemie Stabilă + Ebook: Arta Hidratarii ',
-    amount: '49.00', // ATENȚIE: String cu 2 zecimale
-  };
+  // 2. Transformam in typescript
 
- // Initam react hook form si zod
-  const {
-    register,
-    handleSubmit,
-    control,
-    formState: { errors, isSubmitting },
-  } = useForm<RegisterFormValues>({
-    resolver: zodResolver(registerSchema),
+  type paymentSchemaValues = z.infer<typeof paymentSchema>
+
+  // 3. Detalii produs
+
+   const product = {
+    id: "Mic Dejun Start Active",
+    description: 'desciere Program Start active',
+    amount: '520.00'
+   }
+
+  // Lista de arome disponibile
+  const flavors = [
+    { id: "banana", name: "Banana" },
+    { id: "capsuna", name: "Capsuna" },
+    { id: "caffe latte", name: "Cafe Latte" },
+    { id: "vanilie", name: "Vanilie" },
+    { id: "fursecuri", name: "Fursecuri" },
+    { id: "ciocolata fina", name: "Ciocolata Fina" },
+    { id: "ciocolata alba zmeura", name: "Zmeura si Ciocolata Alba" },
+    { id: "ciocolata si menta", name: "Ciocolata si Menta" },
+  ]
+
+  // 4. Initiem zod si hook form
+
+  const { register, 
+    handleSubmit, 
+    setValue, 
+    watch,
+    formState : {errors, isSubmitting} ,} 
+    = useForm<paymentSchemaValues>({ resolver: zodResolver(paymentSchema), 
     defaultValues: {
-      nume: "",
-      email: "", 
-      adresa_client: "",
-      terms: false, // <-- VALOAREA IMPLICITĂ
-    },
+    firstName: "",
+    lastName: "",
+    email: "",
+    adresa: "",
+    localitate: "",
+    judet: "",
+    phone: "",
+    flavor: "Vanilie",
+    }
   })
 
- 
+  // "Ascultăm" valoarea din hook-form în loc să folosim un useState separat
+const currentFlavor = watch("flavor");
 
-  const onSubmit: SubmitHandler<RegisterFormValues> = async (data) => {
-    setError(null);
+// 5. Functia de onSubmit
 
-    try {
-      const response = await fetch('/api/orders/create', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          name: data.nume,
-          email: data.email,
-          addresa: data.adresa_client,
-          amount: product.amount,
-          description: product.description,
-          productId: product.id,
-        }),
-      });
-      
-      if(!response) {
-        throw new Error('Eroare la crearea comenzii pe server');
-      }
+const onSubmit: SubmitHandler<paymentSchemaValues> = async (data) => {
+  setError(null);
 
-      const result = (await response.json()) as { checkoutUrl ?: string; error?: string};
+  try {
+    const response = await fetch ('/api/orders/create', {
+      method: "POST",
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(data),
+    });
 
-      if(result.checkoutUrl) {
-        router.push(result.checkoutUrl);
-      } else {
+     if(!response.ok) throw new Error('Eroare la crearea comenzii');
+
+     const result = await response.json();
+
+     // Mollie checkout URL
+    if (result.checkoutUrl) {
+      router.push(result.checkoutUrl);
+    } else {
         setError(result.error || 'Nu am primit URL de checkout');
       }
- 
-    } catch (err) {
-      setError(err instanceof Error ? err.message: "O erroare necunoscuta");
-    }
 
+  } catch (error) {
+    setError("A apărut o problemă. Te rugăm să încerci din nou.");
   }
+}
 
-   return (
-      <>
-        <div className="lg:w-6xl mx-auto">
-            <div className="flex flex-col lg:flex-row items-start my-10">
-                <div className="p-5 lg:p-0">
-                    <Image className="mx-auto" src='/checkoutfoto.webp' alt="Checkout Photo" width={600} height={600} />
-                      
-                      <p className="font-sans text-center text-2xl my-5">Valoare Totală: <span className="text-red-500 font-bold line-through">149 RON</span></p>
-  
 
-                    <div className="text-center font-bold font-sans text-2xl">
-                       <h2>🔥 Prețul Tău Azi </h2>
-                       <h2>(Ofertă Limitată): <span className="text-[#8ecb40]">{product.amount} RON!</span></h2>
+  return (
+    <div className="min-h-screen bg-gray-50/50 py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        
+        <h1 className="text-3xl font-bold text-center mb-10 text-foreground">
+          Finalizează Comanda
+        </h1>
+     <form onSubmit={handleSubmit(onSubmit)}>
+        <div className="grid lg:grid-cols-12 gap-8 lg:gap-12">
+          
+          {/* --- LEFT COLUMN: Form & Customization (7 Cols) --- */}
+          <div className="lg:col-span-7 space-y-8">
+             
+            {/* 1. Alegerea Aromei */}
+            <Card className="border-0 shadow-md">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2 text-xl">
+                  <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#8ecb40] text-white text-sm font-bold">1</span>
+                  Alege Aroma Preferată
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid grid-cols-2 gap-4">
+                  {flavors.map((flavor) => (
+                    <div
+                      key={flavor.id}
+                      // Când dai click, trimiți valoarea direct în formularul Zod
+                      onClick={() => setValue("flavor", flavor.name, {shouldValidate: true})}
+                      className={`
+                        cursor-pointer rounded-xl border-2 p-3 flex items-center justify-between transition-all duration-200
+                        ${currentFlavor === flavor.name 
+                          ? "border-[#8ecb40] bg-[#8ecb40]/5 shadow-sm" 
+                          : "border-border hover:border-muted-foreground/30 bg-background"}
+                      `}
+                    >
+                      <span className="font-medium text-sm">{flavor.name}</span>
+                      {currentFlavor === flavor.name && (
+                        <div className="w-5 h-5 bg-[#8ecb40] rounded-full flex items-center justify-center">
+                          <Check className="w-3 h-3 text-white" />
+                        </div>
+                      )}
                     </div>
-
-                    <div className="my-5 text-lg font-opensans">
-                        <h2 className="font-bold  font-opensans mb-3 text-xl">Sumarul Comenzii:</h2>
-                         <div className='flex items-start lg:items-center'>
-                          <FaCheckCircle className="text-[#8ecb40] lg:text-xl text-3xl mr-2 " />
-                           <p className="font-bold">  Ghidul Principal: <span className="text-[#8ecb40] mx-1">"10 Hack-uri Simple Pentru o Glicemie Stabilă" </span></p>
-                        
-                         </div>
-                        <p>Planul tău complet, pas cu pas, pentru a prelua controlul asupra energiei și a poftelor.</p>
-
-                    </div>
-                    
-                     <div className="my-5 text-lg font-opensans">
-                        <h2 className="font-bold mb-3 text-xl">Bonusul Gratuit:</h2>
-                         <p className="font-bold flex items-start"><FaCheckCircle className="text-blue-400 text-xl  rounded-full flex-none mt-1 mr-2" />Mini-Ghidul: <span className="text-blue-400 mx-1">"Arta Hidratării" </span></p>
-                         <p>Ghidul tău practic pentru a-ți optimiza hidratarea, un element cheie pentru un metabolism sănătos.</p>
-                    </div>
+                  ))}
                 </div>
-                <div className="w-sm">
-                  <form onSubmit={handleSubmit(onSubmit)}>
-                    <div className="border-2 border-solid rounded-md p-6">
-                        <h2 className="text-blue-400 font-semibold font-sans text-center">Unde Îți Trimitem Ghidul?</h2>
-                        <h3 className="text-xs font-extralight font-sans text-center mb-4">Acces pe Viață (Plată Unică)</h3>
-                          
-                          <div className="flex flex-col gap-3">
-                        <input 
-                           {...register('nume')}
-                        className={ errors.email? "border-2 border-solid p-2 rounded-md border-red-500" : "border-2 border-solid p-2 rounded-md"} type="text" name="nume" placeholder="Numele Tau..."></input>
+              </CardContent>
+            </Card>
 
-                              {/* Errori Mesaje */}
+            {/* 2. Date Livrare & Facturare */}
+            <Card className="border-0 shadow-md">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2 text-xl">
+                   <span className="flex items-center justify-center w-8 h-8 rounded-full bg-foreground text-background text-sm font-bold">2</span>
+                   Detalii Livrare
+                </CardTitle>
+              </CardHeader>
+             
+              <CardContent className="space-y-4">
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="space-y-2">
+                    <Label htmlFor="firstName">Prenume</Label>
+                    <Input  {...register('firstName')} name='firstName' type='text' placeholder="Ion" />
+                    {errors.firstName && <span className="text-xs text-red-500">{errors.firstName.message}</span>}
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="lastName">Nume</Label>
+                    <Input {...register('lastName')} name='lastName' placeholder="Popescu" />
+                    {errors.lastName && <span className="text-xs text-red-500">{errors.lastName.message}</span>}
+                  </div>
+                </div>
 
-                               {errors.nume && (
-                <p className="text-sm text-red-500 flex items-center gap-1">
-                 
-                  {errors.nume.message}
-                </p>
-              )}
-     {/* Errori Mesaje */}
-                        <input 
-                         {...register('email')}
-                        className={ errors.email? "border-2 border-solid p-2 rounded-md border-red-500" : "border-2 border-solid p-2 rounded-md"} type="email" name="email" placeholder="Adresa de Email.."></input>
-
-                             {/* Errori Mesaje */}
-
-                               {errors.email && (
+                <div className="space-y-2">
+                  <Label htmlFor="email">Email</Label>
+                  <Input  {...register('email')} type="email" name='email' placeholder="ion@exemplu.com" />
+                   
+                   {errors.email && (
                 <p className="text-sm text-red-500 flex items-center gap-1">
                  
                   {errors.email.message}
                 </p>
               )}
-                      
-
-                          <div className="flex items-center mt-4">
-    {/* Textul - Lățime minimă, dar nu se extinde */}
-    <div className="uppercase text-sm font-sans font-semibold text-[#4b4c4b] whitespace-nowrap pr-2">
-        Date facturare
-    </div>
-    
-    {/* Linia - Ocupă tot spațiul rămas (flex-1) */}
-    <div className="border-t border-gray-300 w-full flex-1"></div>
-</div>
-                   <input 
-                           {...register('adresa_client')}
-                        className={ errors.adresa_client? "border-2 border-solid p-2 rounded-md border-red-500" : "border-2 border-solid p-2 rounded-md"} type="text" name="adresa_client" placeholder="Adresa dumneavoastra"></input>
-
-                              {/* Errori Mesaje */}
-
-
-                               {errors.adresa_client && (
-                <p className="text-sm text-red-500 flex items-center gap-1">
-                 
-                  {errors.adresa_client.message}
-                </p>
-              )}
-     {/* Errori Mesaje */}
-
-                        </div>
-
-                        <div className="flex items-center mt-4">
-    {/* Textul - Lățime minimă, dar nu se extinde */}
-    <div className="uppercase text-sm font-sans font-semibold text-[#4b4c4b] whitespace-nowrap pr-2">
-        Detalii de Plata
-    </div>
-    
-    {/* Linia - Ocupă tot spațiul rămas (flex-1) */}
-    <div className="border-t border-gray-300 w-full flex-1"></div>
-</div>
-
-                        <div className="mx-auto bg-white p-4">
-    {/* Sectiunea 1: Articole de baza (de deasupra) */}
-    <div>
-        {/* Titluri */}
-        <div className="flex justify-between font-semibold border-b-2 border-solid text-gray-700 mb-2">
-            <span className="w-3/5 text-[#4b4c4b]">Produs</span>
-            <span className="w-1/5 text-right">Quantity</span>
-            <span className="w-1/5 text-right pr-1">Preț</span>
-        </div>
-        {/* Produsul 1 */}
-        <div className="flex justify-between items-start pt-1">
-            <div className="w-3/5 flex items-center">
-                {/* Aici ar fi input-ul radio, l-am simulat cu un cerc */}
-                <span className="w-4 h-4 rounded-full border-4 border-blue-500 bg-white mr-2 flex-shrink-0"></span>
-                <p className="font-bold text-sm leading-tight">10 Hack-uri Simple Pentru o Glicemie Stabilă</p>
-            </div>
-            <span className="w-1/5 text-right text-sm">1</span>
-             <div className="w-1/5 text-right text-sm font-semibold text-blue-700 leading-tight">
-                <span className="block">RON</span>
-                <span className="block">49.00</span>
-            </div>
-        </div>
-    </div>
-
-    {/* Order Summary / Subtotal */}
-    <div className="border-b border-gray-300 pt-3 pb-3 mb-3 ">
-
-        <div className="flex items-center my-2">
-    {/* Linia din Stânga - Ocupă jumătate din spațiul rămas */}
-    <div className="border-t border-gray-300 w-full flex-1"></div>
-
-    {/* Textul - Centrat și separat de linii prin padding */}
-    <h3 className="text-center font-semibold text-gray-600 mx-4 whitespace-nowrap">
-        Order Summary
-    </h3>
-    
-    {/* Linia din Dreapta - Ocupă jumătate din spațiul rămas */}
-    <div className="border-t border-gray-300 w-full flex-1"></div>
-</div>
-        {/* Titluri Order Summary */}
-        <div className="flex justify-between font-semibold text-gray-700 mb-2 border-b-2 border-solid">
-            <span className="w-3/5">Produs</span>
-            <span className="w-1/5 text-right">Quantity</span>
-            <span className="w-1/5 text-right">Suma</span>
-        </div>
-        
-        {/* Detalii Produs Order Summary */}
-        <div className="flex justify-between pt-1">
-            <p className="w-3/5 text-sm">10 Hack-uri Simple Pentru o Glicemie Stabilă</p>
-            <span className="w-1/5 text-right text-sm">1</span>
-            <div className="w-1/5 text-right text-sm font-semibold text-blue-700 leading-tight">
-                <span className="block">RON</span>
-                <span className="block">49.00</span>
-            </div>
-        </div>
-    </div>
-    
-    {/* Order Total */}
-    <div className="flex justify-between font-bold text-lg pt-2">
-        <span>Order Total</span>
-        <span className="text-blue-700">RON49.00</span>
-    </div>
-</div>                    
-<div className="flex flex-col justify-center">
-    
-        <button type='submit' className='p-2 w-full cursor-pointer hover:bg-green-400 bg-[#8ecb40] font-bold' disabled={isSubmitting}>
-          {isSubmitting ? <Loader2Icon className="animate-spin"> Se proceseaza </Loader2Icon> : 'Plătește Acum'}
-        </button>
-         <p className="text-[11px] my-2 text-center font-sans font-extralight">Achiziție 100% Sigură și Garantată. Primești eBook-ul pe email în 2 minute.</p>
-        {error && <p style={{ color: 'red', marginTop: '10px' }}>{error}</p>}
-</div>
-<div className="flex items-start my-5 gap-2 ">
-  <Controller name='terms' control={control} render={({ field}) => (
-
-    <Checkbox  className={errors.terms? 'mt-1 border-2 border-red-400' : 'mt-1 border-2 border-gray-400'}
-     checked={field.value}
-     onCheckedChange={field.onChange}
-
-    />
-    
-  )} />
-    
-    
-    <p className=" font-opensans text-[14px] ">Am citit și sunt de acord cu <Link href='/termeni_si_conditii' className='text-blue-500 underline'>Termenii și Condițiile </Link>și cu <Link className='text-blue-500 underline' href="/politica_de_confidentialitate">Politica de Confidențialitate</Link> a site-ului.</p>
-
-
-    
-</div>
-
-{errors.terms && (
-                <p className="text-sm text-center text-red-500 flex items-center gap-1">
-                 
-                  {errors.terms.message}
-                </p>
-              )}
-{error && <p style={{ color: 'red', marginTop: '10px' }}>{error}</p>}
-
-
-                        
-                    </div>
-                    </form>
                 </div>
+
+                
+
+                <div className="space-y-2">
+                  <Label htmlFor="phone">Telefon</Label>
+                  <Input  {...register('phone')} name='phone'  type="tel" placeholder="07xx xxx xxx" />
+                  {errors.phone && <span className="text-xs text-red-500">{errors.phone.message}</span>}
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="address">Adresa completă</Label>
+                  <Input {...register('adresa')} name='adresa' placeholder="Strada, Număr, Bloc, Scara..." />
+                  {errors.adresa && <span className="text-xs text-red-500">{errors.adresa.message}</span>}
+                </div>
+
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="space-y-2">
+                    <Label htmlFor="city">Localitate</Label>
+                    <Input  {...register('localitate')} name='localitate' />
+                    {errors.localitate && <span className="text-xs text-red-500">{errors.localitate.message}</span>}
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="county">Județ</Label>
+                    <Input {...register('judet')} name='judet' />
+                    {errors.judet && <span className="text-xs text-red-500">{errors.judet.message}</span>}
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+         
+          </div>
+
+          {/* --- RIGHT COLUMN: Order Summary (5 Cols) --- */}
+          <div className="lg:col-span-5">
+            <div className="sticky top-8">
+              <Card className="border-2 border-[#8ecb40]/20 shadow-xl overflow-hidden">
+                <div className="bg-[#8ecb40]/10 p-4 border-b border-[#8ecb40]/20">
+                    <h3 className="font-bold text-lg flex items-center gap-2">
+                        <Lock className="w-4 h-4 text-[#8ecb40]" />
+                        Rezumat Comandă
+                    </h3>
+                </div>
+                
+                <CardContent className="p-6 space-y-6">
+                  {/* Produs Principal */}
+                  <div className="flex gap-4">
+                    <div className="relative w-20 h-24 bg-muted rounded-lg overflow-hidden shrink-0 ">
+                       <Image 
+                         src="/checkout_photo.jpeg" 
+                         alt="Produs Start Activ Active Boost" 
+                         fill 
+                         className="object-contain p-1"
+                       />
+                    </div>
+                    <div className="flex-1 space-y-1">
+                      <div className="flex justify-between items-start">
+                        <h4 className="font-bold text-foreground">Pachet Start Activ</h4>
+                        <span className="font-bold">520 RON</span>
+                      </div>
+                      <p className="text-sm text-muted-foreground">Cantitate: 1</p>
+                      <span className="text-xs bg-[#8ecb40]/10 text-[#8ecb40] border-[#8ecb40]/20">
+                        Aromă: {currentFlavor}
+                      </span>
+                    </div>
+                  </div>
+
+                  <Separator />
+
+                  {/* Bonusuri */}
+                  <div className="space-y-3">
+                    <p className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">Bonusuri Incluse</p>
+                    
+                    <div className="flex items-center justify-between group">
+                       <div className="flex items-center gap-3">
+                          <div className="w-8 h-8 rounded-full bg-orange-100 flex items-center justify-center text-orange-600">
+                             <Gift className="w-4 h-4" />
+                          </div>
+                          <span className="text-sm font-medium">eBook: Hack-uri Glicemie</span>
+                       </div>
+                       <span className="text-sm font-bold text-[#8ecb40]">GRATIS</span>
+                    </div>
+
+                    <div className="flex items-center justify-between group">
+                       <div className="flex items-center gap-3">
+                          <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
+                             <Gift className="w-4 h-4" />
+                          </div>
+                          <span className="text-sm font-medium">eBook: Arta Hidratării</span>
+                       </div>
+                       <span className="text-sm font-bold text-[#8ecb40]">GRATIS</span>
+                    </div>
+
+                    <div className="flex items-center justify-between group">
+                       <div className="flex items-center gap-3">
+                          <div className="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center text-green-600">
+                             <Truck className="w-4 h-4" />
+                          </div>
+                          <span className="text-sm font-medium">Transport Rapid</span>
+                       </div>
+                       <span className="text-sm font-bold text-[#8ecb40]">GRATIS</span>
+                    </div>
+                  </div>
+
+                  <Separator />
+
+                  {/* Total */}
+                  <div className="flex items-center justify-between py-2">
+                    <span className="text-lg font-medium text-muted-foreground">Total de plată</span>
+                    <span className="text-3xl font-black text-foreground">520 RON</span>
+                  </div>
+
+                  {/* Buton Finalizare */}
+
+                  {error && (
+  <div className="bg-red-50 border border-red-200 text-red-600 px-4 py-3 rounded-lg text-sm mb-4">
+    ⚠️ {error}
+  </div>
+)}
+                  <Button 
+                  type='submit'
+                    className="w-full cursor-pointer h-14 text-lg font-bold bg-[#8ecb40] hover:bg-[#8ecb40]/90 shadow-xl shadow-[#8ecb40]/20"
+                  >
+                     {isSubmitting ? <Loader2Icon className="animate-spin"> Se proceseaza </Loader2Icon> : 'Plătește in siguranta'}
+                    <ShieldCheck className="ml-2 w-5 h-5" />
+                  </Button>
+                  
+                  <p className="text-xs text-center text-muted-foreground px-4">
+                    Prin plasarea comenzii ești de acord cu termenii și condițiile noastre.
+                  </p>
+
+                </CardContent>
+                
+                {/* Footer cu Trust Badges */}
+                <CardFooter className="bg-muted/30 p-4 border-t border-border flex justify-center gap-6 grayscale opacity-70">
+                   {/* Poti pune aici imagini cu Visa/Mastercard, sau text */}
+                   <span className="text-xs font-bold flex items-center gap-1"><Lock className="w-3 h-3"/> SSL Encrypted</span>
+                   <span className="text-xs font-bold">30 Days Return</span>
+                </CardFooter>
+              </Card>
             </div>
+          </div>
+
         </div>
-      </>
-    )
+        </form>
+      </div>
+    </div>
+  )
 }
+
+export default CheckoutPage

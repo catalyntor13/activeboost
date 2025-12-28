@@ -1,0 +1,15 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/termeni_si_conditii/layout,_N_T_/termeni_si_conditii/page,_N_T_/termeni_si_conditii"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/termeni_si_conditii/__PAGE__",
+    "/termeni_si_conditii",
+    "/_index",
+    "/_head"
+  ]
+}

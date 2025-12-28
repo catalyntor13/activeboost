@@ -1,143 +1,93 @@
-
-import mollieClient from '@/lib/mollie';
-import { supabaseServer } from '@/lib/supabaseServer';
-import { NextRequest } from 'next/server';
-import { PaymentStatus } from '@mollie/api-client';
-import { render } from '@react-email/render';
-import { EmailConfirmarePlata } from '@/emails/EmailConfirmarePlata'
+// app/api/webhooks/mollie/route.ts
+import { db } from '@/db';
+import { orders } from '@/db/schema';
+import { eq, and } from 'drizzle-orm';
+import { mollieClient } from '@/lib/mollie';
 import { renderToStream } from '@react-pdf/renderer';
-import { InvoicePDF } from '@/components/Invoice';
-
-
-// Importăm transporterul nostru ---
+import { render } from '@react-email/render';
+import { InvoicePDF } from '@/components/Invoice'; // Componenta ta
+import EmailConfirmarePlata from '@/emails/EmailConfirmarePlata'; // Componenta ta
 import { transporter } from '@/lib/nodemailer';
 
-interface MolliePaymentMetadata {
-  order_id: string;
+// Definește un tip pentru metadata ta
+interface MyPaymentMetadata {
+  internalOrderId: string | number;
 }
 
-export async function POST(request: NextRequest) {
-  try {
-    const formData = await request.formData();
-    const paymentId = formData.get('id') as string;
+export async function POST(req: Request) {
+  const text = await req.text();
+  const params = new URLSearchParams(text);
+  const paymentId = params.get('id');
 
-    if (!paymentId) {
-      console.warn('Webhook primit fără ID de plată');
-      return new Response('OK (No ID)', { status: 200 });
-    }
+  if (!paymentId) return new Response('No ID', { status: 400 });
 
-    const payment = await mollieClient.payments.get(paymentId);
-    const metadata = payment.metadata as MolliePaymentMetadata;
-    const orderId = metadata?.order_id;
+  const payment = await mollieClient.payments.get(paymentId);
+  const metadata = payment.metadata as unknown as MyPaymentMetadata; // Cast aici
 
-    if (!orderId) {
-      throw new Error(`Webhook pentru ${paymentId} nu are order_id!`);
-    }
+ const orderId = Number(metadata.internalOrderId);
 
-    // --- Logica pentru PLATA REUȘITĂ ---
-    if (payment.status === PaymentStatus.paid) {
-      console.log(`Plata reușită pentru comanda: ${orderId}`);
+  // 1. Căutăm comanda în Neon
+  const [order] = await db.select().from(orders).where(eq(orders.id, orderId)).limit(1);
 
-  
-      // 1. Verificăm starea comenzii
-      const { data: order, error: orderError } = await supabaseServer
-        .from('clienti')
-        .select('id, nume_client, email_client, adresa_client, status, email_sent')
-        .eq('id', orderId)
-        .single();
+  if (!order) return new Response('Order not found', { status: 404 });
 
-      if (orderError) {
-        throw new Error(`Comanda ${orderId} nu a fost găsită: ${orderError.message}`);
-      }
-
-      // 2. Verificăm dacă emailul a fost deja trimis
-      if (order.email_sent === true) {
-        console.log(`Email pentru comanda ${orderId} a fost deja trimis. Ignorăm.`);
-        return new Response('OK (Email deja trimis)', { status: 200 });
-      }
-
-      // 3. Preluăm linkurile Google Drive
-      const link1 = process.env.PDF_LINK_1;
-      const link2 = process.env.PDF_LINK_2;
+  // 2. Verificăm dacă e plătită și dacă NU am trimis email-ul deja
+  if (payment.status === 'paid' && !order.email_sent) {
     
+    // --- GENERARE PDF ---
+    const invoiceProps = {
+      orderId: order.id.toString(),
+      date: new Date().toLocaleDateString('ro-RO'),
+      numeClient: order.customer_name,
+      emailClient: order.customer_email,
+      adresaClient: order.customer_address,
+      amount: `${payment.amount.value} RON`,
+      produs: "Pachet Mic Dejun Start Activ"
+    };
 
+    const pdfStream = await renderToStream(<InvoicePDF {...invoiceProps} />);
+    const chunks: any[] = [];
+    for await (const chunk of pdfStream) { chunks.push(chunk); }
+    const pdfBuffer = Buffer.concat(chunks);
 
-      if (!link1 || !link2 ) {
-        throw new Error('Link-urile PDF (PDF_LINK_1 / PDF_LINK_2) nu sunt setate în .env');
-      }
+    // --- GENERARE HTML EMAIL ---
+    const htmlBody = await render(
+      <EmailConfirmarePlata 
+        numeClient={order.customer_name}
+        linkGhid1={process.env.PDF_LINK_1!}
+        linkGhid2={process.env.PDF_LINK_2!}
+        oId={order.id.toString()}
+      />
+    );
 
-      const dataAzi = new Date().toLocaleDateString('ro-RO');
-      const pretTotal = `${payment.amount.value} ${payment.amount.currency}`;
+    // --- TRIMITERE EMAIL ---
+    await transporter.sendMail({
+      from: `"Active Boost" <${process.env.SMTP_USER}>`,
+      to: order.customer_email,
+      subject: `Felicitări! Ghidul tău Active Boost a sosit! 🔥`,
+      html: htmlBody,
+      attachments: [{
+        filename: `Factura_${orderId}.pdf`,
+        content: pdfBuffer,
+        contentType: 'application/pdf'
+      }]
+    });
 
-      const invoiceProps = {
-        orderId: order.id.toString(), // Convertim ID-ul în string dacă e număr
-        date: dataAzi,
-        numeClient: order.nume_client,
-        emailClient: order.email_client,
-        adresaClient: order.adresa_client,
-        amount: pretTotal,
-        produs: "Pachet Ghiduri Active Boost"
-      };
+    // 3. Update Status în Neon: Paid + Email Sent
+    await db.update(orders)
+      .set({ 
+        paymentStatus: 'paid', 
+        email_sent: true,
+        updatedAt: new Date()
+      })
+      .where(eq(orders.id, orderId));
 
-      const pdfStream = await renderToStream(
-        <InvoicePDF {...invoiceProps} />
-      );
-
-      const chunks: Uint8Array[] = [];
-      for await (const chunk of pdfStream) {
-        chunks.push(chunk as Uint8Array);
-      }
-
-      const pdfBuffer = Buffer.concat(chunks);
-
-
-      // --- MODIFICARE 2: Folosim transporter.sendMail ---
-      const htmlBody = await render(
-        <EmailConfirmarePlata
-          numeClient={order.nume_client}
-          linkGhid1={link1}
-          linkGhid2={link2}
-          orderId={order.id}
-      
-        />
-      );
-
-      await transporter.sendMail({
-        from: `"Active Boost" <${process.env.SMTP_USER}>`, // Emailul tău (expeditorul)
-        to: order.email_client, // Emailul clientului
-        subject: `Felicitări! Ghidul tău Active Boost a sosit! 🔥`,
-        html: htmlBody,
-        attachments: [
-          {
-            filename: `Factura_ActiveBoost_${orderId}.pdf`,
-            content: pdfBuffer,
-            contentType: 'application/pdf'
-          }
-        ]
-      });
-      // --- Sfârșitul modificării ---
-
-      console.log(`Email trimis către ${order.email_client}`);
-
-      // 5. Actualizăm comanda în DB (setăm status ȘI email_sent)
-      await supabaseServer
-        .from('clienti')
-        .update({ status: 'paid', email_sent: true })
-        .eq('id', orderId);
-
-    } else if (payment.status === PaymentStatus.failed) {
-      // ... (logica ta pentru plată eșuată)
-      console.log(`Plata eșuată pentru comanda: ${orderId}`);
-      await supabaseServer
-        .from('clienti')
-        .update({ status: 'failed' })
-        .eq('id', orderId);
-    }
-
-    return new Response('OK', { status: 200 });
-
-  } catch (error) {
-    console.error('Eroare la procesarea webhook-ului Mollie:', error);
-    return new Response('Webhook Error', { status: 500 });
+  } else {
+    // Update status simplu (failed, canceled, etc.)
+    await db.update(orders)
+      .set({ paymentStatus: payment.status, updatedAt: new Date() })
+      .where(eq(orders.id, orderId));
   }
+
+  return new Response('OK', { status: 200 });
 }
