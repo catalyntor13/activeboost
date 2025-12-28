@@ -10,7 +10,7 @@ const Footer = () => {
 
        <div className="grid lg:grid-cols-3 grid-cols-1 lg:justify-items-start justify-items-center gap-4 space-y-5 mb-15 mt:0 lg:mt-15 lg:mb-0">
          <div>
-          <Image src='/activeboost.png' alt="Activeboost" width={200} height={150}  />
+          <Image src='/logo.png' alt="Activeboost" width={150} height={150}  />
          </div>
 
          <div className="flex flex-col lg:text-sm text-[12px] font-light justify-center items-center text-center font-opensans ">
@@ -25,7 +25,7 @@ const Footer = () => {
           <div className="flex items-center gap-5 justify-center mx-auto">
         <span>
           <Link href='https://www.facebook.com/activeboost.fitclub'>
-          <Image src='/facebook.png' alt="FacebookIcon"
+          <Image src='/logo.png' alt="FacebookIcon"
             width={35}
             height={35}/>
             </Link>

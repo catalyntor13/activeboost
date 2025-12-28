@@ -91,8 +91,8 @@ const OfertaSection = () => {
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                   </Link>
-                  <p className="text-xs text-center text-muted-foreground">
-                    Plată sigură • Livrare 24/48h • Stoc limitat
+                  <p className="text-xs text-center pt-3 text-muted-foreground">
+                    Plată sigură • Livrare 24/48h • Transport Gratuit
                   </p>
                 </div>
                 

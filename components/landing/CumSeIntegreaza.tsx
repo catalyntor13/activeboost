@@ -124,8 +124,8 @@ const CumSeIntegreaza = () => {
             <p className="text-muted-foreground mb-6">
               Este alternativa <span className="text-primary font-medium">sănătoasă și corectă</span> la patiserie sau fast-food atunci când ești contra cronometru.
             </p>
-            <div className="inline-flex items-center gap-2 text-sm text-muted-foreground bg-background border px-4 py-2 rounded-full">
-               <Clock className="w-4 h-4 text-primary" />
+            <div className="inline-flex lg:items-center items-start lg:gap-2 gap-0 text-sm text-muted-foreground bg-background border px-4 py-2 rounded-full">
+               <Clock className="w-6 h-6 lg:w-4 lg:h-4 text-primary" />
                <span>Pachetul de 21 de porții acoperă exact zilele lucrătoare dintr-o lună.</span>
             </div>
           </div>

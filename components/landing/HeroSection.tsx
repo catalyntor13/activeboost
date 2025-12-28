@@ -3,13 +3,13 @@
 import Image from "next/image"
 
 import { Button } from "../ui/button"
-import { ArrowRight, Sparkles } from "lucide-react"
+import { ArrowRight, Sparkles, ShieldCheck } from "lucide-react"
 import Link from "next/link"
 const HeroSection = () => {
   return (
       <>
         <section className="relative overflow-hidden bg-gradient-to-b from-muted/30 to-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 md:py-16">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             {/* Left Column - Text */}
             <div className="space-y-8">
@@ -29,7 +29,7 @@ const HeroSection = () => {
               </h2>
 
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Un shake proteic complet, bogat în proteine, fibre, vitamine și minerale – totul la doar{" "}
+                Un <span className="uppercase font-bold">shake proteic</span> complet, bogat în proteine, fibre, vitamine și minerale – totul la doar{" "}
                 <span className="font-semibold text-foreground">215 calorii</span>.
               </p>
 
@@ -50,8 +50,8 @@ const HeroSection = () => {
                 </p>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <Link href='/checkout'>
+              <div className="flex flex-col gap-4 pt-4">
+                <Link className="lg:w-[45%]" href='/checkout'>
                 <Button
                   size="lg"
                   className="bg-[#8ecb40] w-full hover:bg-[#8ecb40]/80 cursor-pointer text-primary-foreground text-base px-8 py-6 shadow-xl shadow-primary/20 hover:shadow-2xl hover:shadow-primary/30 transition-all"
@@ -60,7 +60,19 @@ const HeroSection = () => {
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
                </Link>
+                 <p className="text-xs text-center lg:text-start text-muted-foreground">
+                    Plată sigură • Livrare 24/48h • Transport Gratuit
+                  </p>
               </div>
+           
+
+                    {/* Mobile Guarantee (shown only on small screens) */}
+                <div className="lg:hidden flex justify-center pt-4">
+                   <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                      <ShieldCheck className="w-4 h-4 text-[#8ecb40]" />
+                      <span>Garanție de returnare 30 de zile</span>
+                   </div>
+                </div>
             </div>
 
             <div className="relative">
@@ -82,7 +94,7 @@ const HeroSection = () => {
       <section className="bg-[#8ecb40] py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h3 className="text-3xl  font-bold text-primary-foreground mb-4 text-balance leading-tight tracking-tight">
-            De ce micul dejun clasic nu îți oferă energia de care ai nevoie
+            De ce micul dejun clasic nu îți oferă energia de care ai nevoie ?
           </h3>
         </div>
       </section>
