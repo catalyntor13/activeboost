@@ -55,11 +55,11 @@ export async function POST(req: Request) {
       description: `Comanda #${orderId} - Pachet Mic Dejun Start Activ`,
       
       // URL unde se întoarce clientul după plată (Success page)
-      redirectUrl: `${process.env.NEXT_PUBLIC_APP_URL}/thank-you?orderId=${orderId}`,
+      redirectUrl: `${process.env.NEXT_PUBLIC_BASE_URL}/thank-you?orderId=${orderId}`,
       
       // URL unde Mollie trimite notificarea (Webhook) - E CRITIC PENTRU STATUS
       // Notă: Localhost nu merge pentru webhook-uri fără ngrok. 
-      webhookUrl: `${process.env.NEXT_PUBLIC_APP_URL}/api/webhooks/mollie`,
+      webhookUrl: `${process.env.NEXT_PUBLIC_BASE_URL}/api/webhooks/mollie`,
       
       // Metadata ne ajută să știm în webhook a cui e plata
       metadata: {
