@@ -12,3 +12,11 @@
 [00:14:55.923] Server  ERROR   Eroare la creare comanda: ApiError: The redirect URL is invalid
 [00:17:17.451] Server  ERROR   C:\Users\User\Desktop\Proiecte\activeboost\.next\dev\server\chunks\node_modules_@mollie_api-client_dist_mollie_esm_0139122c.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
 [00:17:17.453] Server  ERROR   Eroare la creare comanda: ApiError: The webhook URL is invalid because it is unreachable from Mollie's point of view.
+[00:30:53.493] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/client/image-component.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:30:53.658] Server  LOG      ✓ Compiled in 121ms
+[00:30:54.150] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:30:56.194] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:30:56.194] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/checkout","route":"/checkout"}
+[00:30:56.194] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/checkout color: rgb(120, 120, 120) color: inherit {"dp":"/checkout","o":"http://localhost:3000/checkout","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766990958688}
+[00:30:56.194] Browser WARN    Image with src "/checkout_photo.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:31:01.590] Server  LOG      ✓ Compiled in 156ms
