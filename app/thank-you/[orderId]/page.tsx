@@ -2,8 +2,9 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export default function ThankYouPage() {
-    
+export default async function ThankYouPage() {
+
+  
     // Poti accesa parametrii din URL (router.query) pentru a afisa detalii.
     
     return (

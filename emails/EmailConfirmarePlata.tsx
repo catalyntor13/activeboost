@@ -22,7 +22,7 @@ export interface EmailConfirmarePlataProps {
 
 }
 
-const LOGO_URL = 'https://www.activeboost.ro/activeboost.png'; // Pune aici un link către logo
+const LOGO_URL = 'https://www.activeboost.ro/logo.png'; // Pune aici un link către logo
 
 
 

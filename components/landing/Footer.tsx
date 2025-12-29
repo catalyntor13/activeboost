@@ -25,7 +25,7 @@ const Footer = () => {
           <div className="flex items-center gap-5 justify-center mx-auto">
         <span>
           <Link href='https://www.facebook.com/activeboost.fitclub'>
-          <Image src='/logo.png' alt="FacebookIcon"
+          <Image src='/facebook.png' alt="FacebookIcon"
             width={35}
             height={35}/>
             </Link>
