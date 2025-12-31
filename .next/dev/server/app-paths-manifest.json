@@ -1,5 +1,5 @@
 {
-  "/api/orders/create/route": "app/api/orders/create/route.js",
-  "/checkout/page": "app/checkout/page.js",
-  "/page": "app/page.js"
+  "/_not-found/page": "app/_not-found/page.js",
+  "/page": "app/page.js",
+  "/thank-you/[orderId]/page": "app/thank-you/[orderId]/page.js"
 }
