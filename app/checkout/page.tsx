@@ -261,6 +261,26 @@ const onSubmit: SubmitHandler<paymentSchemaValues> = async (data) => {
                   {/* Bonusuri */}
                   <div className="space-y-3">
                     <p className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">Bonusuri Incluse</p>
+
+                    <div className="flex items-center justify-between group">
+                       <div className="flex items-center gap-3">
+                          <div className="w-8 h-8 rounded-full bg-orange-100 flex items-center justify-center text-orange-600">
+                             <Gift className="w-4 h-4" />
+                          </div>
+                          <span className="text-sm font-medium">Lingură dozaj inclusă </span>
+                       </div>
+                       <span className="text-sm font-bold text-[#8ecb40]">CADOU</span>
+                    </div>
+
+                    <div className="flex items-center justify-between group">
+                       <div className="flex items-center gap-3">
+                          <div className="w-8 h-8 rounded-full bg-orange-100 flex items-center justify-center text-orange-600">
+                             <Gift className="w-4 h-4" />
+                          </div>
+                          <span className="text-sm font-medium">Shaker Premium </span>
+                       </div>
+                       <span className="text-sm font-bold text-[#8ecb40]">CADOU</span>
+                    </div>
                     
                     <div className="flex items-center justify-between group">
                        <div className="flex items-center gap-3">

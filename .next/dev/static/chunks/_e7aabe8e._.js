@@ -998,7 +998,7 @@ const CheckoutPage = ()=>{
                                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                                 className: "text-sm font-medium",
-                                                                                children: "eBook: Hack-uri Glicemie"
+                                                                                children: "Lingură dozaj inclusă "
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/checkout/page.tsx",
                                                                                 lineNumber: 270,
@@ -1012,7 +1012,7 @@ const CheckoutPage = ()=>{
                                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                         className: "text-sm font-bold text-[#8ecb40]",
-                                                                        children: "GRATIS"
+                                                                        children: "CADOU"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/checkout/page.tsx",
                                                                         lineNumber: 272,
@@ -1031,7 +1031,7 @@ const CheckoutPage = ()=>{
                                                                         className: "flex items-center gap-3",
                                                                         children: [
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                className: "w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600",
+                                                                                className: "w-8 h-8 rounded-full bg-orange-100 flex items-center justify-center text-orange-600",
                                                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$gift$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Gift$3e$__["Gift"], {
                                                                                     className: "w-4 h-4"
                                                                                 }, void 0, false, {
@@ -1046,7 +1046,7 @@ const CheckoutPage = ()=>{
                                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                                 className: "text-sm font-medium",
-                                                                                children: "eBook: Arta Hidratării"
+                                                                                children: "Shaker Premium "
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/checkout/page.tsx",
                                                                                 lineNumber: 280,
@@ -1060,7 +1060,7 @@ const CheckoutPage = ()=>{
                                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                         className: "text-sm font-bold text-[#8ecb40]",
-                                                                        children: "GRATIS"
+                                                                        children: "CADOU"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/checkout/page.tsx",
                                                                         lineNumber: 282,
@@ -1079,8 +1079,8 @@ const CheckoutPage = ()=>{
                                                                         className: "flex items-center gap-3",
                                                                         children: [
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                className: "w-8 h-8 rounded-full bg-green-100 flex items-center justify-center text-green-600",
-                                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$truck$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Truck$3e$__["Truck"], {
+                                                                                className: "w-8 h-8 rounded-full bg-orange-100 flex items-center justify-center text-orange-600",
+                                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$gift$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Gift$3e$__["Gift"], {
                                                                                     className: "w-4 h-4"
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/checkout/page.tsx",
@@ -1094,7 +1094,7 @@ const CheckoutPage = ()=>{
                                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                                 className: "text-sm font-medium",
-                                                                                children: "Transport Rapid"
+                                                                                children: "eBook: Hack-uri Glicemie"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/checkout/page.tsx",
                                                                                 lineNumber: 290,
@@ -1119,6 +1119,102 @@ const CheckoutPage = ()=>{
                                                                 fileName: "[project]/app/checkout/page.tsx",
                                                                 lineNumber: 285,
                                                                 columnNumber: 21
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "flex items-center justify-between group",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "flex items-center gap-3",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                className: "w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600",
+                                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$gift$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Gift$3e$__["Gift"], {
+                                                                                    className: "w-4 h-4"
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/app/checkout/page.tsx",
+                                                                                    lineNumber: 298,
+                                                                                    columnNumber: 30
+                                                                                }, ("TURBOPACK compile-time value", void 0))
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/app/checkout/page.tsx",
+                                                                                lineNumber: 297,
+                                                                                columnNumber: 27
+                                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                className: "text-sm font-medium",
+                                                                                children: "eBook: Arta Hidratării"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/app/checkout/page.tsx",
+                                                                                lineNumber: 300,
+                                                                                columnNumber: 27
+                                                                            }, ("TURBOPACK compile-time value", void 0))
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/app/checkout/page.tsx",
+                                                                        lineNumber: 296,
+                                                                        columnNumber: 24
+                                                                    }, ("TURBOPACK compile-time value", void 0)),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                        className: "text-sm font-bold text-[#8ecb40]",
+                                                                        children: "GRATIS"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/app/checkout/page.tsx",
+                                                                        lineNumber: 302,
+                                                                        columnNumber: 24
+                                                                    }, ("TURBOPACK compile-time value", void 0))
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/app/checkout/page.tsx",
+                                                                lineNumber: 295,
+                                                                columnNumber: 21
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "flex items-center justify-between group",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "flex items-center gap-3",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                className: "w-8 h-8 rounded-full bg-green-100 flex items-center justify-center text-green-600",
+                                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$truck$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Truck$3e$__["Truck"], {
+                                                                                    className: "w-4 h-4"
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/app/checkout/page.tsx",
+                                                                                    lineNumber: 308,
+                                                                                    columnNumber: 30
+                                                                                }, ("TURBOPACK compile-time value", void 0))
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/app/checkout/page.tsx",
+                                                                                lineNumber: 307,
+                                                                                columnNumber: 27
+                                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                className: "text-sm font-medium",
+                                                                                children: "Transport Rapid"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/app/checkout/page.tsx",
+                                                                                lineNumber: 310,
+                                                                                columnNumber: 27
+                                                                            }, ("TURBOPACK compile-time value", void 0))
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/app/checkout/page.tsx",
+                                                                        lineNumber: 306,
+                                                                        columnNumber: 24
+                                                                    }, ("TURBOPACK compile-time value", void 0)),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                        className: "text-sm font-bold text-[#8ecb40]",
+                                                                        children: "GRATIS"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/app/checkout/page.tsx",
+                                                                        lineNumber: 312,
+                                                                        columnNumber: 24
+                                                                    }, ("TURBOPACK compile-time value", void 0))
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/app/checkout/page.tsx",
+                                                                lineNumber: 305,
+                                                                columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
@@ -1128,7 +1224,7 @@ const CheckoutPage = ()=>{
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$separator$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Separator"], {}, void 0, false, {
                                                         fileName: "[project]/app/checkout/page.tsx",
-                                                        lineNumber: 296,
+                                                        lineNumber: 316,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1139,7 +1235,7 @@ const CheckoutPage = ()=>{
                                                                 children: "Total de plată"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/checkout/page.tsx",
-                                                                lineNumber: 300,
+                                                                lineNumber: 320,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1147,13 +1243,13 @@ const CheckoutPage = ()=>{
                                                                 children: "520 RON"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/checkout/page.tsx",
-                                                                lineNumber: 301,
+                                                                lineNumber: 321,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/checkout/page.tsx",
-                                                        lineNumber: 299,
+                                                        lineNumber: 319,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     error && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1164,7 +1260,7 @@ const CheckoutPage = ()=>{
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/checkout/page.tsx",
-                                                        lineNumber: 307,
+                                                        lineNumber: 327,
                                                         columnNumber: 3
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -1176,20 +1272,20 @@ const CheckoutPage = ()=>{
                                                                 children: " Se proceseaza "
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/checkout/page.tsx",
-                                                                lineNumber: 315,
+                                                                lineNumber: 335,
                                                                 columnNumber: 38
                                                             }, ("TURBOPACK compile-time value", void 0)) : 'Plătește in siguranta',
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldCheck$3e$__["ShieldCheck"], {
                                                                 className: "ml-2 w-5 h-5"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/checkout/page.tsx",
-                                                                lineNumber: 316,
+                                                                lineNumber: 336,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/checkout/page.tsx",
-                                                        lineNumber: 311,
+                                                        lineNumber: 331,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1197,7 +1293,7 @@ const CheckoutPage = ()=>{
                                                         children: "Prin plasarea comenzii ești de acord cu termenii și condițiile noastre."
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/checkout/page.tsx",
-                                                        lineNumber: 319,
+                                                        lineNumber: 339,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
@@ -1216,14 +1312,14 @@ const CheckoutPage = ()=>{
                                                                 className: "w-3 h-3"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/checkout/page.tsx",
-                                                                lineNumber: 328,
+                                                                lineNumber: 348,
                                                                 columnNumber: 80
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             " SSL Encrypted"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/checkout/page.tsx",
-                                                        lineNumber: 328,
+                                                        lineNumber: 348,
                                                         columnNumber: 20
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1231,13 +1327,13 @@ const CheckoutPage = ()=>{
                                                         children: "30 Days Return"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/checkout/page.tsx",
-                                                        lineNumber: 329,
+                                                        lineNumber: 349,
                                                         columnNumber: 20
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/checkout/page.tsx",
-                                                lineNumber: 326,
+                                                lineNumber: 346,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
