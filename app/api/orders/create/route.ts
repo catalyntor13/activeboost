@@ -52,7 +52,7 @@ export async function POST(req: Request) {
         currency: 'RON',
         value: PRICE.toFixed(2), // Mollie vrea string "520.00"
       },
-      description: `Comanda #${orderId} - Pachet Mic Dejun Start Activ`,
+      description: `Pachet Mic Dejun Start Activ`,
       
       // URL unde se întoarce clientul după plată (Success page)
       redirectUrl: `${process.env.NEXT_PUBLIC_BASE_URL}/thank-you/${orderId}`,
