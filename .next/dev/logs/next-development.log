@@ -650,3 +650,18 @@ Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
 [03:01:09.527] Browser WARN    Image with src "/protein.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
 [03:01:09.527] Browser WARN    Image with src "/formula1s.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
 [03:01:09.527] Browser WARN    Image with src "/formula1s.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[03:07:31.158] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[03:07:31.158] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[03:09:15.047] Server  LOG      ✓ Compiled in 94ms
+[03:09:23.659] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[03:09:23.659] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[03:09:33.334] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[03:09:33.334] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[03:09:51.806] Server  LOG      ✓ Compiled in 82ms
+[03:09:54.690] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[03:09:54.690] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[03:10:09.439] Server  LOG      ✓ Compiled in 56ms
+[03:10:16.423] Server  LOG      ✓ Compiled in 87ms
+[03:10:22.124] Server  LOG      ✓ Compiled in 45ms
+[03:10:29.441] Server  LOG      ✓ Compiled in 46ms
+[03:10:31.512] Server  LOG      ✓ Compiled in 55ms

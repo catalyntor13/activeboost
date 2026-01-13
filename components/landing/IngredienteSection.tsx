@@ -111,7 +111,7 @@ const IngredienteSection = () => {
                      
                     </button>
                   </DialogTrigger>
-                  <DialogContent className="rounded-[2.5rem]">
+                  <DialogContent className="max-w-[95vw] md:max-w-2xl rounded-[2rem] md:rounded-[2.5rem] max-h-[90vh] overflow-y-auto p-6 md:p-10">
                     <DialogHeader>
                       <DialogTitle className="text-2xl font-black italic">Ingrediente Formula 1 (Denumiri Comerciale)</DialogTitle>
                     </DialogHeader>
