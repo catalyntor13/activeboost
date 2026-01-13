@@ -306,10 +306,18 @@ const Footer = ()=>{
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "font-normal",
-                                children: "Copyright © IDTORO S.R.L. | Active Boost"
+                                children: "Copyright © Active Boost"
                             }, void 0, false, {
                                 fileName: "[project]/components/landing/Footer.tsx",
                                 lineNumber: 17,
+                                columnNumber: 11
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "font-medium",
+                                children: "BUZATU N. ROBERT-NICOLAE PFA"
+                            }, void 0, false, {
+                                fileName: "[project]/components/landing/Footer.tsx",
+                                lineNumber: 18,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -319,27 +327,10 @@ const Footer = ()=>{
                                         children: "CUI:"
                                     }, void 0, false, {
                                         fileName: "[project]/components/landing/Footer.tsx",
-                                        lineNumber: 18,
+                                        lineNumber: 19,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)),
-                                    " RO51431636"
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/components/landing/Footer.tsx",
-                                lineNumber: 18,
-                                columnNumber: 11
-                            }, ("TURBOPACK compile-time value", void 0)),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "font-normal",
-                                        children: "Nr. Reg. Com.:"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/landing/Footer.tsx",
-                                        lineNumber: 19,
-                                        columnNumber: 14
-                                    }, ("TURBOPACK compile-time value", void 0)),
-                                    " J2024051439004"
+                                    " 31933883"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/landing/Footer.tsx",
@@ -347,7 +338,7 @@ const Footer = ()=>{
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                children: "Bld. Dem Radulescu 15"
+                                children: "Strada Henri Coanda 35"
                             }, void 0, false, {
                                 fileName: "[project]/components/landing/Footer.tsx",
                                 lineNumber: 20,
@@ -396,7 +387,7 @@ const Footer = ()=>{
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: "ml-1",
-                                        children: "0748904680"
+                                        children: "0754916858"
                                     }, void 0, false, {
                                         fileName: "[project]/components/landing/Footer.tsx",
                                         lineNumber: 23,

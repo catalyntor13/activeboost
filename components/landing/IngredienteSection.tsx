@@ -2,7 +2,14 @@
 
 
 import { Card, CardContent } from "@/components/ui/card"
-import { Check, Zap } from "lucide-react"
+import { Check, Zap, CircleArrowRight } from "lucide-react"
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 import Image from "next/image"
 
 
@@ -87,9 +94,58 @@ const IngredienteSection = () => {
                  
                 </div>
             </div>
+   
 
           </div>
+          
         </CardContent>
+        <Dialog>
+                  <DialogTrigger asChild>
+                    <button className="flex items-center cursor-pointer justify-between mx-auto w-4/5 p-5 rounded-[1.5rem] bg-green-200 text-slate-900 hover:bg-green-100 transition-all group/btn">
+                      <div className="flex items-center gap-4">
+                        <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center shadow-sm">
+                          <CircleArrowRight className="w-5 h-5 text-slate-800 group-hover/btn:text-green-500 transition-colors" />
+                        </div>
+                        <span className="text-sm font-bold tracking-wide">Lista Ingrediente</span>
+                      </div>
+                     
+                    </button>
+                  </DialogTrigger>
+                  <DialogContent className="rounded-[2.5rem]">
+                    <DialogHeader>
+                      <DialogTitle className="text-2xl font-black italic">Ingrediente Formula 1 (Denumiri Comerciale)</DialogTitle>
+                    </DialogHeader>
+                    <p className="text-slate-600 font-medium leading-relaxed">
+                     <span className="font-bold">Baza Proteică:</span>  Proteină vegetală de înaltă calitate (Izolat proteic din soia).
+                    </p>
+                    <p className="text-slate-600  font-medium leading-relaxed">
+                    <span className="font-bold">Sursă de Energie:</span>  Carbohidrați cu eliberare controlată (Fructoză naturală).
+                    </p>
+                  
+                    <p className="text-slate-600 font-medium leading-relaxed">
+                    <span className="font-bold">Complex de Fibre:</span>   Amestec optim de fibre prebiotice și digestive (Inulină, fibre din ovăz fără gluten și pudră de semințe de in).
+                    </p>
+                    <p className="text-slate-600  font-medium leading-relaxed">
+                     <span className="font-bold">Mix Esențial de Minerale:</span>  Complex mineral complet (Calciu, Magneziu, Fier, Zinc, Seleniu, Mangan, Crom, Iod, Cupru).
+
+                    </p>
+                    <p className="text-slate-600  font-medium leading-relaxed">
+                     <span className="font-bold">Pachet Multivitaminic (25 de Vitamine):</span>  Vitaminele A, C, D, E, K și întreg grupul de Vitamine B (B1, B2, B6, B12, Niacină, Acid Folic, Biotină, Acid Pantotenic).
+                    </p>
+                    <p className="text-slate-600 font-medium leading-relaxed">
+                    <span className="font-bold">Amestec de Super-Fructe și Plante:</span>  Mix botanic antioxidant (Pudră de Papaya, Rodie, Afine și Pătrunjel).
+                    </p>
+                    <p className="text-slate-600  font-medium leading-relaxed">
+                   <span className="font-bold">Îndulcitor Natural:</span>    Extract pur din frunze de Stevia.
+                    </p>
+                    <p className="text-slate-600 font-medium leading-relaxed">
+                    <span className="font-bold">Textură și Omogenizare:</span>  Lecitină naturală și agenți de îngroșare naturali (Gumă de xantan și guar).
+                    </p>
+                      <p className="text-slate-600 font-medium leading-relaxed">
+               <span className="font-bold">Informații Alergeni:</span> Conține soia și ovăz fără gluten.
+                    </p>
+                  </DialogContent>
+                </Dialog>
       </Card>
 
 
@@ -138,8 +194,55 @@ const IngredienteSection = () => {
                 </div>
             </div>
 
+
           </div>
         </CardContent>
+         <Dialog>
+                  <DialogTrigger asChild>
+                    <button className="flex items-center cursor-pointer justify-between mx-auto w-4/5 p-5 rounded-[1.5rem] bg-green-200 text-slate-900 hover:bg-green-100 transition-all group/btn">
+                      <div className="flex items-center gap-4">
+                        <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center shadow-sm">
+                          <CircleArrowRight className="w-5 h-5 text-slate-800 group-hover/btn:text-green-500 transition-colors" />
+                        </div>
+                        <span className="text-sm font-bold tracking-wide">Lista Ingrediente</span>
+                      </div>
+                     
+                    </button>
+                  </DialogTrigger>
+                  <DialogContent className="rounded-[2.5rem]">
+                    <DialogHeader>
+                      <DialogTitle className="text-2xl font-black italic">Ingrediente Protein Drink Mix (Denumiri Comerciale)</DialogTitle>
+                    </DialogHeader>
+                    <p className="text-slate-600 font-medium leading-relaxed">
+                     <span className="font-bold mr-1.5">Mix Proteic Premium:</span>Combinație de proteine cu absorbție lentă și rapidă (Izolat proteic din soia și cazeinat de calciu din lapte).
+
+                    </p>
+                    <p className="text-slate-600  font-medium leading-relaxed">
+                    <span className="font-bold mr-1.5">Sursă de Energie:</span>Carbohidrați complecși pentru susținerea antrenamentelor (Maltodextrină).
+                    </p>
+                  
+                    <p className="text-slate-600 font-medium leading-relaxed">
+                    <span className="font-bold mr-1.5">Grăsimi Sănătoase:</span>Infuzie de acizi grași din surse vegetale (Ulei de floarea-soarelui).
+                    </p>
+                    <p className="text-slate-600  font-medium leading-relaxed">
+                     <span className="font-bold mr-1.5">Complex de Minerale Esențiale:</span>Amestec echilibrat de electroliți și minerale (Magneziu, Calciu, Potasiu, Zinc, Mangan, Cupru, Iod, Seleniu).
+
+                    </p>
+                    <p className="text-slate-600  font-medium leading-relaxed">
+                     <span className="font-bold mr-1.5">Sursă Vitală de Vitamine:</span>Mix complet de 12 vitamine esențiale (Vitaminele A, C, D3, E și complexul de Vitamine B: B1, B2, B3, B5, B6, B12, Acid Folic și Biotină).
+                    </p>
+                    <p className="text-slate-600 font-medium leading-relaxed">
+                    <span className="font-bold mr-1.5">Textură Fină și Omogenizare:</span>Stabilizatori naturali (Gumă de guar și xantan) și lecitină vegetală pentru o consistență cremoasă.
+                    </p>
+                    <p className="text-slate-600  font-medium leading-relaxed">
+                   <span className="font-bold mr-1.5">Îndulcitor:</span>Sucraloză (pentru un gust excelent fără adaos de zahăr).
+                    </p>
+          
+                      <p className="text-slate-600 font-medium leading-relaxed">
+               <span className="font-bold mr-1.5">Informații Alergeni:</span>Conține soia și ovăz fără gluten.
+                    </p>
+                  </DialogContent>
+                </Dialog>
       </Card>
 
     </div>

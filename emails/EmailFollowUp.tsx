@@ -19,7 +19,7 @@ export interface EmailFollowUpProps {
  
 }
 
-const LOGO_URL = 'https://www.activeboost.ro/activeboost.png'; 
+const LOGO_URL = 'https://www.activeboost.ro/logo.png'; 
 
 export const EmailFollowUp: React.FC<EmailFollowUpProps> = ({ customer_firstName }) => {
 
@@ -62,28 +62,7 @@ Ai apucat să răsfoiești ghidul? Ai încercat vreun hack la ultima masă?</Tex
 
 
 
- {/* Secțiunea P.S. (Lista de Așteptare) */}
-            <Section className="mt-10 pt-6 border-t border-gray-300">
-              <Heading as="h2" className="text-xl font-semibold text-black mx-5">
-               P.S.: Încă o șansă pentru dimineți liniștite... ⏰
-              </Heading>
-              <Text className="text-base leading-6 mx-2">
-                În caz că ți-a scăpat în primul email sau în ghid: dacă te lupți în continuare cu diminețile haotice și simți că nu ai timp să-ți prepari un mic dejun corect (ajungând tot la patiserie), am soluția pregătită.
-              </Text>
-              <Text className="text-base leading-6 mx-2">
-                Înscrie-te pe lista de așteptare pentru programul "Start Activ" – soluția de nutriție gata în 2 minute, concepută special pentru oamenii ocupați..
-              </Text>
 
-              <Text className="text-base leading-6 mx-2">
-               Vei primi prioritate și o ofertă specială la lansare.
-              </Text>
-              <Button
-                className="bg-gray-800 text-white font-semibold py-3 px-6 rounded-md mt-4 text-center m-5"
-              
-              >
-                DA, Vreau să mă înscriu pe Lista de Așteptare!
-              </Button>
-            </Section>
 
                  </Container>
 

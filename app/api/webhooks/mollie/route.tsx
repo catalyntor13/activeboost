@@ -41,6 +41,7 @@ export async function POST(req: Request) {
       numeClient: order.customer_name,
       emailClient: order.customer_email,
       adresaClient: order.customer_address,
+      telefonClient: order.customer_phone,
       amount: `${payment.amount.value} RON`,
       produs: "Pachet Mic Dejun Start Activ"
     };

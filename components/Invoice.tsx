@@ -35,6 +35,7 @@ interface InvoiceProps {
   numeClient: string;
   emailClient: string;
   adresaClient: string;
+  telefonClient: string;
   amount: string; 
   produs: string;
 }
@@ -48,7 +49,7 @@ const SELLER_INFO = {
   telefon: "0748904680"
 };
 
-export const InvoicePDF = ({ orderId, date, numeClient, emailClient, adresaClient, amount, produs }: InvoiceProps) => (
+export const InvoicePDF = ({ orderId, date, numeClient, emailClient, adresaClient, telefonClient, amount, produs }: InvoiceProps) => (
   <Document>
     <Page size="A4" style={styles.page}>
       
@@ -82,7 +83,8 @@ export const InvoicePDF = ({ orderId, date, numeClient, emailClient, adresaClien
           <Text style={styles.label}>CLIENT:</Text>
           <Text style={styles.value}>{numeClient}</Text>
           <Text style={styles.value}>{emailClient}</Text>
-           <Text style={styles.value}>{adresaClient}</Text>
+          <Text style={styles.value}>{adresaClient}</Text>
+          <Text style={styles.value}>{telefonClient}</Text>
         </View>
       </View>
 

@@ -14,13 +14,13 @@ const Footer = () => {
          </div>
 
          <div className="flex flex-col lg:text-sm text-[12px] font-light justify-center items-center text-center font-opensans ">
-          <p className="font-normal">Copyright © IDTORO S.R.L. | Active Boost</p>
-          <p ><span className="font-semibold">CUI:</span> RO51431636</p>
-          <p><span className="font-normal">Nr. Reg. Com.:</span> J2024051439004</p>
-          <p>Bld. Dem Radulescu 15</p>
+          <p className="font-normal">Copyright © Active Boost</p>
+          <p className="font-medium">BUZATU N. ROBERT-NICOLAE PFA</p>
+          <p ><span className="font-semibold">CUI:</span> 31933883</p>
+          <p>Strada Henri Coanda 35</p>
           <p>Mun. Ramnicu Valcea, Județ Valcea, România</p>
           <p><span className="font-normal">Email:</span><span className="ml-1">activeboostfitclub@gmail.com</span></p>
-          <p><span className="font-normal">Telefon:</span><span className="ml-1">0748904680</span></p>
+          <p><span className="font-normal">Telefon:</span><span className="ml-1">0754916858</span></p>
          </div>
           <div className="flex items-center gap-5 justify-center mx-auto">
         <span>

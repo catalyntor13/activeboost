@@ -2332,6 +2332,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/card.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/check.js [app-client] (ecmascript) <export default as Check>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/zap.js [app-client] (ecmascript) <export default as Zap>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$info$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Info$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/info.js [app-client] (ecmascript) <export default as Info>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/chevron-right.js [app-client] (ecmascript) <export default as ChevronRight>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
 "use client";
 ;
@@ -2557,6 +2559,99 @@ const IngredienteSection = ()=>{
                                                 fileName: "[project]/components/landing/IngredienteSection.tsx",
                                                 lineNumber: 75,
                                                 columnNumber: 13
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Dialog, {
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(DialogTrigger, {
+                                                        asChild: true,
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                            className: "flex items-center justify-between w-full p-5 rounded-[1.5rem] bg-slate-100 text-slate-900 hover:bg-slate-200 transition-all group/btn",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "flex items-center gap-4",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                            className: "w-10 h-10 rounded-xl bg-white flex items-center justify-center shadow-sm",
+                                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$info$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Info$3e$__["Info"], {
+                                                                                className: "w-5 h-5 text-slate-400 group-hover/btn:text-blue-500 transition-colors"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/components/landing/IngredienteSection.tsx",
+                                                                                lineNumber: 95,
+                                                                                columnNumber: 27
+                                                                            }, ("TURBOPACK compile-time value", void 0))
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/components/landing/IngredienteSection.tsx",
+                                                                            lineNumber: 94,
+                                                                            columnNumber: 25
+                                                                        }, ("TURBOPACK compile-time value", void 0)),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "text-sm font-bold tracking-wide",
+                                                                            children: "Informații Produs"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/components/landing/IngredienteSection.tsx",
+                                                                            lineNumber: 97,
+                                                                            columnNumber: 25
+                                                                        }, ("TURBOPACK compile-time value", void 0))
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/components/landing/IngredienteSection.tsx",
+                                                                    lineNumber: 93,
+                                                                    columnNumber: 23
+                                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
+                                                                    className: "w-5 h-5 text-slate-300 group-hover/btn:translate-x-1 transition-transform"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/components/landing/IngredienteSection.tsx",
+                                                                    lineNumber: 99,
+                                                                    columnNumber: 23
+                                                                }, ("TURBOPACK compile-time value", void 0))
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/components/landing/IngredienteSection.tsx",
+                                                            lineNumber: 92,
+                                                            columnNumber: 21
+                                                        }, ("TURBOPACK compile-time value", void 0))
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/landing/IngredienteSection.tsx",
+                                                        lineNumber: 91,
+                                                        columnNumber: 19
+                                                    }, ("TURBOPACK compile-time value", void 0)),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(DialogContent, {
+                                                        className: "rounded-[2.5rem]",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(DialogHeader, {
+                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(DialogTitle, {
+                                                                    className: "text-2xl font-black italic",
+                                                                    children: "Protein Drink Mix - Detalii"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/components/landing/IngredienteSection.tsx",
+                                                                    lineNumber: 104,
+                                                                    columnNumber: 23
+                                                                }, ("TURBOPACK compile-time value", void 0))
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/landing/IngredienteSection.tsx",
+                                                                lineNumber: 103,
+                                                                columnNumber: 21
+                                                            }, ("TURBOPACK compile-time value", void 0)),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                className: "text-slate-600 p-4 font-medium leading-relaxed",
+                                                                children: "Aici poți pune lista de ingrediente specifică pentru al doilea produs, urmând aceeași structură ca la primul card."
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/landing/IngredienteSection.tsx",
+                                                                lineNumber: 106,
+                                                                columnNumber: 21
+                                                            }, ("TURBOPACK compile-time value", void 0))
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/components/landing/IngredienteSection.tsx",
+                                                        lineNumber: 102,
+                                                        columnNumber: 19
+                                                    }, ("TURBOPACK compile-time value", void 0))
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/components/landing/IngredienteSection.tsx",
+                                                lineNumber: 90,
+                                                columnNumber: 4
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
@@ -2595,7 +2690,7 @@ const IngredienteSection = ()=>{
                                                                         children: "💪"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/landing/IngredienteSection.tsx",
-                                                                        lineNumber: 105,
+                                                                        lineNumber: 126,
                                                                         columnNumber: 20
                                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2603,13 +2698,13 @@ const IngredienteSection = ()=>{
                                                                         children: "Performanță"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/landing/IngredienteSection.tsx",
-                                                                        lineNumber: 106,
+                                                                        lineNumber: 127,
                                                                         columnNumber: 20
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/components/landing/IngredienteSection.tsx",
-                                                                lineNumber: 104,
+                                                                lineNumber: 125,
                                                                 columnNumber: 17
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -2617,7 +2712,7 @@ const IngredienteSection = ()=>{
                                                                 children: "Protein Drink Mix"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/landing/IngredienteSection.tsx",
-                                                                lineNumber: 108,
+                                                                lineNumber: 129,
                                                                 columnNumber: 17
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2625,13 +2720,13 @@ const IngredienteSection = ()=>{
                                                                 children: "Supliment Proteic Avansat"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/landing/IngredienteSection.tsx",
-                                                                lineNumber: 109,
+                                                                lineNumber: 130,
                                                                 columnNumber: 17
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/landing/IngredienteSection.tsx",
-                                                        lineNumber: 103,
+                                                        lineNumber: 124,
                                                         columnNumber: 15
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -2645,12 +2740,12 @@ const IngredienteSection = ()=>{
                                                                             className: "w-3 h-3 text-blue-600"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/landing/IngredienteSection.tsx",
-                                                                            lineNumber: 116,
+                                                                            lineNumber: 137,
                                                                             columnNumber: 23
                                                                         }, ("TURBOPACK compile-time value", void 0))
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/landing/IngredienteSection.tsx",
-                                                                        lineNumber: 115,
+                                                                        lineNumber: 136,
                                                                         columnNumber: 22
                                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2658,24 +2753,24 @@ const IngredienteSection = ()=>{
                                                                         children: protein.title
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/landing/IngredienteSection.tsx",
-                                                                        lineNumber: 118,
+                                                                        lineNumber: 139,
                                                                         columnNumber: 21
                                                                     }, ("TURBOPACK compile-time value", void 0))
                                                                 ]
                                                             }, protein.id, true, {
                                                                 fileName: "[project]/components/landing/IngredienteSection.tsx",
-                                                                lineNumber: 114,
+                                                                lineNumber: 135,
                                                                 columnNumber: 19
                                                             }, ("TURBOPACK compile-time value", void 0)))
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/landing/IngredienteSection.tsx",
-                                                        lineNumber: 112,
+                                                        lineNumber: 133,
                                                         columnNumber: 15
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/landing/IngredienteSection.tsx",
-                                                lineNumber: 102,
+                                                lineNumber: 123,
                                                 columnNumber: 13
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2689,33 +2784,33 @@ const IngredienteSection = ()=>{
                                                         className: "object-cover transition-transform duration-700 group-hover:scale-105 "
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/landing/IngredienteSection.tsx",
-                                                        lineNumber: 131,
+                                                        lineNumber: 152,
                                                         columnNumber: 17
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/landing/IngredienteSection.tsx",
-                                                    lineNumber: 130,
+                                                    lineNumber: 151,
                                                     columnNumber: 17
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             }, void 0, false, {
                                                 fileName: "[project]/components/landing/IngredienteSection.tsx",
-                                                lineNumber: 125,
+                                                lineNumber: 146,
                                                 columnNumber: 16
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/landing/IngredienteSection.tsx",
-                                        lineNumber: 99,
+                                        lineNumber: 120,
                                         columnNumber: 11
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/components/landing/IngredienteSection.tsx",
-                                    lineNumber: 98,
+                                    lineNumber: 119,
                                     columnNumber: 9
                                 }, ("TURBOPACK compile-time value", void 0))
                             }, void 0, false, {
                                 fileName: "[project]/components/landing/IngredienteSection.tsx",
-                                lineNumber: 97,
+                                lineNumber: 118,
                                 columnNumber: 7
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
