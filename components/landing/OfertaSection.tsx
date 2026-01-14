@@ -7,7 +7,7 @@ import Link from "next/link"
 
 const OfertaSection = () => {
   return (
-    <section className="py-16 lg:py-24 bg-secondary/20 overflow-hidden">
+    <section id="oferta" className="py-16 lg:py-24 bg-secondary/20 overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Main Card Container - Split Layout on Desktop */}
