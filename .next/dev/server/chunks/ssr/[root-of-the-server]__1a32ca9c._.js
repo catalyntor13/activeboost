@@ -202,36 +202,49 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$vercel$2f$
 ;
 ;
 const metadata = {
-    title: 'Ghid "10 Hack-uri" pentru Glicemie Stabilă - Scapă de Pofte și Oboseală | Active Boost',
-    description: "Descoperă 10 hack-uri simple bazate pe știință pentru a-ți stabiliza glicemia, a scăpa de pofta de dulce și a-ți recâștiga energia. Începe transformarea ta azi!",
+    title: 'Start Activ - Micul Dejun Nutritiv la doar 215 Calorii | Active Boost',
+    description: "Descoperă Start Activ: Micul dejun gustos și super nutritiv, bogat în proteine, fibre, vitamine și minerale. Tot ce are nevoie corpul tău într-o singură masă delicioasă in doar 215 calorii. Optimizează-ți sănătatea de la prima oră. Află mai multe!",
     keywords: [
-        "Stabilizarea glicemie",
-        "Controlul glicemiei",
-        "Scăderea glicemiei",
-        "Hack-uri glicemie",
-        "Echilibrare glicemică",
-        "Ghid glicemie stabilă",
-        "eBook nutriție",
-        "Dieta Slabire",
-        "Nutritie",
-        "Welness"
+        "Active Boost Romania",
+        "Start Activ mic dejun",
+        "Protocol Start Activ",
+        "Produse Active Boost",
+        "mic dejun nutritiv",
+        "shake proteic slabit",
+        "inlocuitor de masa sanatos",
+        "mic dejun bogat in proteine si fibre",
+        "suplimente vitamine si minerale mic dejun",
+        "Welness",
+        "shake nutritiv 200 calorii",
+        "ce sa mananci la micul dejun ca sa ai energie",
+        "mic dejun rapid pentru oameni ocupati",
+        "cum sa slabesti fara sa iti fie foame dimineata",
+        "mic dejun pentru energie si concentrare",
+        "cel mai bun shake proteic pentru digestie",
+        "mic dejun fara zahar adaugat",
+        "cum sa controlezi glicemia la micul dejun",
+        "optimizare metabolica mic dejun",
+        "biohacking romania nutritie",
+        "hrana pentru creier dimineata",
+        "longevitate prin nutritie",
+        "sanatatea microbiomului mic dejun"
     ],
     authors: [
         {
-            name: "Activeboost"
+            name: "Active Boost"
         }
     ],
     openGraph: {
-        title: "Ghid 10 Hack-uri pentru Glicemie Stabilă",
-        description: "Descoperă 10 hack-uri simple bazate pe știință pentru a-ți stabiliza glicemia, a scăpa de pofta de dulce și a-ți recâștiga energia. Începe transformarea ta azi",
-        url: "https://www.activeboost.roo/",
-        siteName: "ActiveBoost",
+        title: "Start Activ - Micul Dejun Nutritiv la doar 215 Calorii | Active Boost",
+        description: "Descoperă Start Activ: Micul dejun gustos și super nutritiv, bogat în proteine, fibre, vitamine și minerale. Tot ce are nevoie corpul tău într-o singură masă delicioasă in doar 215 calorii. Optimizează-ți sănătatea de la prima oră. Află mai multe!",
+        url: "https://www.activeboost.ro/",
+        siteName: "Active Boost",
         images: [
             {
-                url: "https://www.activeboost.ro/activeboost.png",
+                url: "https://www.activeboost.ro/logo.png",
                 width: 1200,
                 height: 630,
-                alt: "ActiveBoost"
+                alt: "Active Boost"
             }
         ],
         locale: "ro_RO",
