@@ -1,3 +1,4 @@
 {
+  "/cacat/page": "app/cacat/page.js",
   "/page": "app/page.js"
 }
