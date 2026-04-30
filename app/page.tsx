@@ -1,26 +1,21 @@
-import Header from "@/components/landing/Header";
-import HeroSection from "@/components/landing/HeroSection";
-import BeneficiiSection from "@/components/landing/BeneficiiSection";
-import CumSeIntegreaza from "@/components/landing/CumSeIntegreaza";
-import FaqSection from "@/components/landing/FaqSection";
-import IngredienteSection from "@/components/landing/IngredienteSection";
-import OfertaSection from "@/components/landing/OfertaSection";
-import Footer from "../components/landing/Footer";
-
+import BeneficiiSection from "@/components/landing/Beneficii";
+import CTASection from "@/components/landing/CTA";
+import CuriculumPage from "@/components/landing/Curiculum";
+import Footer from "@/components/landing/Footer";
+import HeroPage from "@/components/landing/Hero";
+import PovestePage from "@/components/landing/Poveste";
 
  
 
 export default function Home() {
 
   return (
-    <div className="min-h-screen bg-background font-jakarta">
-       <Header/>
-      <HeroSection/>
-      <BeneficiiSection/>
-      <IngredienteSection/>
-      <CumSeIntegreaza/>
-      <OfertaSection/>
-      <FaqSection/>
+    <div className="min-h-screen bg-[#0f0f0f] text-gray-200 font-jakarta">
+      <HeroPage />
+      <BeneficiiSection />
+      <CuriculumPage />
+      <PovestePage />
+      <CTASection />
       <Footer/>
     </div>
   );
