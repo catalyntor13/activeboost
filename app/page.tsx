@@ -10,7 +10,7 @@ import PovestePage from "@/components/landing/Poveste";
 export default function Home() {
 
   return (
-    <div className="min-h-screen bg-[#0f0f0f] text-gray-200 font-jakarta">
+    <div className="min-h-screen bg-white text-gray-200 font-jakarta">
       <HeroPage />
       <BeneficiiSection />
       <CuriculumPage />

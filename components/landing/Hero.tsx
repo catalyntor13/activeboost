@@ -11,19 +11,19 @@ export default function HeroPage() {
       <section className="relative pt-20 pb-32 px-6 text-center">
         <div className="max-w-4xl mx-auto">
           <Image src="/logo.png" alt="Active Boost Logo" width={200} height={180} className="mx-auto " />
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight leading-[1.1]">
+          <h1 className="text-5xl md:text-7xl font-bold text-slate-800 mb-6 tracking-tight leading-[1.1]">
             10 Hack-uri pentru o <br />
             <span className="text-[#7dc142]">Glicemie Stabilă</span> 
           </h1>
-          <p className="text-xl md:text-2xl text-gray-400 mb-8 font-light italic">
+          <p className="text-xl md:text-2xl text-gray-700 mb-8 font-semibold italic">
             Energie constantă · Pofte controlate · Greutate echilibrată
           </p>
-          <p className="text-lg text-gray-200 max-w-2xl mx-auto mb-10">
+          <p className="text-lg text-gray-500 max-w-2xl mx-auto mb-10">
             Descoperă strategiile validate științific care îți stabilizează glicemia și îți transformă energia zilnică — fără diete restrictive.
           </p>
 
           {/* BOX BONUS: Evidențierea valorii adăugate gratuite[cite: 1] */}
-          <div className="bg-[#1a2e0d] border border-[#2d4a1a] p-4 rounded-xl max-w-lg mx-auto mb-10 flex items-center gap-4 text-left">
+          <div className="bg-slate-950 border border-[#2d4a1a] p-4 rounded-xl max-w-lg mx-auto mb-10 flex items-center gap-4 text-left">
             <div className="bg-[#7dc142] p-2 rounded-lg text-[#0a1a02]"><Droplets size={24} /></div>
             <div>
               <p className="text-[#7dc142] text-xs font-bold uppercase">Bonus gratuit inclus</p>

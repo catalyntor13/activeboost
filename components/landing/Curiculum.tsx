@@ -11,7 +11,7 @@ export default function CuriculumPage() {
         <div className="max-w-3xl mx-auto">
           <div className="mb-12">
             <p className="text-[#7dc142] font-bold text-xs uppercase tracking-widest mb-2">Curriculum</p>
-            <h2 className="text-3xl font-bold text-white uppercase tracking-tighter">Ce vei învăța din ghid</h2>
+            <h2 className="text-3xl font-bold text-slate-900 uppercase tracking-tighter">Ce vei învăța din ghid</h2>
           </div>
 
           <div className="space-y-4">
@@ -33,7 +33,7 @@ export default function CuriculumPage() {
                 <div className="bg-[#1a2e0d] p-1 rounded-full border border-[#7dc142]/30">
                   <CheckCircle2 size={18} className="text-[#7dc142]" />
                 </div>
-                <span className="text-gray-300 font-medium">{text}</span>
+                <span className="text-slate-800 font-medium">{text}</span>
               </motion.div>
             ))}
           </div>

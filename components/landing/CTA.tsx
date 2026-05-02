@@ -11,7 +11,7 @@ export default function CTASection() {
         <div className="max-w-2xl mx-auto">
           <motion.div 
             whileInView={{ scale: [0.95, 1] }}
-            className="bg-[#1a2e0d] border border-[#2d4a1a] p-6 rounded-2xl mb-12 inline-block"
+            className="bg-slate-950 border border-[#2d4a1a] p-6 rounded-2xl mb-12 inline-block"
           >
             <p className="text-[#7dc142] text-sm font-bold uppercase mb-2">Ofertă Limitată</p>
             <h4 className="text-white text-xl font-bold mb-1">Ghid Glicemie + Bonus Hidratare</h4>
@@ -21,7 +21,7 @@ export default function CTASection() {
             </div>
           </motion.div>
           
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-8 tracking-tighter uppercase">
+          <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-8 tracking-tighter uppercase">
             Ești gata să îți recapeți <br /> controlul asupra energiei?
           </h2>
           
@@ -29,7 +29,7 @@ export default function CTASection() {
             VREAU GHIDUL PDF <ArrowRight className="inline ml-2 group-hover:translate-x-1 transition-transform" />
           </Button>
           
-          <p className="mt-8 text-gray-500 text-sm italic">
+          <p className="mt-8 text-gray-600 text-sm italic">
             *Plată securizată. Link-ul de download vine instant pe email.
           </p>
         </div>
