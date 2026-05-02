@@ -429,7 +429,7 @@ function CuriculumPage() {
                                 transition: {
                                     delay: i * 0.1
                                 },
-                                className: "flex items-center gap-4 p-4 rounded-xl border border-white/5 bg-white/[0.02]",
+                                className: "flex items-center gap-4 p-4 rounded-xl border border-white/5 bg-white/[0.02] shadow-md",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "bg-[#1a2e0d] p-1 rounded-full border border-[#7dc142]/30",

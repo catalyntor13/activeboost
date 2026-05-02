@@ -28,7 +28,7 @@ export default function CuriculumPage() {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ delay: i * 0.1 }}
                 key={i} 
-                className="flex items-center gap-4 p-4 rounded-xl border border-white/5 bg-white/[0.02]"
+                className="flex items-center gap-4 p-4 rounded-xl border border-white/5 bg-white/[0.02] shadow-md"
               >
                 <div className="bg-[#1a2e0d] p-1 rounded-full border border-[#7dc142]/30">
                   <CheckCircle2 size={18} className="text-[#7dc142]" />
