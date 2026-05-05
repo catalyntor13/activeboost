@@ -4,11 +4,11 @@
   "static/chunks/node_modules_motion-dom_dist_es_da948acf._.js",
   "static/chunks/node_modules_framer-motion_dist_es_b71551f1._.js",
   "static/chunks/node_modules_tailwind-merge_dist_bundle-mjs_mjs_56b6fd65._.js",
-  "static/chunks/node_modules_next_a62874fb._.js",
+  "static/chunks/node_modules_next_6c83ff1a._.js",
   "static/chunks/node_modules_react-icons_fa_index_mjs_0459ff00._.js",
   "static/chunks/node_modules_react-icons_lib_844c6c50._.js",
   "static/chunks/node_modules_d853ff57._.js",
-  "static/chunks/_a7697018._.js"
+  "static/chunks/_b4297f9e._.js"
 ],
     source: "dynamic"
 });

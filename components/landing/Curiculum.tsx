@@ -10,8 +10,8 @@ export default function CuriculumPage() {
      <section className="py-24 px-6">
         <div className="max-w-3xl mx-auto">
           <div className="mb-12">
-            <p className="text-[#7dc142] font-bold text-xs uppercase tracking-widest mb-2">Curriculum</p>
-            <h2 className="text-3xl font-bold text-slate-900 uppercase tracking-tighter">Ce vei învăța din ghid</h2>
+            <p className="text-[#7dc142] font-bold text-xs text-center lg:text-start uppercase tracking-widest mb-2">Curriculum</p>
+            <h2 className="text-3xl font-bold text-center lg:text-start text-slate-900 uppercase tracking-tighter">Ce vei învăța din ghid</h2>
           </div>
 
           <div className="space-y-4">

@@ -1,14 +1,15 @@
 "use client"
 
-import { Download, Droplets } from "lucide-react"
+import { Download, Droplets, } from "lucide-react"
 import { Button } from "../ui/button"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function HeroPage() {
     return (
         <>
         {/* SECTIUNEA HERO: Titlu, Subtitlu și Primul Call to Action */}
-      <section className="relative max-w-7xl flex flex-col-reverse lg:flex-row justify-center mx-auto gap-16 py-16">
+      <section className="relative max-w-7xl flex flex-col-reverse lg:flex-row justify-center mx-auto gap-16 py-16 px-6 lg:px-0 ">
         <div className="max-w-5xl my-auto">
           <Image src="/ebook.jpeg" alt="Hero Background" width={500} height={100} className="rounded-lg shadow-lg object-cover w-full h-auto" />
         </div>
@@ -36,7 +37,9 @@ export default function HeroPage() {
               <span className="text-gray-500 line-through text-lg">198 lei</span>
               <span className="text-[#7dc142] text-4xl font-bold ">99 lei</span> 
             </div>
+            <Link href="/checkout" className="group inline-block">
             <Button variant='destructive' className="bg-[#7dc142] cursor-pointer text-[#0a1a02] hover:bg-[#8ee04b] shadow-[0_0_20px_rgba(125,193,66,0.3)] text-xl  p-8 font-bold w-full lg:w-sm">VREAU AMBELE GHIDURI ACUM</Button>
+            </Link>
             <p className="text-[10px] flex items-center gap-2 text-gray-500 uppercase tracking-widest tracking-tighter">
               <Download className="inline mr-1" size={12} />  Acces imediat PDF • Descarcă pe orice dispozitiv 
             </p>

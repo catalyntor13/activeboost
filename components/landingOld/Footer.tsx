@@ -3,21 +3,21 @@ import Link from "next/link"
 
 const Footer = () => {
   return (
-    <div className='lg:w-5xl w-xs sm:w-2xl mx-auto '>
-    
-       
- 
 
-       <div className="grid lg:grid-cols-3 grid-cols-1 lg:justify-items-start justify-items-center gap-4 space-y-5 mb-15 mt:0 lg:mt-15 lg:mb-0">
+
+    <>
+    <section className="bg-slate-950 p-2">
+    <footer className="lg:w-5xl w-xs sm:w-2xl mx-auto ">
+     <div className="grid lg:grid-cols-3 grid-cols-1 lg:justify-items-start justify-items-center gap-4 space-y-5 mb-15 mt:0 lg:mt-15 lg:mb-0">
          <div>
           <Image src='/logo.png' alt="Activeboost" width={150} height={150}  />
          </div>
 
          <div className="flex flex-col lg:text-sm text-[12px] font-light justify-center items-center text-center font-opensans ">
-          <p className="font-normal">Copyright © Active Boost</p>
-          <p className="font-medium">BUZATU N. ROBERT-NICOLAE PFA</p>
-          <p ><span className="font-semibold">CUI:</span> 31933883</p>
-          <p>Strada Henri Coanda 35</p>
+          <p className="font-normal ">Copyright © Active Boost</p>
+          <p className="font-medium">IDTORO SRL</p>
+          <p ><span className="font-semibold">CUI:</span> 51081026</p>
+          <p>Blv Dem Radulescu, Nr.15, Bl. X2, Sc A, Et 5, Ap 37</p>
           <p>Mun. Ramnicu Valcea, Județ Valcea, România</p>
           <p><span className="font-normal">Email:</span><span className="ml-1">activeboostfitclub@gmail.com</span></p>
           <p><span className="font-normal">Telefon:</span><span className="ml-1">0754916858</span></p>
@@ -72,19 +72,29 @@ const Footer = () => {
         
         <div className="flex">
        <div className="mx-auto space-x-2 my-5">
-         <Link className="w-full text-[9px] lg:text-base uppercase font-bold text-blue-500" target="_blank" 
+         <Link className="w-full text-[9px] lg:text-base uppercase font-bold text-[#7dc142]" target="_blank" 
   rel="noopener noreferrer" href='/politica_de_confidentialitate'>Politica de Confidentialitate</Link>
          <strong className="text-[9px] lg:text-base">|</strong>
-         <Link className="w-full text-[9px] lg:text-base flex-2 uppercase font-bold text-blue-500" target="_blank" 
+         <Link className="w-full text-[9px] lg:text-base flex-2 uppercase font-bold text-[#7dc142]" target="_blank" 
   rel="noopener noreferrer" href='/termeni_si_conditii'>Termeni si conditii</Link>
        </div>
 </div>
-       <div className="lg:w-xl mx-auto my-2">
+       <div className="lg:w-xl mx-auto pb-5">
         <p className="text-[11px] text-center">Acest site nu este parte a website-ului Facebook™ sau a companiei Meta Platforms, Inc. În plus, acest site NU este susținut sau aprobat de Meta în niciun fel. FACEBOOK™ este o marcă înregistrată a Meta Platforms, Inc.</p>
        </div>
 
+    </footer>
+    </section>
+    </>
+    
+    
+       
+ 
+
       
-    </div>
+
+      
+ 
   )
 }
 

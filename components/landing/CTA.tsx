@@ -3,6 +3,7 @@
 import { ArrowRight, Download } from "lucide-react"
 import { motion } from "framer-motion"
 import { Button } from "../ui/button"
+import Link from "next/link"
 
 export default function CTASection() {
     return (
@@ -25,12 +26,13 @@ export default function CTASection() {
             Ești gata să îți recapeți <br /> controlul asupra energiei?
           </h2>
           
+          <Link href="/checkout" className="group inline-block">
           <Button className="bg-[#7dc142] cursor-pointer text-[#0a1a02] hover:bg-[#8ee04b] shadow-[0_0_20px_rgba(125,193,66,0.3)] text-xl  p-8 font-bold w-full lg:w-xs">
             VREAU GHIDUL PDF <ArrowRight className="inline ml-2 group-hover:translate-x-1 transition-transform" />
           </Button>
-          
-          <p className="mt-8 text-gray-600 text-sm italic">
-            *Plată securizată. Link-ul de download vine instant pe email.
+          </Link>
+          <p className="mt-8 text-gray-600 text-sm ">
+           Acces imediat PDF • Descarcă pe orice dispozitiv
           </p>
         </div>
       </section>

@@ -1,256 +1,101 @@
-[00:00:00.834] Server  LOG      ✓ Ready in 627ms
-[00:00:04.055] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:04.181] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:04.181] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:04.181] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:04.181] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1777962801355} /_vercel/insights/view
-[00:07:04.167] Server  LOG      ✓ Compiled in 33ms
-[00:07:10.980] Server  LOG      ✓ Compiled in 23ms
-[00:09:44.380] Server  LOG      ✓ Compiled in 15ms
-[00:09:44.662] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/eboo.jpeg" "received" null
-[00:09:48.316] Server  LOG      ✓ Compiled in 13ms
-[00:09:58.228] Server  LOG      ✓ Compiled in 15ms
-[00:11:49.494] Server  LOG      ✓ Compiled in 16ms
-[00:12:02.791] Server  LOG      ✓ Compiled in 12ms
-[00:22:38.111] Server  LOG      ✓ Compiled in 26ms
-[00:23:58.258] Server  LOG      ✓ Compiled in 41ms
-[00:24:18.637] Server  LOG      ✓ Compiled in 15ms
-[00:24:24.754] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:24:24.873] Browser WARN    Image with src "/ebook.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:00:00.723] Server  LOG      ✓ Ready in 553ms
+[00:02:34.704] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:35.646] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:02:35.646] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:02:35.646] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1777975151831} /_vercel/insights/view
+[00:02:35.646] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:02:35.646] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:24:24.873] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:02:35.646] Browser WARN    Image with src "/ebook.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:24:24.873] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:24:24.873] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:24:24.873] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:24:24.873] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1777964262025} /_vercel/insights/view
-[00:25:05.201] Server  LOG      ✓ Compiled in 15ms
-[00:25:11.761] Server  LOG      ✓ Compiled in 13ms
-[00:25:23.415] Server  LOG      ✓ Compiled in 15ms
-[00:25:29.456] Server  LOG      ✓ Compiled in 14ms
-[00:25:32.189] Server  LOG      ✓ Compiled in 13ms
-[00:25:43.809] Server  LOG      ✓ Compiled in 13ms
-[00:26:24.669] Server  LOG      ✓ Compiled in 18ms
-[00:26:27.182] Server  LOG      ✓ Compiled in 12ms
-[00:26:34.733] Server  LOG      ✓ Compiled in 21ms
-[00:26:45.676] Server  LOG      ✓ Compiled in 12ms
-[00:26:49.541] Server  LOG      ✓ Compiled in 12ms
-[00:27:02.118] Server  LOG      ✓ Compiled in 15ms
-[00:27:02.726] Server  LOG      ✓ Compiled in 13ms
-[00:27:05.003] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:27:05.003] Browser WARN    Image with src "/ebook.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:27:05.003] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:27:05.178] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:27:05.178] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:27:05.178] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:27:05.178] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1777964422328} /_vercel/insights/view
-[00:27:21.030] Server  LOG      ✓ Compiled in 13ms
-[00:27:27.792] Server  LOG      ✓ Compiled in 12ms
-[00:29:15.742] Server  LOG      ✓ Compiled in 12ms
-[00:29:20.486] Server  LOG      ✓ Compiled in 14ms
-[00:29:25.252] Server  LOG      ✓ Compiled in 15ms
-[00:29:33.078] Server  LOG      ✓ Compiled in 19ms
-[00:29:36.558] Server  LOG      ✓ Compiled in 12ms
-[00:29:39.216] Server  LOG      ✓ Compiled in 13ms
-[00:29:51.150] Server  LOG      ✓ Compiled in 27ms
-[00:29:54.559] Server  LOG      ✓ Compiled in 28ms
-[00:30:00.896] Server  LOG      ✓ Compiled in 13ms
-[00:30:15.556] Server  LOG      ✓ Compiled in 12ms
-[00:30:17.099] Server  LOG      ✓ Compiled in 12ms
-[00:30:33.205] Server  LOG      ✓ Compiled in 12ms
-[00:30:36.076] Server  LOG      ✓ Compiled in 12ms
-[00:31:47.860] Server  LOG      ✓ Compiled in 14ms
-[00:32:05.052] Server  LOG      ✓ Compiled in 21ms
-[00:32:12.416] Server  LOG      ✓ Compiled in 19ms
-[00:32:20.026] Server  LOG      ✓ Compiled in 13ms
-[00:32:52.635] Server  LOG      ✓ Compiled in 14ms
-[00:32:57.213] Server  LOG      ✓ Compiled in 12ms
-[00:33:11.580] Server  LOG      ✓ Compiled in 14ms
-[00:34:49.309] Server  LOG      ✓ Compiled in 15ms
-[00:35:07.980] Server  LOG      ✓ Compiled in 15ms
-[00:35:12.006] Server  LOG      ✓ Compiled in 12ms
-[00:35:31.830] Server  LOG      ✓ Compiled in 22ms
-[00:35:37.134] Server  LOG      ✓ Compiled in 11ms
-[00:35:41.472] Server  LOG      ✓ Compiled in 20ms
-[00:35:46.753] Server  LOG      ✓ Compiled in 14ms
-[00:35:52.089] Server  LOG      ✓ Compiled in 12ms
-[00:35:54.679] Server  LOG      ✓ Compiled in 13ms
-[00:35:57.764] Server  LOG      ✓ Compiled in 17ms
-[00:36:04.641] Server  LOG      ✓ Compiled in 12ms
-[00:36:16.037] Server  LOG      ✓ Compiled in 11ms
-[00:37:34.144] Server  LOG      ✓ Compiled in 12ms
-[00:37:36.599] Server  LOG      ✓ Compiled in 16ms
-[00:37:39.243] Server  LOG      ✓ Compiled in 14ms
-[00:37:44.365] Server  LOG      ✓ Compiled in 12ms
-[00:37:47.529] Server  LOG      ✓ Compiled in 12ms
-[00:37:51.064] Server  LOG      ✓ Compiled in 12ms
-[00:37:51.614] Server  LOG      ✓ Compiled in 14ms
-[00:37:55.365] Server  LOG      ✓ Compiled in 12ms
-[00:37:57.171] Server  LOG      ✓ Compiled in 12ms
-[00:38:01.504] Server  LOG      ✓ Compiled in 18ms
-[00:38:02.943] Server  LOG      ✓ Compiled in 14ms
-[00:38:15.679] Server  LOG      ✓ Compiled in 53ms
-[00:39:46.288] Server  LOG      ✓ Compiled in 15ms
-[00:40:11.140] Server  LOG      ✓ Compiled in 29ms
-[00:40:17.533] Server  LOG      ✓ Compiled in 13ms
-[00:40:22.089] Server  LOG      ✓ Compiled in 14ms
-[00:40:27.023] Server  LOG      ✓ Compiled in 14ms
-[00:40:41.773] Server  LOG      ✓ Compiled in 12ms
-[00:40:46.041] Server  LOG      ✓ Compiled in 14ms
-[00:43:41.834] Server  LOG      ✓ Compiled in 50ms
-[00:43:52.752] Server  LOG      ✓ Compiled in 44ms
-[00:44:02.893] Server  LOG      ✓ Compiled in 38ms
-[00:44:19.333] Server  LOG      ✓ Compiled in 12ms
-[00:44:22.957] Server  LOG      ✓ Compiled in 14ms
-[00:44:26.449] Server  LOG      ✓ Compiled in 14ms
-[00:44:37.406] Server  LOG      ✓ Compiled in 13ms
-[00:59:22.711] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:59:22.833] Browser WARN    Image with src "/ebook.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:59:22.833] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:59:22.833] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:59:22.833] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:59:22.833] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1777966359982} /_vercel/insights/view
-[00:59:25.959] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:59:26.084] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:59:26.084] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:59:26.084] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1777966363229} /_vercel/insights/view
-[00:59:31.131] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:00:17.762] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:00:17.883] Browser WARN    Image with src "/ebook.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:00:17.883] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:00:17.883] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:00:17.883] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[01:00:17.883] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1777966415030} /_vercel/insights/view
-[01:03:24.594] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/adrian.jpg" "received" null
-[01:03:48.965] Server  LOG      ✓ Compiled in 14ms
-[01:05:10.206] Server  LOG      ✓ Compiled in 13ms
-[01:05:12.454] Server  LOG      ✓ Compiled in 13ms
-[01:06:58.089] Server  LOG      ✓ Compiled in 34ms
-[01:20:31.400] Server  LOG      ✓ Compiled in 117ms
-[01:20:44.475] Server  LOG      ✓ Compiled in 17ms
-[01:21:00.083] Server  LOG      ✓ Compiled in 14ms
-[01:21:03.361] Server  LOG      ✓ Compiled in 14ms
-[01:21:07.782] Server  LOG      ✓ Compiled in 15ms
-[01:21:10.800] Server  LOG      ✓ Compiled in 21ms
-[01:21:14.345] Server  LOG      ✓ Compiled in 12ms
-[01:21:26.318] Server  LOG      ✓ Compiled in 14ms
-[01:21:45.791] Server  LOG      ✓ Compiled in 21ms
-[01:22:32.723] Server  LOG      ✓ Compiled in 14ms
-[01:22:37.933] Server  LOG      ✓ Compiled in 12ms
-[01:22:41.256] Server  LOG      ✓ Compiled in 18ms
-[01:22:43.644] Server  LOG      ✓ Compiled in 13ms
-[01:22:54.983] Server  LOG      ✓ Compiled in 18ms
-[01:22:55.088] Browser ERROR   ./components/landing/PentruCine.tsx:45:19
-Parsing ecmascript source code failed
-  43 |                 </div>
-  44 |             </div>
-> 45 |         </section>
-     |                   ^
-> 46 |         </>
-     | ^^^^^^^^^
-  47 |     )
-  48 | }
+[00:02:59.735] Browser WARN    Image with src "/litigi.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:02:59.735] Browser WARN    Image with src "/anpc.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:05:03.964] Server  LOG      ✓ Compiled in 25ms
+[00:05:10.194] Server  LOG      ✓ Compiled in 16ms
+[00:05:16.079] Server  LOG      ✓ Compiled in 20ms
+[00:05:19.344] Server  LOG      ✓ Compiled in 14ms
+[00:05:22.861] Server  LOG      ✓ Compiled in 15ms
+[00:05:36.953] Server  LOG      ✓ Compiled in 14ms
+[00:05:43.064] Server  LOG      ✓ Compiled in 13ms
+[00:05:45.937] Server  LOG      ✓ Compiled in 30ms
+[00:05:50.826] Server  LOG      ✓ Compiled in 13ms
+[00:06:19.468] Server  LOG      ✓ Compiled in 15ms
+[00:06:22.169] Server  LOG      ✓ Compiled in 18ms
+[00:06:31.497] Server  LOG      ✓ Compiled in 13ms
+[00:06:42.957] Server  LOG      ✓ Compiled in 14ms
+[00:08:14.606] Server  LOG      ✓ Compiled in 19ms
+[00:08:39.586] Server  LOG      ✓ Compiled in 23ms
+[00:08:50.492] Server  LOG      ✓ Compiled in 20ms
+[00:12:21.308] Server  LOG      ✓ Compiled in 41ms
+[00:12:24.410] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/checkout color: rgb(120, 120, 120) color: inherit {"dp":"/checkout","o":"http://localhost:3000/checkout","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1777975741326} /_vercel/insights/view
+[00:12:24.551] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/checkout_photo.jpeg" "received" null
+[00:12:25.603] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1777975742520} /_vercel/insights/view
+[00:12:48.485] Server  LOG      ✓ Compiled in 28ms
+[00:12:59.807] Server  LOG      ✓ Compiled in 24ms
+[00:12:59.910] Browser ERROR   ./components/landing/Hero.tsx:6:8
+Ecmascript file had an error
+  4 | import { Button } from "../ui/button"
+  5 | import Image from "next/image"
+> 6 | import Link from "next/link"
+    |        ^^^^
+  7 |
+  8 | export default function HeroPage() {
+  9 |     return (
 
-Expected '</', got 'jsx text (
-        )'
+the name `Link` is defined multiple times
 
 Import trace:
   Server Component:
-    ./components/landing/PentruCine.tsx
+    ./components/landing/Hero.tsx
     ./app/page.tsx
-[01:22:56.817] Server  LOG      ✓ Compiled in 20ms
-[01:25:55.445] Server  LOG      ✓ Compiled in 28ms
-[01:27:34.442] Server  LOG      ✓ Compiled in 19ms
-[01:27:37.462] Server  LOG      ✓ Compiled in 11ms
-[01:27:40.449] Server  LOG      ✓ Compiled in 12ms
-[01:27:42.584] Server  LOG      ✓ Compiled in 28ms
-[01:27:48.004] Server  LOG      ✓ Compiled in 12ms
-[01:27:53.983] Server  LOG      ✓ Compiled in 26ms
-[01:27:56.488] Server  LOG      ✓ Compiled in 18ms
-[01:27:58.927] Server  LOG      ✓ Compiled in 12ms
-[01:28:00.462] Server  LOG      ✓ Compiled in 13ms
-[01:28:07.570] Server  LOG      ✓ Compiled in 16ms
-[01:28:08.992] Server  LOG      ✓ Compiled in 14ms
-[01:28:16.981] Server  LOG      ✓ Compiled in 12ms
-[01:28:36.503] Server  LOG      ✓ Compiled in 26ms
-[01:29:18.964] Server  LOG      ✓ Compiled in 14ms
-[01:29:26.324] Server  LOG      ✓ Compiled in 29ms
-[01:29:29.533] Server  LOG      ✓ Compiled in 17ms
-[01:29:36.867] Server  LOG      ✓ Compiled in 13ms
-[01:30:00.497] Server  LOG      ✓ Compiled in 13ms
-[01:30:06.279] Server  LOG      ✓ Compiled in 30ms
-[01:30:21.191] Server  LOG      ✓ Compiled in 12ms
-[01:30:31.419] Server  LOG      ✓ Compiled in 18ms
-[01:30:41.208] Server  LOG      ✓ Compiled in 27ms
-[01:31:11.845] Server  LOG      ✓ Compiled in 28ms
-[01:31:20.389] Server  LOG      ✓ Compiled in 15ms
-[01:31:45.341] Server  LOG      ✓ Compiled in 14ms
-[01:33:35.185] Server  LOG      ✓ Compiled in 16ms
-[01:33:39.484] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:33:39.649] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:33:39.649] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[01:33:39.649] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1777968416824} /_vercel/insights/view
-[01:33:48.959] Server  LOG      ✓ Compiled in 15ms
-[01:34:31.141] Server  LOG      ✓ Compiled in 28ms
-[01:34:52.570] Server  LOG      ✓ Compiled in 13ms
-[01:34:54.911] Server  LOG      ✓ Compiled in 14ms
-[01:35:07.340] Server  LOG      ✓ Compiled in 17ms
-[01:35:11.830] Server  LOG      ✓ Compiled in 19ms
-[01:35:29.279] Server  LOG      ✓ Compiled in 19ms
-[01:35:38.139] Server  LOG      ✓ Compiled in 17ms
-[01:35:42.685] Server  LOG      ✓ Compiled in 16ms
-[01:35:54.655] Server  LOG      ✓ Compiled in 23ms
-[01:36:22.436] Server  LOG      ✓ Compiled in 19ms
-[01:36:31.504] Server  LOG      ✓ Compiled in 15ms
-[01:37:30.138] Server  LOG      ✓ Compiled in 14ms
-[01:37:36.037] Server  LOG      ✓ Compiled in 12ms
-[01:37:41.651] Server  LOG      ✓ Compiled in 18ms
-[01:37:53.654] Server  LOG      ✓ Compiled in 12ms
-[01:38:31.998] Server  LOG      ✓ Compiled in 16ms
-[01:38:38.185] Server  LOG      ✓ Compiled in 19ms
-[01:39:11.239] Server  LOG      ✓ Compiled in 16ms
-[01:39:14.871] Server  LOG      ✓ Compiled in 15ms
-[01:39:20.633] Server  LOG      ✓ Compiled in 18ms
-[01:40:15.904] Server  LOG      ✓ Compiled in 21ms
-[01:40:33.194] Server  LOG      ✓ Compiled in 17ms
-[01:41:19.692] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:43:47.463] Server  LOG      ✓ Compiled in 13ms
-[01:43:47.552] Browser WARN    Image with src "/anpc.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:43:47.552] Browser WARN    Image with src "/litigi.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:44:07.691] Server  LOG      ✓ Compiled in 17ms
-[01:44:14.094] Server  LOG      ✓ Compiled in 14ms
-[01:44:17.645] Server  LOG      ✓ Compiled in 14ms
-[01:44:26.536] Server  LOG      ✓ Compiled in 14ms
-[01:44:27.582] Server  LOG      ✓ Compiled in 15ms
-[01:44:37.460] Server  LOG      ✓ Compiled in 17ms
-[01:44:41.293] Server  LOG      ✓ Compiled in 13ms
-[01:45:27.289] Server  LOG      ✓ Compiled in 13ms
-[01:45:31.945] Server  LOG      ✓ Compiled in 13ms
-[01:45:36.413] Server  LOG      ✓ Compiled in 12ms
-[01:45:38.313] Server  LOG      ✓ Compiled in 13ms
-[01:45:42.332] Server  LOG      ✓ Compiled in 12ms
-[01:45:48.783] Server  LOG      ✓ Compiled in 20ms
-[01:45:55.008] Server  LOG      ✓ Compiled in 21ms
-[01:46:17.654] Server  LOG      ✓ Compiled in 15ms
-[01:46:35.455] Server  LOG      ✓ Compiled in 29ms
-[01:46:39.047] Server  LOG      ✓ Compiled in 27ms
-[01:47:32.053] Server  LOG      ✓ Compiled in 19ms
-[01:47:43.576] Server  LOG      ✓ Compiled in 30ms
-[01:47:48.260] Server  LOG      ✓ Compiled in 30ms
-[01:47:53.689] Server  LOG      ✓ Compiled in 14ms
-[01:47:58.076] Server  LOG      ✓ Compiled in 13ms
-[01:48:02.638] Server  LOG      ✓ Compiled in 33ms
-[01:48:07.900] Server  LOG      ✓ Compiled in 13ms
-[01:48:14.810] Server  LOG      ✓ Compiled in 14ms
-[01:48:22.005] Server  LOG      ✓ Compiled in 13ms
-[01:48:57.418] Server  LOG      ✓ Compiled in 13ms
-[01:49:02.205] Server  LOG      ✓ Compiled in 14ms
-[01:49:07.594] Server  LOG      ✓ Compiled in 13ms
-[01:49:10.464] Server  LOG      ✓ Compiled in 12ms
-[01:49:19.414] Server  LOG      ✓ Compiled in 19ms
-[01:49:22.290] Server  LOG      ✓ Compiled in 25ms
-[01:49:24.222] Server  LOG      ✓ Compiled in 13ms
+[00:13:15.686] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/checkout_photo.jpeg" "received" null
+[00:13:15.770] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/checkout color: rgb(120, 120, 120) color: inherit {"dp":"/checkout","o":"http://localhost:3000/checkout","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1777975792692} /_vercel/insights/view
+[00:13:17.217] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1777975794136} /_vercel/insights/view
+[00:14:08.586] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/checkout_photo.jpeg" "received" null
+[00:14:29.943] Server  LOG      ✓ Compiled in 21ms
+[00:14:35.598] Server  LOG      ✓ Compiled in 39ms
+[00:17:46.391] Server  LOG      ✓ Compiled in 15ms
+[00:17:52.746] Server  LOG      ✓ Compiled in 19ms
+[00:17:58.875] Server  LOG      ✓ Compiled in 14ms
+[00:18:03.554] Server  LOG      ✓ Compiled in 14ms
+[00:18:19.406] Server  LOG      ✓ Compiled in 15ms
+[00:18:22.929] Server  LOG      ✓ Compiled in 12ms
+[00:18:33.349] Server  LOG      ✓ Compiled in 15ms
+[00:18:40.431] Server  LOG      ✓ Compiled in 27ms
+[00:18:55.633] Server  LOG      ✓ Compiled in 20ms
+[00:19:05.546] Server  LOG      ✓ Compiled in 13ms
+[00:19:09.012] Server  LOG      ✓ Compiled in 19ms
+[00:19:13.514] Server  LOG      ✓ Compiled in 15ms
+[00:19:16.659] Server  LOG      ✓ Compiled in 14ms
+[00:19:42.855] Server  LOG      ✓ Compiled in 17ms
+[00:19:50.278] Server  LOG      ✓ Compiled in 15ms
+[00:19:53.216] Server  LOG      ✓ Compiled in 15ms
+[00:19:56.032] Server  LOG      ✓ Compiled in 12ms
+[00:19:59.324] Server  LOG      ✓ Compiled in 21ms
+[00:20:02.426] Server  LOG      ✓ Compiled in 14ms
+[00:20:05.491] Server  LOG      ✓ Compiled in 14ms
+[00:20:24.145] Server  LOG      ✓ Compiled in 13ms
+[00:20:30.571] Server  LOG      ✓ Compiled in 32ms
+[00:20:34.514] Server  LOG      ✓ Compiled in 18ms
+[00:21:47.597] Server  LOG      ✓ Compiled in 16ms
+[00:21:52.502] Server  LOG      ✓ Compiled in 12ms
+[00:25:12.474] Browser ERROR   ./components/landingOld/Footer.tsx:14:10
+Parsing ecmascript source code failed
+  12 |     </footer>
+  13 |     </>
+> 14 |     <div className=' '>
+     |          ^^^^^^^^^
+  15 |     
+  16 |        
+  17 |  
+
+Expected ',', got 'className'
+
+Import trace:
+  Server Component:
+    ./components/landingOld/Footer.tsx
+    ./app/page.tsx
+[00:29:11.171] Server  LOG      ✓ Compiled in 31ms
+[00:29:24.306] Server  LOG      ✓ Compiled in 14ms
+[00:29:30.689] Server  LOG      ✓ Compiled in 13ms
+[00:29:42.698] Server  LOG      ✓ Compiled in 15ms

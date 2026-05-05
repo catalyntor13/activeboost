@@ -285,7 +285,7 @@ function VesteBuna() {
                 className: "max-w-6xl flex flex-col items-center mx-auto text-center gap-6",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                        className: "text-[#7dc142] text-center font-bold text-xs uppercase tracking-widest mb-2",
+                        className: "text-[#7dc142] text-center font-bold text-xs uppercase tracking-widest ",
                         children: "Vestea bună"
                     }, void 0, false, {
                         fileName: "[project]/components/landing/VesteBuna.tsx",
@@ -293,7 +293,7 @@ function VesteBuna() {
                         columnNumber: 13
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                        className: "text-center text-4xl font-bold text-slate-950  uppercase tracking-tighter ",
+                        className: "text-center text-2xl lg:text-4xl font-bold text-slate-950  uppercase tracking-tighter ",
                         children: "Toate au o singură cauză"
                     }, void 0, false, {
                         fileName: "[project]/components/landing/VesteBuna.tsx",
@@ -309,11 +309,11 @@ function VesteBuna() {
                         columnNumber: 12
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "text-[#7dc142]",
+                        className: "text-[#7dc142] font-bold",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["FaArrowDown"], {}, void 0, false, {
                             fileName: "[project]/components/landing/VesteBuna.tsx",
                             lineNumber: 14,
-                            columnNumber: 44
+                            columnNumber: 54
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/landing/VesteBuna.tsx",
@@ -346,7 +346,7 @@ function VesteBuna() {
                         columnNumber: 12
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-gray-500 max-w-2xl",
+                        className: "text-gray-500 max-w-2xl font-medium text-sm lg:text-base",
                         children: "Când glicemia urcă și cade brusc, corpul răspunde cu oboseală, foame, pofte și acumulare de grăsime. Dacă înveți să controlezi asta, controlezi totul."
                     }, void 0, false, {
                         fileName: "[project]/components/landing/VesteBuna.tsx",
