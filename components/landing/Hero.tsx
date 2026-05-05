@@ -8,20 +8,20 @@ export default function HeroPage() {
     return (
         <>
         {/* SECTIUNEA HERO: Titlu, Subtitlu și Primul Call to Action */}
-      <section className="relative pt-20 pb-32 px-6 text-center">
-        <div className="max-w-4xl mx-auto">
+      <section className="relative max-w-7xl flex flex-col-reverse lg:flex-row justify-center mx-auto gap-16 py-16">
+        <div className="max-w-5xl my-auto">
+          <Image src="/ebook.jpeg" alt="Hero Background" width={500} height={100} className="rounded-lg shadow-lg object-cover w-full h-auto" />
+        </div>
+        <div className="max-w-xl text-center w-full">
           <Image src="/logo.png" alt="Active Boost Logo" width={200} height={180} className="mx-auto " />
-          <h1 className="text-5xl md:text-7xl font-bold text-slate-800 mb-6 tracking-tight leading-[1.1]">
-            10 Hack-uri pentru o <br />
-            <span className="text-[#7dc142]">Glicemie Stabilă</span> 
+          <h1 className="text-xl  font-bold text-slate-800 mb-6 tracking-tight leading-[1.1]">
+            Scapă de oboseală, pofte de dulce și <span className="text-[#7dc142]">kilograme în plus</span> — fără diete și fără restricții
+          
           </h1>
-          <p className="text-xl md:text-2xl text-gray-700 mb-8 font-semibold italic">
-            Energie constantă · Pofte controlate · Greutate echilibrată
+          <p className="text-sm text-gray-400 mb-8 font-semibold ">
+            Ghidul practic bazat pe știință, aplicabil imediat — acasă sau la restaurant.
           </p>
-          <p className="text-lg text-gray-500 max-w-2xl mx-auto mb-10">
-            Descoperă strategiile validate științific care îți stabilizează glicemia și îți transformă energia zilnică — fără diete restrictive.
-          </p>
-
+          
           {/* BOX BONUS: Evidențierea valorii adăugate gratuite[cite: 1] */}
           <div className="bg-slate-950 border border-[#2d4a1a] p-4 rounded-xl max-w-lg mx-auto mb-10 flex items-center gap-4 text-left">
             <div className="bg-[#7dc142] p-2 rounded-lg text-[#0a1a02]"><Droplets size={24} /></div>

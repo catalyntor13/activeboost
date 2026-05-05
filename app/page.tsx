@@ -3,7 +3,9 @@ import CTASection from "@/components/landing/CTA";
 import CuriculumPage from "@/components/landing/Curiculum";
 import Footer from "@/components/landing/Footer";
 import HeroPage from "@/components/landing/Hero";
+import PentruCine from "@/components/landing/PentruCine";
 import PovestePage from "@/components/landing/Poveste";
+import VesteBuna from "@/components/landing/VesteBuna";
 
  
 
@@ -13,8 +15,10 @@ export default function Home() {
     <div className="min-h-screen bg-white text-gray-200 font-jakarta">
       <HeroPage />
       <BeneficiiSection />
+       <VesteBuna />
       <CuriculumPage />
       <PovestePage />
+      <PentruCine />  
       <CTASection />
       <Footer/>
     </div>
