@@ -672,10 +672,6 @@
     margin-block: auto;
   }
 
-  .mt-0\.5 {
-    margin-top: calc(var(--spacing) * .5);
-  }
-
   .mt-1 {
     margin-top: calc(var(--spacing) * 1);
   }
@@ -2137,10 +2133,6 @@
     padding: calc(var(--spacing) * 12);
   }
 
-  .p-16 {
-    padding: calc(var(--spacing) * 16);
-  }
-
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
   }
@@ -2489,10 +2481,6 @@
 
   .text-blue-400 {
     color: var(--color-blue-400);
-  }
-
-  .text-blue-500 {
-    color: var(--color-blue-500);
   }
 
   .text-blue-600 {

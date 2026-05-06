@@ -9,7 +9,7 @@ export default function PoliticaConfidentialitate() {
 
         <div className="lg:w-3xl lg:mx-auto">
               <Link href='/'>
-          <Image src='/activeboost.png' width={250} height={250} alt="Activeboost Logo" className="mx-auto" />
+          <Image src='/logo.png' width={250} height={250} alt="Activeboost Logo" className="mx-auto" />
           </Link>
         </div>
         
@@ -100,9 +100,9 @@ Exemple: Cookie-uri de la platforma noastră (Content Creator Machine) care gest
 
 <div className="flex flex-col lg:flex-row items-center justify-between">
     <div>
-        <Image src='/activeboost.png' width={250} height={250} alt="Activeboost Logo" className="mx-auto" />
+        <Image src='/logo.png' width={150} height={250} alt="Activeboost Logo" className="mx-auto" />
     </div>
-    <div className="uppercase">© 2025 IDTORO</div>
+    <div className="uppercase font-bold">© {new Date().getFullYear()} IDTORO</div>
 </div>
 </div>
         </div>
