@@ -9,12 +9,15 @@ export default function HeroPage() {
     return (
         <>
         {/* SECTIUNEA HERO: Titlu, Subtitlu și Primul Call to Action */}
-      <section className="relative max-w-7xl flex flex-col-reverse lg:flex-row justify-center mx-auto gap-16 py-16 px-6 lg:px-0 ">
-        <div className="max-w-5xl my-auto">
+              <Image src="/logo.png" alt="Active Boost Logo" width={200} height={180} className="mx-auto " />
+      <section className="relative max-w-7xl flex flex-col-reverse lg:flex-row justify-center mx-auto gap-16 py-8 px-6 lg:px-0 ">
+          
+
+        <div className="max-w-5xl ">
           <Image src="/ebook.jpeg" alt="Hero Background" width={500} height={100} className="rounded-lg shadow-lg object-cover w-full h-auto" />
         </div>
         <div className="max-w-xl text-center w-full">
-          <Image src="/logo.png" alt="Active Boost Logo" width={200} height={180} className="mx-auto " />
+    
           <h1 className="text-xl  font-bold text-slate-800 mb-6 tracking-tight leading-[1.1]">
             Scapă de oboseală, pofte de dulce și <span className="text-[#7dc142]">kilograme în plus</span> — fără diete și fără restricții
           
