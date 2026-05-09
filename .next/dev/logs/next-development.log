@@ -233,3 +233,55 @@ Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
 [00:59:37.735] Server  LOG      ✓ Compiled in 14ms
 [00:59:39.562] Server  LOG      ✓ Compiled in 11ms
 [00:59:40.293] Server  LOG      ✓ Compiled in 14ms
+[01:02:13.720] Server  LOG      ✓ Compiled in 15ms
+[01:02:16.980] Server  LOG      ✓ Compiled in 18ms
+[01:02:21.338] Server  LOG      ✓ Compiled in 26ms
+[01:02:26.007] Server  LOG      ✓ Compiled in 10ms
+[01:02:36.233] Server  LOG      ✓ Compiled in 18ms
+[01:02:41.392] Server  LOG      ✓ Compiled in 18ms
+[01:03:05.843] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/checkout_photo.jpeg" "received" null
+[01:03:05.877] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/checkout color: rgb(120, 120, 120) color: inherit {"dp":"/checkout","o":"http://localhost:3000/checkout","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1778329666752} /_vercel/insights/view
+[01:07:02.904] Server  LOG      ✓ Compiled in 23ms
+[01:07:15.401] Server  LOG      ✓ Compiled in 29ms
+[01:07:15.504] Browser ERROR   uncaughtError: ReferenceError: flavors is not defined
+[01:07:17.950] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:07:17.966] Server  LOG      ✓ Compiled in 20ms
+[01:07:18.105] Server  ERROR    ⨯ ReferenceError: flavors is not defined
+[01:07:18.216] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:07:18.344] Browser ERROR   uncaughtError: ReferenceError: flavors is not defined
+[01:07:21.126] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:07:21.190] Server  LOG      ✓ Compiled in 23ms
+[01:07:21.231] Server  ERROR    ⨯ ReferenceError: flavors is not defined
+[01:07:21.349] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:07:21.474] Browser ERROR   uncaughtError: ReferenceError: flavors is not defined
+[01:07:33.916] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:07:33.983] Server  LOG      ✓ Compiled in 29ms
+[01:07:34.032] Server  ERROR    ⨯ ReferenceError: currentFlavor is not defined
+[01:07:34.143] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:07:34.267] Browser ERROR   uncaughtError: ReferenceError: currentFlavor is not defined
+[01:07:40.104] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:07:40.158] Server  LOG      ✓ Compiled in 18ms
+[01:07:40.247] Server  ERROR    ⨯ ReferenceError: currentFlavor is not defined
+[01:07:40.365] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:07:40.486] Browser ERROR   uncaughtError: ReferenceError: currentFlavor is not defined
+[01:08:00.024] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:08:00.091] Server  LOG      ✓ Compiled in 17ms
+[01:08:00.235] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/checkout_photo.jpeg" "received" null
+[01:08:00.261] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:08:00.380] Browser WARN    Image with src "/checkout_photo.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:08:00.380] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:08:00.380] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/checkout","route":"/checkout"}
+[01:08:00.380] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/checkout color: rgb(120, 120, 120) color: inherit {"dp":"/checkout","o":"http://localhost:3000/checkout","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1778329961260} /_vercel/insights/view
+[01:08:17.939] Server  LOG      ✓ Compiled in 14ms
+[01:09:05.788] Server  LOG      ✓ Compiled in 31ms
+[01:09:16.638] Server  LOG      ✓ Compiled in 18ms
+[01:09:23.222] Server  LOG      ✓ Compiled in 15ms
+[01:09:27.900] Server  LOG      ✓ Compiled in 14ms
+[01:09:55.247] Server  LOG      ✓ Compiled in 14ms
+[01:10:38.394] Server  LOG      ✓ Compiled in 12ms
+[01:11:39.301] Server  LOG      ✓ Compiled in 53ms
+[01:11:44.694] Server  LOG      ✓ Compiled in 20ms
+[01:12:36.362] Server  LOG      ✓ Compiled in 16ms
+[01:12:40.175] Server  LOG      ✓ Compiled in 28ms
+[01:12:56.002] Server  LOG      ✓ Compiled in 27ms
+[01:12:57.138] Server  LOG      ✓ Compiled in 25ms

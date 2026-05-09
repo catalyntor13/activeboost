@@ -24,7 +24,7 @@ export async function POST(req: Request) {
     const validatedData = checkoutSchema.parse(body);
 
     // 2. Calculăm prețul 
-       const PRICE = 520;
+       const PRICE = 99;
 
     // 3. Inserăm comanda în Neon (Status: pending)
     // Folosim .returning() pentru a primi înapoi ID-ul generat (ex: 1, 2, 3...)
@@ -38,7 +38,7 @@ export async function POST(req: Request) {
       // Snapshot-ul comenzii (JSONB)
       orderDetails: {
         productID: 1,
-        productName: "Pachet Start Activ",
+        productName: "Pachet E-book Active Boost",
         selectedFlavor: validatedData.flavor,
         priceSnapshot: PRICE // e bine să știi cât costa la momentul plății
       }
@@ -50,9 +50,9 @@ export async function POST(req: Request) {
     const payment = await mollieClient.payments.create({
       amount: {
         currency: 'RON',
-        value: PRICE.toFixed(2), // Mollie vrea string "520.00"
+        value: PRICE.toFixed(2), // Mollie vrea string "99.00"
       },
-      description: `Pachet Mic Dejun Start Activ`,
+      description: `Pachet E-book Active Boost - Comanda #${orderId}`,
       
       // URL unde se întoarce clientul după plată (Success page)
       redirectUrl: `${process.env.NEXT_PUBLIC_BASE_URL}/thank-you/${orderId}`,

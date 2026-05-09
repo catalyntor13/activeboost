@@ -12,7 +12,8 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
-import { Check, ShieldCheck, Lock, Gift, Truck } from "lucide-react"
+import { ShieldCheck, Lock, Gift, } from "lucide-react"
+import { FaCheckCircle } from "react-icons/fa";
 
 const CheckoutPage = () => {
   const router = useRouter();
@@ -28,7 +29,6 @@ const CheckoutPage = () => {
     localitate: z.string().min(2, "Localitatea este obligatorie"),
     judet: z.string().min(2, "Judetul este obligatoriu"),
     phone: z.string().min(10, 'Telefon Invalid'),
-    flavor: z.string().min(1, "Te rugăm să alegi o aromă"),
     
   })
 
@@ -37,27 +37,7 @@ const CheckoutPage = () => {
 
   type paymentSchemaValues = z.infer<typeof paymentSchema>
 
-  // 3. Detalii produs
-
-   const product = {
-    id: "Mic Dejun Start Active",
-    description: 'desciere Program Start active',
-    amount: '520.00'
-   }
-
-  // Lista de arome disponibile
-  const flavors = [
-    { id: "banana", name: "Banana" },
-    { id: "capsuna", name: "Capsuna" },
-    { id: "caffe latte", name: "Cafe Latte" },
-    { id: "vanilie", name: "Vanilie" },
-    { id: "fursecuri", name: "Fursecuri" },
-    { id: "ciocolata fina", name: "Ciocolata Fina" },
-    { id: "ciocolata alba zmeura", name: "Zmeura si Ciocolata Alba" },
-    { id: "ciocolata si menta", name: "Ciocolata si Menta" },
-  ]
-
-  // 4. Initiem zod si hook form
+  // 3. Initiem zod si hook form
 
   const { register, 
     handleSubmit, 
@@ -73,12 +53,11 @@ const CheckoutPage = () => {
     localitate: "",
     judet: "",
     phone: "",
-    flavor: "Vanilie",
+
     }
   })
 
-  // "Ascultăm" valoarea din hook-form în loc să folosim un useState separat
-const currentFlavor = watch("flavor");
+
 
 // 5. Functia de onSubmit
 
@@ -122,46 +101,13 @@ const onSubmit: SubmitHandler<paymentSchemaValues> = async (data) => {
           {/* --- LEFT COLUMN: Form & Customization (7 Cols) --- */}
           <div className="lg:col-span-7 space-y-8">
              
-            {/* 1. Alegerea Aromei */}
+          
+            {/* 1. Date Livrare & Facturare */}
             <Card className="border-0 shadow-md">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-xl">
-                  <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#8ecb40] text-white text-sm font-bold">1</span>
-                  Alege Aroma Preferată
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="grid grid-cols-2 gap-4">
-                  {flavors.map((flavor) => (
-                    <div
-                      key={flavor.id}
-                      // Când dai click, trimiți valoarea direct în formularul Zod
-                      onClick={() => setValue("flavor", flavor.name, {shouldValidate: true})}
-                      className={`
-                        cursor-pointer rounded-xl border-2 p-3 flex items-center justify-between transition-all duration-200
-                        ${currentFlavor === flavor.name 
-                          ? "border-[#8ecb40] bg-[#8ecb40]/5 shadow-sm" 
-                          : "border-border hover:border-muted-foreground/30 bg-background"}
-                      `}
-                    >
-                      <span className="font-medium text-sm">{flavor.name}</span>
-                      {currentFlavor === flavor.name && (
-                        <div className="w-5 h-5 bg-[#8ecb40] rounded-full flex items-center justify-center">
-                          <Check className="w-3 h-3 text-white" />
-                        </div>
-                      )}
-                    </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* 2. Date Livrare & Facturare */}
-            <Card className="border-0 shadow-md">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-xl">
-                   <span className="flex items-center justify-center w-8 h-8 rounded-full bg-foreground text-background text-sm font-bold">2</span>
-                   Detalii Livrare
+                   <span className="flex items-center justify-center w-8 h-8 rounded-full bg-foreground text-background text-sm font-bold">1</span>
+                   Detalii Facturare
                 </CardTitle>
               </CardHeader>
              
@@ -246,13 +192,11 @@ const onSubmit: SubmitHandler<paymentSchemaValues> = async (data) => {
                     </div>
                     <div className="flex-1 space-y-1">
                       <div className="flex justify-between items-start">
-                        <h4 className="font-bold text-foreground">Pachet Start Activ</h4>
-                        <span className="font-bold">520 RON</span>
+                        <h4 className="font-bold text-foreground">Pachet E-bookuri</h4>
+                        <span className="font-bold">99 RON</span>
                       </div>
                       <p className="text-sm text-muted-foreground">Cantitate: 1</p>
-                      <span className="text-xs bg-[#8ecb40]/10 text-[#8ecb40] border-[#8ecb40]/20">
-                        Aromă: {currentFlavor}
-                      </span>
+                      
                     </div>
                   </div>
 
@@ -262,26 +206,8 @@ const onSubmit: SubmitHandler<paymentSchemaValues> = async (data) => {
                   <div className="space-y-3">
                     <p className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">Bonusuri Incluse</p>
 
-                    <div className="flex items-center justify-between group">
-                       <div className="flex items-center gap-3">
-                          <div className="w-8 h-8 rounded-full bg-orange-100 flex items-center justify-center text-orange-600">
-                             <Gift className="w-4 h-4" />
-                          </div>
-                          <span className="text-sm font-medium">Lingură dozaj inclusă </span>
-                       </div>
-                       <span className="text-sm font-bold text-[#8ecb40]">CADOU</span>
-                    </div>
-
-                    <div className="flex items-center justify-between group">
-                       <div className="flex items-center gap-3">
-                          <div className="w-8 h-8 rounded-full bg-orange-100 flex items-center justify-center text-orange-600">
-                             <Gift className="w-4 h-4" />
-                          </div>
-                          <span className="text-sm font-medium">Shaker Premium </span>
-                       </div>
-                       <span className="text-sm font-bold text-[#8ecb40]">CADOU</span>
-                    </div>
-                    
+                  
+                 
                     <div className="flex items-center justify-between group">
                        <div className="flex items-center gap-3">
                           <div className="w-8 h-8 rounded-full bg-orange-100 flex items-center justify-center text-orange-600">
@@ -289,7 +215,9 @@ const onSubmit: SubmitHandler<paymentSchemaValues> = async (data) => {
                           </div>
                           <span className="text-sm font-medium">eBook: Hack-uri Glicemie</span>
                        </div>
-                       <span className="text-sm font-bold text-[#8ecb40]">GRATIS</span>
+                       <span className="text-sm font-bold text-[#8ecb40]">
+                        <FaCheckCircle className="text-[#8ecb40] w-4 h-4" />
+                       </span>
                     </div>
 
                     <div className="flex items-center justify-between group">
@@ -299,18 +227,10 @@ const onSubmit: SubmitHandler<paymentSchemaValues> = async (data) => {
                           </div>
                           <span className="text-sm font-medium">eBook: Arta Hidratării</span>
                        </div>
-                       <span className="text-sm font-bold text-[#8ecb40]">GRATIS</span>
+                       <span className="text-sm font-bold text-[#8ecb40]"><FaCheckCircle className="text-[#8ecb40] w-4 h-4" /></span>
                     </div>
 
-                    <div className="flex items-center justify-between group">
-                       <div className="flex items-center gap-3">
-                          <div className="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center text-green-600">
-                             <Truck className="w-4 h-4" />
-                          </div>
-                          <span className="text-sm font-medium">Transport Rapid</span>
-                       </div>
-                       <span className="text-sm font-bold text-[#8ecb40]">GRATIS</span>
-                    </div>
+                
                   </div>
 
                   <Separator />
@@ -318,7 +238,7 @@ const onSubmit: SubmitHandler<paymentSchemaValues> = async (data) => {
                   {/* Total */}
                   <div className="flex items-center justify-between py-2">
                     <span className="text-lg font-medium text-muted-foreground">Total de plată</span>
-                    <span className="text-3xl font-black text-foreground">520 RON</span>
+                    <span className="text-3xl font-black text-foreground">99 RON</span>
                   </div>
 
                   {/* Buton Finalizare */}
@@ -333,7 +253,7 @@ const onSubmit: SubmitHandler<paymentSchemaValues> = async (data) => {
                     className="w-full cursor-pointer h-14 text-lg font-bold bg-[#8ecb40] hover:bg-[#8ecb40]/90 shadow-xl shadow-[#8ecb40]/20"
                   >
                      {isSubmitting ? <Loader2Icon className="animate-spin"> Se proceseaza </Loader2Icon> : 'Plătește in siguranta'}
-                    <ShieldCheck className="ml-2 w-5 h-5" />
+                    <ShieldCheck className="ml-2 w-5 h-5 " />
                   </Button>
                   
                   <p className="text-xs text-center text-muted-foreground px-4">

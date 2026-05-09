@@ -12,7 +12,7 @@ export default function CTASection() {
         <div className="max-w-2xl border-1 border-gray-300 rounded-2xl py-5 mx-auto">
         
           
-          <h2 className="text-lg font-bold text-slate-900 mb-8 tracking-tighter uppercase">
+          <h2 className="text-lg  font-bold text-slate-900 mb-8 mt-10 tracking-tighter uppercase">
             Ești gata să îți recapeți  controlul asupra energiei?
           </h2>
             <motion.div 
