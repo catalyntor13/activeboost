@@ -22,26 +22,26 @@ export default function HeroPage() {
             Scapă de oboseală, pofte de dulce și <span className="text-[#7dc142]">kilograme în plus</span> — fără diete și fără restricții
           
           </h1>
-          <p className="text-sm text-gray-400 mb-8 font-semibold ">
-            Ghidul practic bazat pe știință, aplicabil imediat — acasă sau la restaurant.
+          <p className="text-xs text-gray-400 mb-8 font-semibold uppercase ">
+            E-bookul suprem bazat pe știință, aplicabil imediat — acasă sau la restaurant.
           </p>
           
           {/* BOX BONUS: Evidențierea valorii adăugate gratuite[cite: 1] */}
-          <div className="bg-slate-950 border border-[#2d4a1a] p-4 rounded-xl max-w-lg mx-auto mb-10 flex items-center gap-4 text-left">
+          <div className="border-1 border-gray-300 p-4 rounded-xl max-w-lg mx-auto mb-10 flex items-center gap-4 text-left">
             <div className="bg-[#7dc142] p-2 rounded-lg text-[#0a1a02]"><Droplets size={24} /></div>
             <div>
               <p className="text-[#7dc142] text-xs font-bold uppercase">Bonus gratuit inclus</p>
-              <p className="text-sm text-gray-200"><strong>Arta Hidratării</strong> — Maximizați energia (Valoare 99 lei) </p>
+              <p className="text-sm text-slate-950"><strong>Arta Hidratării</strong> — Maximizați energia (Valoare 99 lei) </p>
             </div>
           </div>
 
           <div className="flex flex-col items-center gap-4">
             <div className="flex items-center gap-4 mb-2">
-              <span className="text-gray-500 line-through text-lg">198 lei</span>
-              <span className="text-[#7dc142] text-4xl font-bold ">99 lei</span> 
+              <span className="text-gray-500 line-through text-lg">198 RON</span>
+              <span className="text-slate-950 text-4xl font-bold ">99 RON</span> 
             </div>
             <Link href="/checkout" className="group inline-block">
-            <Button variant='destructive' className="bg-[#7dc142] cursor-pointer text-[#0a1a02] hover:bg-[#8ee04b] shadow-[0_0_20px_rgba(125,193,66,0.3)] text-xl  p-8 font-bold w-full lg:w-sm">VREAU AMBELE GHIDURI ACUM</Button>
+            <Button variant='destructive' className="bg-[#7dc142] cursor-pointer text-[#0a1a02] hover:bg-[#8ee04b] shadow-[0_0_20px_rgba(125,193,66,0.3)] text-xl p-8 font-bold w-full lg:w-sm">VREAU AMBELE GHIDURI ACUM</Button>
             </Link>
             <p className="text-[10px] flex items-center gap-2 text-gray-500 uppercase tracking-widest tracking-tighter">
               <Download className="inline mr-1" size={12} />  Acces imediat PDF • Descarcă pe orice dispozitiv 

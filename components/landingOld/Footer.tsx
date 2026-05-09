@@ -1,5 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
+import { AiOutlineTikTok } from "react-icons/ai";
+
 
 const Footer = () => {
   return (
@@ -17,7 +19,7 @@ const Footer = () => {
           <p className="font-normal ">Copyright © Active Boost</p>
           <p className="font-medium">IDTORO SRL</p>
           <p ><span className="font-semibold">CUI:</span> 51081026</p>
-          <p>Blv Dem Radulescu, Nr.15, Bl. X2, Sc A, Et 5, Ap 37</p>
+          <p>Bulevardul Dem Radulescu, Nr 15 </p>
           <p>Mun. Ramnicu Valcea, Județ Valcea, România</p>
           <p><span className="font-normal">Email:</span><span className="ml-1">activeboostfitclub@gmail.com</span></p>
           <p><span className="font-normal">Telefon:</span><span className="ml-1">0754916858</span></p>
@@ -46,9 +48,8 @@ const Footer = () => {
             </span>
              <span>
               <Link href='tiktok.com/@activeboost.fitclub'>
-          <Image src='/tik-tok.png' alt="TikTokIcon"
-            width={35}
-            height={35}/>
+           
+            <AiOutlineTikTok size={35}  />
              </Link>
             </span>
            

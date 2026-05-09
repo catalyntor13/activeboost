@@ -13,9 +13,9 @@ export default function VesteBuna() {
 
            <div className="text-[#7dc142] font-bold"><FaArrowDown/></div>
 
-           <div className="border max-w-xl rounded-md bg-[#7dc142] hover:bg-[#8ee04b] shadow-[0_0_20px_rgba(125,193,66,0.3)] text-xl  p-8">
-             <h3 className="text-slate-950 font-bold text-4xl mb-2 uppercase tracking-tight">Spike Glicemic</h3>
-            <p className="text-slate-700 text-sm">Creșterea bruscă a zahărului din sânge după masă</p>
+           <div className="border-1  border-gray-400 max-w-xl rounded-lg  text-xl  p-8">
+             <h3 className="text-red-500 font-bold text-4xl mb-2 uppercase tracking-tight ">Spike Glicemic</h3>
+            <p className="text-slate-950 font-semibold max-w-sm text-sm">Creșterea bruscă a zahărului din sânge după masă</p>
            </div>
            <p className="text-gray-500 max-w-2xl font-medium text-sm lg:text-base">Când glicemia urcă și cade brusc, corpul răspunde cu oboseală, foame, pofte și acumulare de grăsime. Dacă înveți să controlezi asta, controlezi totul.</p>
         </div>

@@ -20,7 +20,7 @@ export default function CuriculumPage() {
               "Mitul zahărului bun și rău — adevărul ascuns",
               "Diferența dintre Glucoză și Fructoză și impactul lor",
               "Protocolul de 10 minute după masă pentru a evita spike-ul",
-              "Strategii aplicabile imediat (Acasă vs Restaurant)",
+              "Ghid aplicabil  imediat (Acasă vs Restaurant)",
               "BONUS: Arta hidratării — ghid complet de revitalizare"
             ].map((text, i) => (
               <motion.div 

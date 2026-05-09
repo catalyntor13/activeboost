@@ -210,6 +210,7 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-right.js [app-client] (ecmascript) <export default as ArrowRight>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$download$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Download$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/download.js [app-client] (ecmascript) <export default as Download>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/button.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
@@ -233,7 +234,7 @@ function CTASection() {
                                 1
                             ]
                         },
-                        className: "bg-slate-950 border border-[#2d4a1a] p-6 rounded-2xl mb-12 inline-block",
+                        className: "border-1 border-gray-300 p-6 rounded-2xl mb-12 inline-block",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-[#7dc142] text-sm font-bold uppercase mb-2",
@@ -244,7 +245,7 @@ function CTASection() {
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                className: "text-white text-xl font-bold mb-1",
+                                className: "text-slate-950 text-xl font-bold mb-1",
                                 children: "Ghid Glicemie + Bonus Hidratare"
                             }, void 0, false, {
                                 fileName: "[project]/components/landing/CTA.tsx",
@@ -263,7 +264,7 @@ function CTASection() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-[#7dc142] text-3xl font-black italic",
+                                        className: "text-slate-950 text-3xl font-black ",
                                         children: "99 lei"
                                     }, void 0, false, {
                                         fileName: "[project]/components/landing/CTA.tsx",
@@ -283,7 +284,7 @@ function CTASection() {
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                        className: "text-3xl md:text-5xl font-bold text-slate-900 mb-8 tracking-tighter uppercase",
+                        className: "text-xl md:text-4xl font-bold text-slate-900 mb-8 tracking-tighter uppercase",
                         children: [
                             "Ești gata să îți recapeți ",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
@@ -300,9 +301,9 @@ function CTASection() {
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                         href: "/checkout",
-                        className: "group inline-block",
+                        className: "group",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
-                            className: "bg-[#7dc142] cursor-pointer text-[#0a1a02] hover:bg-[#8ee04b] shadow-[0_0_20px_rgba(125,193,66,0.3)] text-xl  p-8 font-bold w-full lg:w-xs",
+                            className: "bg-[#7dc142] cursor-pointer text-[#0a1a02] hover:bg-[#8ee04b] w-full shadow-[0_0_20px_rgba(125,193,66,0.3)] text-xl  p-8 font-bold w-full lg:w-xs",
                             children: [
                                 "VREAU GHIDUL PDF ",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
@@ -324,9 +325,19 @@ function CTASection() {
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "mt-8 text-gray-600 text-sm ",
-                        children: "Acces imediat PDF • Descarcă pe orice dispozitiv"
-                    }, void 0, false, {
+                        className: "text-[10px] flex items-center justify-center mt-3 gap-2 text-gray-500 uppercase tracking-widest tracking-tighter ",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$download$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Download$3e$__["Download"], {
+                                className: "inline mr-1",
+                                size: 12
+                            }, void 0, false, {
+                                fileName: "[project]/components/landing/CTA.tsx",
+                                lineNumber: 35,
+                                columnNumber: 15
+                            }, this),
+                            "  Acces imediat PDF • Descarcă pe orice dispozitiv"
+                        ]
+                    }, void 0, true, {
                         fileName: "[project]/components/landing/CTA.tsx",
                         lineNumber: 34,
                         columnNumber: 11
@@ -404,7 +415,7 @@ function CuriculumPage() {
                             "Mitul zahărului bun și rău — adevărul ascuns",
                             "Diferența dintre Glucoză și Fructoză și impactul lor",
                             "Protocolul de 10 minute după masă pentru a evita spike-ul",
-                            "Strategii aplicabile imediat (Acasă vs Restaurant)",
+                            "Ghid aplicabil  imediat (Acasă vs Restaurant)",
                             "BONUS: Arta hidratării — ghid complet de revitalizare"
                         ].map((text, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                                 initial: {
@@ -551,15 +562,15 @@ function HeroPage() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-sm text-gray-400 mb-8 font-semibold ",
-                                children: "Ghidul practic bazat pe știință, aplicabil imediat — acasă sau la restaurant."
+                                className: "text-xs text-gray-400 mb-8 font-semibold uppercase ",
+                                children: "E-bookul suprem bazat pe știință, aplicabil imediat — acasă sau la restaurant."
                             }, void 0, false, {
                                 fileName: "[project]/components/landing/Hero.tsx",
                                 lineNumber: 25,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "bg-slate-950 border border-[#2d4a1a] p-4 rounded-xl max-w-lg mx-auto mb-10 flex items-center gap-4 text-left",
+                                className: "border-1 border-gray-300 p-4 rounded-xl max-w-lg mx-auto mb-10 flex items-center gap-4 text-left",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "bg-[#7dc142] p-2 rounded-lg text-[#0a1a02]",
@@ -586,14 +597,14 @@ function HeroPage() {
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-sm text-gray-200",
+                                                className: "text-sm text-slate-950",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
                                                         children: "Arta Hidratării"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/landing/Hero.tsx",
                                                         lineNumber: 34,
-                                                        columnNumber: 52
+                                                        columnNumber: 53
                                                     }, this),
                                                     " — Maximizați energia (Valoare 99 lei) "
                                                 ]
@@ -622,15 +633,15 @@ function HeroPage() {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "text-gray-500 line-through text-lg",
-                                                children: "198 lei"
+                                                children: "198 RON"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/landing/Hero.tsx",
                                                 lineNumber: 40,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-[#7dc142] text-4xl font-bold ",
-                                                children: "99 lei"
+                                                className: "text-slate-950 text-4xl font-bold ",
+                                                children: "99 RON"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/landing/Hero.tsx",
                                                 lineNumber: 41,
@@ -647,7 +658,7 @@ function HeroPage() {
                                         className: "group inline-block",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
                                             variant: "destructive",
-                                            className: "bg-[#7dc142] cursor-pointer text-[#0a1a02] hover:bg-[#8ee04b] shadow-[0_0_20px_rgba(125,193,66,0.3)] text-xl  p-8 font-bold w-full lg:w-sm",
+                                            className: "bg-[#7dc142] cursor-pointer text-[#0a1a02] hover:bg-[#8ee04b] shadow-[0_0_20px_rgba(125,193,66,0.3)] text-xl p-8 font-bold w-full lg:w-sm",
                                             children: "VREAU AMBELE GHIDURI ACUM"
                                         }, void 0, false, {
                                             fileName: "[project]/components/landing/Hero.tsx",

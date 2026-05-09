@@ -1,5 +1,9 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
+
+import { PiTiktokLogoLight } from "react-icons/pi";
 
 const Footer = () => {
   return (
@@ -46,9 +50,7 @@ const Footer = () => {
             </span>
              <span>
               <Link href='tiktok.com/@activeboost.fitclub'>
-          <Image src='/tik-tok.png' alt="TikTokIcon"
-            width={35}
-            height={35}/>
+              <PiTiktokLogoLight size={35}  />
              </Link>
             </span>
            
