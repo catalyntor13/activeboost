@@ -214,3 +214,22 @@ Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
 [00:46:07.285] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
 [00:46:07.285] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1778328648163} /_vercel/insights/view
 [00:48:09.401] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:57:21.692] Server  LOG      ✓ Compiled in 27ms
+[00:57:23.860] Server  LOG      ✓ Compiled in 30ms
+[00:57:29.419] Server  LOG      ✓ Compiled in 14ms
+[00:57:44.520] Server  LOG      ✓ Compiled in 18ms
+[00:57:51.776] Server  LOG      ✓ Compiled in 13ms
+[00:57:54.249] Server  LOG      ✓ Compiled in 34ms
+[00:57:58.075] Server  LOG      ✓ Compiled in 20ms
+[00:58:00.143] Server  LOG      ✓ Compiled in 15ms
+[00:58:02.895] Server  LOG      ✓ Compiled in 13ms
+[00:59:03.215] Server  LOG      ✓ Compiled in 13ms
+[00:59:07.902] Server  LOG      ✓ Compiled in 32ms
+[00:59:09.605] Server  LOG      ✓ Compiled in 17ms
+[00:59:14.343] Server  LOG      ✓ Compiled in 14ms
+[00:59:18.652] Server  LOG      ✓ Compiled in 15ms
+[00:59:25.142] Server  LOG      ✓ Compiled in 16ms
+[00:59:32.944] Server  LOG      ✓ Compiled in 14ms
+[00:59:37.735] Server  LOG      ✓ Compiled in 14ms
+[00:59:39.562] Server  LOG      ✓ Compiled in 11ms
+[00:59:40.293] Server  LOG      ✓ Compiled in 14ms
