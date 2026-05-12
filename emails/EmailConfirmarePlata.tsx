@@ -88,10 +88,10 @@ export const EmailConfirmarePlata: React.FC<EmailConfirmarePlataProps> = ({
             <Section className="px-8 py-12">
               <Section className="mb-6">
                 <Button
-                  className="w-full font-bold text-base text-white bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg px-6 py-4 text-center"
+                  className="bg-[#7dc142] cursor-pointer text-[#0a1a02] hover:bg-[#8ee04b] shadow-[0_0_20px_rgba(125,193,66,0.3)] text-xl p-8 font-bold w-full lg:w-sm"
                   href={linkGhid1}
                 >
-                  ⬇️ Descarcă "Ghid Arta Hidratării"
+                   Descarcă "Ghid Arta Hidratării"
                 </Button>
               </Section>
               
@@ -101,10 +101,10 @@ export const EmailConfirmarePlata: React.FC<EmailConfirmarePlataProps> = ({
               
               <Section>
                 <Button
-                  className="w-full font-bold text-base text-white bg-gradient-to-r from-[#8ecb40] to-[#7ab838] rounded-lg px-6 py-4 text-center"
+                  className="bg-blue-500 cursor-pointer text-[#0a1a02] hover:bg-[#8ee04b] shadow-[0_0_20px_rgba(125,193,66,0.3)] text-xl p-8 font-bold w-full lg:w-sm"
                   href={linkGhid2}
                 >
-                  ⬇️ Descarcă "Ghid 10 Hack-uri Simple"
+                 Descarcă "Ghid 10 Hack-uri Simple"
                 </Button>
               </Section>
             </Section>

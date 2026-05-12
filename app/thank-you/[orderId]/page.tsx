@@ -21,14 +21,13 @@ export default async function ThankYouPage({ params }: PageProps) {
     notFound();
   }
 
-  // 2. Căutăm comanda în baza de date Neon
-  // Verificăm și statusul să fie 'paid' pentru a evita accesul celor care au dat cancel la plată
+ 
+   // Only check that order exists, NOT the payment status
+  // The webhook will update it within milliseconds
   const order = await db.query.orders.findFirst({
-    where: and(
-      eq(orders.id, id),
-      eq(orders.paymentStatus, "paid")
-    ),
+    where: eq(orders.id, id)
   });
+
 
   // 3. Dacă nu există comanda sau nu e plătită, aruncăm un 404
   if (!order) {
