@@ -40,64 +40,108 @@ export const EmailConfirmarePlata: React.FC<EmailConfirmarePlataProps> = ({
   return (
     <Html lang="ro">
       <Head />
-      <Preview>Felicitări! Ghidul tău Active Boost a sosit!</Preview>
+      <Preview>Felicitări! Pachetul tău Active Boost a sosit!</Preview>
       
-      {/* 2. <Tailwind> este esențial. 
-          Acesta va converti toate clasele de mai jos în CSS inline. */}
       <Tailwind>
-        <Body className=" text-gray-800 font-sans">
-          <Container className="bg-white border border-gray-200 rounded-lg shadow-sm my-10 mx-auto p-8 max-w-sm">
+        <Body className="text-gray-700 font-sans bg-gray-50">
+          {/* Header with gradient background */}
+          <Section className="bg-gradient-to-r from-[#8ecb40] to-[#7ab838] px-0">
+            <Container className="max-w-2xl pt-12 pb-8">
+              <Section className="text-center">
+                <Img src={LOGO_URL} width="160" alt="Active Boost Logo" className="mx-auto" />
+              </Section>
+            </Container>
+          </Section>
+
+          {/* Main Content */}
+          <Container className="bg-white max-w-2xl mx-auto shadow-lg">
             
-            {/* Logo (Opțional, dar recomandat) */}
-            <Section className="mt-4 mb-8 text-center">
-              <Img src={LOGO_URL} width="180" alt="Active Boost Logo" className="mx-auto" />
+            {/* Welcome Section */}
+            <Section className="px-8 pt-12 pb-6">
+              <Heading className="text-4xl font-bold text-gray-900 text-center m-0 mb-4">
+                Felicitări, {numeClient}! 🎉
+              </Heading>
+              <Text className="text-center text-[#8ecb40] font-semibold text-lg m-0">
+                Ești acum parte din comunitatea Active Boost
+              </Text>
             </Section>
 
-            <Heading className="text-3xl font-bold text-black text-center">
-              Felicitări, {numeClient}!
-            </Heading>
+            {/* Divider */}
+            <Section className="px-8">
+              <div className="border-t border-gray-200"></div>
+            </Section>
 
-            <Section className="mt-6 ">
-              <Text className="text-lg leading-7 mx-2">
-                Sunt Adrian și vreau să te felicit personal! Ai făcut primul și cel mai important pas către o viață cu mai multă energie și control. Sunt foarte mândru de decizia ta.
+            {/* Personal Message */}
+            <Section className="px-8 py-8">
+              <Text className="text-gray-700 text-base leading-8 m-0 mb-4">
+                Sunt Adrian și vreau să te felicit personal! 
+                <br />
+                <br />
+                Ai făcut primul și cel mai important pas către o viață cu mai multă energie și control. Sunt foarte mândru de decizia ta.
               </Text>
-              <Text className="text-lg leading-7 font-semibold text-black mx-2">
+              <Text className="text-gray-900 font-semibold text-base leading-8 m-0">
                 Gata cu așteptarea. Găsești mai jos link-urile securizate pentru a descărca pachetul tău complet:
               </Text>
             </Section>
 
-            {/* Secțiunea de Butoane de Download */}
-            <Section className="text-center mt-8">
-              <Button
-                className="font-semibold text-lg  bg-blue-500 p-4   border-2  border-solid mt-5 mb-2  text-white rounded-md"
-                href={linkGhid1}
-              >
-                Descarcă "Ghid Arta Hidratării"
-              </Button>
-              <Text className="my-2 text-gray-600">si</Text>
-              <Button
-                className="font-semibold text-lg  bg-[#8ecb40ff] p-4   border-2 border-solid mt-5 mb-2 text-white rounded-md"
-                href={linkGhid2}
-              >
-                Descarcă "Ghid 10 Hack-uri Simple"
-              </Button>
+            {/* Download Buttons Section */}
+            <Section className="px-8 py-12">
+              <Section className="mb-6">
+                <Button
+                  className="w-full font-bold text-base text-white bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg px-6 py-4 text-center"
+                  href={linkGhid1}
+                >
+                  ⬇️ Descarcă "Ghid Arta Hidratării"
+                </Button>
+              </Section>
+              
+              <Section className="text-center mb-6">
+                <Text className="text-gray-400 text-sm m-0">și</Text>
+              </Section>
+              
+              <Section>
+                <Button
+                  className="w-full font-bold text-base text-white bg-gradient-to-r from-[#8ecb40] to-[#7ab838] rounded-lg px-6 py-4 text-center"
+                  href={linkGhid2}
+                >
+                  ⬇️ Descarcă "Ghid 10 Hack-uri Simple"
+                </Button>
+              </Section>
             </Section>
 
-            <Section className="mt-8">
-              <Text className="text-lg leading-7 mx-2">
-                Îți recomand să salvezi ambele fișiere PDF pe telefon sau laptop pentru a le avea mereu la îndemână. Acesta este doar începutul călătoriei noastre împreună.
+            {/* Info Section */}
+            <Section className="px-8 py-8 bg-gray-50 rounded-b-lg">
+              <Text className="text-gray-700 text-base leading-7 m-0 mb-4">
+                💡 <strong>Sfat:</strong> Salvează ambele fișiere PDF pe telefon sau laptop pentru a le avea mereu la îndemână. Acesta este doar începutul călătoriei noastre împreună.
               </Text>
-              <Text className="text-lg leading-7 mx-2">Spor la citit!</Text>
-              <Text className="text-lg leading-7 mt-4 mx-2">
-                Cu drag,
-                <br />
-                Adrian, Fondator Active Boost
+              <Text className="text-gray-600 text-base leading-7 m-0 mb-6">
+                Spor la citit și la transformare! 
               </Text>
             </Section>
 
-           
+            {/* Signature */}
+            <Section className="px-8 py-8 border-t border-gray-200">
+              <Text className="text-gray-700 text-base m-0 mb-2">Cu drag,</Text>
+              <Text className="text-gray-900 font-bold text-base m-0">
+                Adrian
+              </Text>
+              <Text className="text-[#8ecb40] font-semibold text-sm m-0">
+                Fondator, Active Boost
+              </Text>
+            </Section>
 
           </Container>
+
+          {/* Footer */}
+          <Section className="text-center py-8">
+            <Text className="text-gray-500 text-xs m-0">
+              © 2026 Active Boost. Toate drepturile rezervate.
+            </Text>
+            <Text className="text-gray-400 text-xs m-0 mt-2">
+              Acest email a fost trimis la adresa ta de contact asociată cu comanda.
+            </Text>
+          </Section>
+
         </Body>
       </Tailwind>
     </Html>

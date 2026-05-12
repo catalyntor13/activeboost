@@ -166,14 +166,6 @@ const Footer = ()=>{
                                 className: "flex flex-col lg:text-sm text-[12px] font-light justify-center items-center text-center font-opensans ",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "font-normal ",
-                                        children: "Copyright © Active Boost"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/landingOld/Footer.tsx",
-                                        lineNumber: 19,
-                                        columnNumber: 11
-                                    }, ("TURBOPACK compile-time value", void 0)),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "font-medium",
                                         children: "IDTORO SRL"
                                     }, void 0, false, {
@@ -340,7 +332,7 @@ const Footer = ()=>{
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                            href: "tiktok.com/@activeboost.fitclub",
+                                            href: "https://www.tiktok.com/@activeboost.fitclub",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$ai$2f$index$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["AiOutlineTikTok"], {
                                                 size: 35
                                             }, void 0, false, {
@@ -494,6 +486,18 @@ const Footer = ()=>{
                         fileName: "[project]/components/landingOld/Footer.tsx",
                         lineNumber: 83,
                         columnNumber: 8
+                    }, ("TURBOPACK compile-time value", void 0)),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "font-normal text-xs  flex items-center justify-center ",
+                        children: [
+                            " @ ",
+                            new Date().getFullYear(),
+                            " Copyright Active Boost"
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/landingOld/Footer.tsx",
+                        lineNumber: 86,
+                        columnNumber: 4
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {

@@ -23,7 +23,7 @@ export default function HeroPage() {
           
           </h1>
           <p className="text-xs text-gray-400 mb-8 font-semibold uppercase ">
-            E-bookul suprem bazat pe știință, aplicabil imediat — acasă sau la restaurant.
+            eBookul suprem bazat pe știință, aplicabil imediat — acasă sau la restaurant.
           </p>
           
           {/* BOX BONUS: Evidențierea valorii adăugate gratuite[cite: 1] */}

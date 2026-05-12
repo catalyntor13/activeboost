@@ -65,7 +65,7 @@ Consultați site-ul ANPC pentru mai multe sfaturi despre protejarea confidenția
 
 <div className="text-lg"><h2 className="font-bold text-2xl">1. Cookie-uri Esențiale (Strict Necesare)</h2></div>
 <p className="text-lg">Aceste cookie-uri sunt absolut necesare pentru funcționarea de bază a Site-ului. Fără ele, anumite funcționalități, cum ar fi procesul de cumpărare sau menținerea sesiunii de utilizator, nu ar fi posibile. Acestea nu stochează informații de identificare personală și nu pot fi dezactivate din sistemele noastre.
-Exemple: Cookie-uri de la platforma noastră (Content Creator Machine) care gestionează coșul de cumpărături și sesiunea de utilizator. Cookie-uri de la procesatorul de plăți (Stripe), esențiale pentru securitatea tranzacției și prevenirea fraudelor (ex:__stripe_mid, __stripe_sid).</p>
+Exemple: Cookie-uri de la platforma noastră (Content Creator Machine) care gestionează coșul de cumpărături și sesiunea de utilizator. Cookie-uri de la procesatorul de plăți (Mollie), esențiale pentru securitatea tranzacției și prevenirea fraudelor (ex:__mollie_mid, __mollie_sid).</p>
 
 <div className="text-lg"><h2 className="font-bold text-2xl">2. Cookie-uri de Performanță și Analiză</h2></div>
 <p className="text-lg">Aceste cookie-uri ne ajută să înțelegem cum interacționează vizitatorii cu Site-ul nostru. Colectăm date agregate și anonime despre paginile vizitate, timpul petrecut pe site și sursele de trafic. Folosim aceste informații valoroase pentru a optimiza structura site-ului și pentru a îmbunătăți constant experiența utilizatorilor.</p>

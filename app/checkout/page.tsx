@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { useForm, SubmitHandler} from "react-hook-form"  
+import { useForm, SubmitHandler, Controller } from "react-hook-form"  
 import Image from "next/image"
 import { Loader2Icon } from 'lucide-react';
 import { Button } from "@/components/ui/button"
@@ -12,8 +12,10 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
+import { Checkbox } from "@/components/ui/checkbox"
 import { ShieldCheck, Lock, Gift, } from "lucide-react"
 import { FaCheckCircle } from "react-icons/fa";
+import Link from "next/link";
 
 const CheckoutPage = () => {
   const router = useRouter();
@@ -29,7 +31,9 @@ const CheckoutPage = () => {
     localitate: z.string().min(2, "Localitatea este obligatorie"),
     judet: z.string().min(2, "Judetul este obligatoriu"),
     phone: z.string().min(10, 'Telefon Invalid'),
-    
+    agreeToTerms: z.boolean().refine(val => val === true, {
+      message: "Trebuie să accepți termenii și condițiile noastre"
+    })
   })
 
 
@@ -41,8 +45,8 @@ const CheckoutPage = () => {
 
   const { register, 
     handleSubmit, 
-    setValue, 
     watch,
+    control,
     formState : {errors, isSubmitting} ,} 
     = useForm<paymentSchemaValues>({ resolver: zodResolver(paymentSchema), 
     defaultValues: {
@@ -53,7 +57,7 @@ const CheckoutPage = () => {
     localitate: "",
     judet: "",
     phone: "",
-
+    agreeToTerms: false
     }
   })
 
@@ -182,17 +186,18 @@ const onSubmit: SubmitHandler<paymentSchemaValues> = async (data) => {
                 <CardContent className="p-6 space-y-6">
                   {/* Produs Principal */}
                   <div className="flex gap-4">
-                    <div className="relative w-20 h-24 bg-muted rounded-lg overflow-hidden shrink-0 ">
+                    <div className="relative  bg-muted rounded-lg overflow-hidden shrink-0 ">
                        <Image 
-                         src="/checkout_photo.jpeg" 
+                         src="/ebooks.jpeg" 
                          alt="Produs Start Activ Active Boost" 
-                         fill 
+                          width={120}
+                          height={100}
                          className="object-contain p-1"
                        />
                     </div>
                     <div className="flex-1 space-y-1">
                       <div className="flex justify-between items-start">
-                        <h4 className="font-bold text-foreground">Pachet E-bookuri</h4>
+                        <h4 className="font-bold text-foreground">Pachet eBookuri</h4>
                         <span className="font-bold">99 RON</span>
                       </div>
                       <p className="text-sm text-muted-foreground">Cantitate: 1</p>
@@ -248,17 +253,35 @@ const onSubmit: SubmitHandler<paymentSchemaValues> = async (data) => {
     ⚠️ {error}
   </div>
 )}
+
+                  <div className="space-y-4 flex flex-col">
+                    <div className="flex items-start gap-3">
+                      <Controller
+                        name="agreeToTerms"
+                        control={control}
+                        render={({ field }) => (
+                          <Checkbox 
+                            id="agreeToTerms"
+                            className="mt-1"
+                            checked={field.value}
+                            onCheckedChange={field.onChange}
+                          />
+                        )}
+                      />
+                      <p className="text-sm font-medium leading-relaxed cursor-pointer">
+                        Sunt de acord cu <Link href="/politica_de_confidentialitate" className="underline text-[#8ecb40] hover:text-[#8ecb40]/80 transition-colors">Politica de Confidențialitate</Link> și <Link href="/termeni_si_conditii" className="underline text-[#8ecb40] hover:text-[#8ecb40]/80 transition-colors">Termenii și Condițiile</Link> noastre *
+                      </p>
+                    </div>
+                    {errors.agreeToTerms && <span className="text-xs text-red-500">{errors.agreeToTerms.message}</span>}
+                  </div>
+                  
                   <Button 
-                  type='submit'
+                    type='submit'
                     className="w-full cursor-pointer h-14 text-lg font-bold bg-[#8ecb40] hover:bg-[#8ecb40]/90 shadow-xl shadow-[#8ecb40]/20"
                   >
                      {isSubmitting ? <Loader2Icon className="animate-spin"> Se proceseaza </Loader2Icon> : 'Plătește in siguranta'}
                     <ShieldCheck className="ml-2 w-5 h-5 " />
                   </Button>
-                  
-                  <p className="text-xs text-center text-muted-foreground px-4">
-                    Prin plasarea comenzii ești de acord cu termenii și condițiile noastre.
-                  </p>
 
                 </CardContent>
                 

@@ -555,7 +555,7 @@ function HeroPage() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-xs text-gray-400 mb-8 font-semibold uppercase ",
-                                children: "E-bookul suprem bazat pe știință, aplicabil imediat — acasă sau la restaurant."
+                                children: "eBookul suprem bazat pe știință, aplicabil imediat — acasă sau la restaurant."
                             }, void 0, false, {
                                 fileName: "[project]/components/landing/Hero.tsx",
                                 lineNumber: 25,
@@ -967,6 +967,7 @@ function PovestePage() {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "w-40 h-52 bg-[#2a2a2a] rounded-2xl flex-shrink-0 border border-white/10 flex items-center justify-center italic text-gray-600",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            className: "rounded-2xl",
                             src: "/first.webp",
                             alt: "Adrian",
                             width: 160,
@@ -992,19 +993,51 @@ function PovestePage() {
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-gray-200 italic",
-                                children: '"Problema nu era voința mea — ci glicemia. Am aplicat aceste strategii simple și totul s-a schimbat."'
+                                className: "text-gray-200 font-bold italic",
+                                children: '"Ani la rând mă simțeam obosit tot timpul — deși dormeam 7-8 ore pe noapte."'
                             }, void 0, false, {
                                 fileName: "[project]/components/landing/Poveste.tsx",
                                 lineNumber: 16,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-gray-200 text-sm italic",
+                                children: [
+                                    "La ora 12-1 îmi venea să dorm. Consumam dulciuri după fiecare masă, energia îmi era la pământ, kilogramele se acumulau și nicio dietă nu ținea mai mult de câteva zile. ",
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                        fileName: "[project]/components/landing/Poveste.tsx",
+                                        lineNumber: 17,
+                                        columnNumber: 213
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                        fileName: "[project]/components/landing/Poveste.tsx",
+                                        lineNumber: 17,
+                                        columnNumber: 218
+                                    }, this),
+                                    "Credeam că trebuia să dorm mai mult și că programul încărcat era problema. Până când am descoperit că problema nu era programul încărcat — ci glicemia. Postând conținut pentru Active Boost, am dat peste cercetările lui Jessie Inchauspé (Glucose Goddess) și instant m-am identificat cu fiecare simptom descris. ",
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                        fileName: "[project]/components/landing/Poveste.tsx",
+                                        lineNumber: 19,
+                                        columnNumber: 159
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                        fileName: "[project]/components/landing/Poveste.tsx",
+                                        lineNumber: 19,
+                                        columnNumber: 164
+                                    }, this),
+                                    "Am înțeles cum funcționează spike-ul glicemic și de ce corpul meu reacționa așa. Am aplicat cele 10 hack-uri și în câteva zile poftele s-au diminuat, energia a revenit și mă simțeam din nou în control. A fost o revelație — ceva atât de simplu cu un impact atât de mare în viața de zi cu zi. Am creat acest ghid ca să îți ofer soluția reală la probleme pe care le-am avut și eu."
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/landing/Poveste.tsx",
+                                lineNumber: 17,
+                                columnNumber: 1
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "mt-4 text-slate-100 font-bold",
                                 children: "— Adrian, Fondator Active Boost "
                             }, void 0, false, {
                                 fileName: "[project]/components/landing/Poveste.tsx",
-                                lineNumber: 17,
+                                lineNumber: 23,
                                 columnNumber: 13
                             }, this)
                         ]

@@ -1,9 +1,7 @@
-"use client"
-
 import Image from "next/image"
 import Link from "next/link"
+import { AiOutlineTikTok } from "react-icons/ai";
 
-import { PiTiktokLogoLight } from "react-icons/pi";
 
 const Footer = () => {
   return (
@@ -17,11 +15,11 @@ const Footer = () => {
           <Image src='/logo.png' alt="Activeboost" width={150} height={150}  />
          </div>
 
-         <div className="flex flex-col lg:text-sm text-[12px] font-light justify-center items-center text-center font-opensans ">
-          <p className="font-normal ">Copyright © Active Boost</p>
+         <div className="flex flex-col lg:text-sm text-[12px] text-white font-light justify-center items-center text-center font-opensans ">
+         
           <p className="font-medium">IDTORO SRL</p>
           <p ><span className="font-semibold">CUI:</span> 51081026</p>
-          <p>Blv Dem Radulescu, Nr.15, Bl. X2, Sc A, Et 5, Ap 37</p>
+          <p>Bulevardul Dem Radulescu, Nr 15 </p>
           <p>Mun. Ramnicu Valcea, Județ Valcea, România</p>
           <p><span className="font-normal">Email:</span><span className="ml-1">activeboostfitclub@gmail.com</span></p>
           <p><span className="font-normal">Telefon:</span><span className="ml-1">0754916858</span></p>
@@ -48,9 +46,10 @@ const Footer = () => {
             height={35}/>
             </Link>
             </span>
-             <span>
-              <Link href='tiktok.com/@activeboost.fitclub'>
-              <PiTiktokLogoLight size={35}  />
+             <span className="text-white">
+              <Link href='https://www.tiktok.com/@activeboost.fitclub'>
+           
+            <AiOutlineTikTok size={35}  />
              </Link>
             </span>
            
@@ -82,9 +81,9 @@ const Footer = () => {
        </div>
 </div>
        <div className="lg:w-xl mx-auto pb-5">
-        <p className="text-[11px] text-center">Acest site nu este parte a website-ului Facebook™ sau a companiei Meta Platforms, Inc. În plus, acest site NU este susținut sau aprobat de Meta în niciun fel. FACEBOOK™ este o marcă înregistrată a Meta Platforms, Inc.</p>
+        <p className="text-[11px] text-white text-center">Acest site nu este parte a website-ului Facebook™ sau a companiei Meta Platforms, Inc. În plus, acest site NU este susținut sau aprobat de Meta în niciun fel. FACEBOOK™ este o marcă înregistrată a Meta Platforms, Inc.</p>
        </div>
-
+   <p className="font-normal text-xs text-white  flex items-center justify-center "> @ {new Date().getFullYear()} Copyright Active Boost</p>
     </footer>
     </section>
     </>

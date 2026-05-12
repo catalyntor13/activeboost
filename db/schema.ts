@@ -14,11 +14,10 @@ export const orders = pgTable("orders", {
     createdAt: timestamp('created_at').defaultNow(),
     updatedAt: timestamp('updated_at').defaultNow(),
     email_sent: boolean('email_sent').default(false),
-    follow_up_sent: boolean('follow_up_sent').default(false),
+    invoiceNumber: text('invoice_number').unique(),
     orderDetails: jsonb('order_details').notNull().$type<{
         productID: number,
         productName: string,
-        selectedFlavor: string,
         priceSnapshot: number
     }>(),
 
@@ -30,5 +29,5 @@ export const products = pgTable("products", {
     productName: text('name').notNull(),
     productPrice: integer('price').notNull(),
     description: text('description'),
-    variants: jsonb('variants').$type<string[]>(),
+   
 })

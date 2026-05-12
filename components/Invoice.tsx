@@ -33,6 +33,7 @@ interface InvoiceProps {
   orderId: string;
   date: string;
   numeClient: string;
+  invoiceNumber: string;
   emailClient: string;
   adresaClient: string;
   telefonClient: string;
@@ -49,7 +50,7 @@ const SELLER_INFO = {
   telefon: "0748904680"
 };
 
-export const InvoicePDF = ({ orderId, date, numeClient, emailClient, adresaClient, telefonClient, amount, produs }: InvoiceProps) => (
+export const InvoicePDF = ({ invoiceNumber, date, numeClient, emailClient, adresaClient, telefonClient, amount, produs }: InvoiceProps) => (
   <Document>
     <Page size="A4" style={styles.page}>
       
@@ -57,13 +58,13 @@ export const InvoicePDF = ({ orderId, date, numeClient, emailClient, adresaClien
       <View style={styles.header}>
         <View>
           <Text style={styles.title}>FACTURĂ</Text>
-          <Text style={styles.value}>Seria AB nr. {orderId.toUpperCase()}</Text>
+          <Text style={styles.value}>{invoiceNumber}</Text>
           <Text style={styles.value}>Data: {date}</Text>
         </View>
         <View>
           <Image 
       style={styles.logo} 
-      src="https://activeboost.ro/activeboost.png" 
+      src="https://activeboost.ro/logo.png" 
     />
           <Text style={{...styles.title, fontSize: 16}}>Active Boost</Text>
         </View>
