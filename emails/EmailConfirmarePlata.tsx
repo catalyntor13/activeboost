@@ -10,6 +10,7 @@ import {
   Section,
   Text,
   Tailwind,
+  
 } from '@react-email/components';
 import * as React from 'react';
 
@@ -39,10 +40,9 @@ export const EmailConfirmarePlata: React.FC<EmailConfirmarePlataProps> = ({
 
   return (
     <Html lang="ro">
-      <Head />
-      <Preview>Felicitări! Pachetul tău Active Boost a sosit!</Preview>
-      
       <Tailwind>
+        <Head />
+        <Preview>Felicitări! Pachetul tău Active Boost a sosit!</Preview>
         <Body className="text-gray-700 font-sans bg-gray-50">
           {/* Header with gradient background */}
           <Section className="bg-gradient-to-r from-[#8ecb40] to-[#7ab838] px-0">

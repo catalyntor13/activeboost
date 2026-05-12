@@ -66,7 +66,7 @@ export const InvoicePDF = ({ invoiceNumber, date, numeClient, emailClient, adres
       style={styles.logo} 
       src="https://activeboost.ro/logo.png" 
     />
-          <Text style={{...styles.title, fontSize: 16}}>Active Boost</Text>
+         
         </View>
       </View>
 
