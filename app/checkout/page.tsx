@@ -13,7 +13,7 @@ import { Label } from "@/components/ui/label"
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
 import { Checkbox } from "@/components/ui/checkbox"
-import { ShieldCheck, Lock, Gift, } from "lucide-react"
+import { ShieldCheck, Lock, BookOpenText, } from "lucide-react"
 import { FaCheckCircle } from "react-icons/fa";
 import Link from "next/link";
 
@@ -216,7 +216,7 @@ const onSubmit: SubmitHandler<paymentSchemaValues> = async (data) => {
                     <div className="flex items-center justify-between group">
                        <div className="flex items-center gap-3">
                           <div className="w-8 h-8 rounded-full bg-orange-100 flex items-center justify-center text-orange-600">
-                             <Gift className="w-4 h-4" />
+                             <BookOpenText className="w-4 h-4" />
                           </div>
                           <span className="text-sm font-medium">eBook: Hack-uri Glicemie</span>
                        </div>
@@ -228,7 +228,7 @@ const onSubmit: SubmitHandler<paymentSchemaValues> = async (data) => {
                     <div className="flex items-center justify-between group">
                        <div className="flex items-center gap-3">
                           <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
-                             <Gift className="w-4 h-4" />
+                             <BookOpenText className="w-4 h-4" />
                           </div>
                           <span className="text-sm font-medium">eBook: Arta Hidratării</span>
                        </div>

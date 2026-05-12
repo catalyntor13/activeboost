@@ -86,7 +86,7 @@ export const EmailConfirmarePlata: React.FC<EmailConfirmarePlataProps> = ({
 
             {/* Download Buttons Section */}
             <Section className="px-8 py-12">
-              <Section className="mb-6">
+              <Section className="mb-6 mx-50">
                 <Button
                   className="bg-blue-500 rounded-full cursor-pointer text-[#0a1a02]  shadow-[0_0_20px_rgba(125,193,66,0.3)] text-lg p-5 font-bold w-base"
                   href={linkGhid1}
@@ -99,7 +99,7 @@ export const EmailConfirmarePlata: React.FC<EmailConfirmarePlataProps> = ({
                 <Text className="text-gray-400 text-sm m-0">și</Text>
               </Section>
               
-              <Section>
+              <Section className='mx-50'>
                 <Button
                   className="bg-[#7dc142]  rounded-full cursor-pointer text-[#0a1a02] 
                   shadow-[0_0_20px_rgba(125,193,66,0.3)] text-base p-6 font-bold w-base"
