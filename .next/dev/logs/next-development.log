@@ -1,138 +1,275 @@
-[00:00:00.723] Server  LOG      ✓ Ready in 535ms
-[00:01:10.840] Server  WARN     ⚠ Cross origin request detected from cherry-veinal-unsternly.ngrok-free.dev to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
-Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
-[00:01:10.928] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:11.663] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:01:11.663] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:01:11.663] Browser LOG     %c[Vercel Web Analytics]%c [view] https://cherry-veinal-unsternly.ngrok-free.dev/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"https://cherry-veinal-unsternly.ngrok-free.dev/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1778571294716} /_vercel/insights/view
-[00:01:11.663] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:01:12.665] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:00:00.723] Server  LOG      ✓ Ready in 555ms
+[00:00:03.471] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:03.620] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:01:12.665] Browser WARN    Image with src "/ebook.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:00:03.620] Browser WARN    Image with src "/ebook.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:01:13.677] Browser WARN    ObjectMultiplex - orphaned data for stream "metamask-multichain-provider"
-[00:01:13.677] Browser WARN    ObjectMultiplex - orphaned data for stream "metamask-multichain-provider"
-[00:38:23.965] Browser LOG     %c[Vercel Web Analytics]%c [view] https://cherry-veinal-unsternly.ngrok-free.dev/checkout color: rgb(120, 120, 120) color: inherit {"dp":"/checkout","o":"https://cherry-veinal-unsternly.ngrok-free.dev/checkout","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1778573527589} /_vercel/insights/view
-[00:46:12.466] Server  LOG      ✓ Compiled in 17ms
-[00:46:18.147] Server  LOG      ✓ Compiled in 14ms
-[00:46:23.747] Server  LOG      ✓ Compiled in 13ms
-[00:46:32.163] Server  LOG      ✓ Compiled in 52ms
-[00:47:31.819] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:47:31.819] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:47:31.819] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/checkout","route":"/checkout"}
-[00:47:31.819] Browser LOG     %c[Vercel Web Analytics]%c [view] https://cherry-veinal-unsternly.ngrok-free.dev/checkout color: rgb(120, 120, 120) color: inherit {"dp":"/checkout","o":"https://cherry-veinal-unsternly.ngrok-free.dev/checkout","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1778574075414} /_vercel/insights/view
-[00:47:31.819] Browser WARN    ObjectMultiplex - orphaned data for stream "metamask-multichain-provider"
-[00:47:31.819] Browser WARN    ObjectMultiplex - orphaned data for stream "metamask-multichain-provider"
-[00:47:56.470] Server  LOG      ✓ Compiled in 16ms
-[00:48:02.134] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:48:02.134] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:48:02.134] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/checkout","route":"/checkout"}
-[00:48:02.134] Browser LOG     %c[Vercel Web Analytics]%c [view] https://cherry-veinal-unsternly.ngrok-free.dev/checkout color: rgb(120, 120, 120) color: inherit {"dp":"/checkout","o":"https://cherry-veinal-unsternly.ngrok-free.dev/checkout","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1778574105722} /_vercel/insights/view
-[00:48:02.134] Browser WARN    ObjectMultiplex - orphaned data for stream "metamask-multichain-provider"
-[00:48:02.134] Browser WARN    ObjectMultiplex - orphaned data for stream "metamask-multichain-provider"
-[00:48:04.656] Server  LOG      ✓ Compiled in 13ms
-[00:49:24.059] Server  LOG      ✓ Compiled in 15ms
-[00:49:30.098] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:49:30.098] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:49:30.098] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/checkout","route":"/checkout"}
-[00:49:30.098] Browser LOG     %c[Vercel Web Analytics]%c [view] https://cherry-veinal-unsternly.ngrok-free.dev/checkout color: rgb(120, 120, 120) color: inherit {"dp":"/checkout","o":"https://cherry-veinal-unsternly.ngrok-free.dev/checkout","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1778574193765} /_vercel/insights/view
-[00:49:30.241] Browser WARN    ObjectMultiplex - orphaned data for stream "metamask-multichain-provider"
-[00:49:30.241] Browser WARN    ObjectMultiplex - orphaned data for stream "metamask-multichain-provider"
-[00:49:48.480] Server  LOG      ✓ Compiled in 14ms
-[00:49:51.820] Server  LOG      ✓ Compiled in 14ms
-[00:49:54.126] Server  LOG      ✓ Compiled in 11ms
-[00:49:57.402] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:49:57.402] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:49:57.402] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/checkout","route":"/checkout"}
-[00:49:57.402] Browser LOG     %c[Vercel Web Analytics]%c [view] https://cherry-veinal-unsternly.ngrok-free.dev/checkout color: rgb(120, 120, 120) color: inherit {"dp":"/checkout","o":"https://cherry-veinal-unsternly.ngrok-free.dev/checkout","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1778574221029} /_vercel/insights/view
-[00:49:57.515] Browser WARN    ObjectMultiplex - orphaned data for stream "metamask-multichain-provider"
-[00:49:57.515] Browser WARN    ObjectMultiplex - orphaned data for stream "metamask-multichain-provider"
-[00:50:12.356] Browser LOG     %c[Vercel Web Analytics]%c [view] https://cherry-veinal-unsternly.ngrok-free.dev/politica_de_confidentialitate color: rgb(120, 120, 120) color: inherit {"dp":"/politica_de_confidentialitate","o":"https://cherry-veinal-unsternly.ngrok-free.dev/politica_de_confidentialitate","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1778574235977} /_vercel/insights/view
-[00:50:15.646] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:50:34.451] Browser LOG     %c[Vercel Web Analytics]%c [view] https://cherry-veinal-unsternly.ngrok-free.dev/checkout color: rgb(120, 120, 120) color: inherit {"dp":"/checkout","o":"https://cherry-veinal-unsternly.ngrok-free.dev/checkout","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1778574258058} /_vercel/insights/view
-[00:50:52.114] Server  LOG      ✓ Compiled in 13ms
-[00:50:56.287] Server  LOG      ✓ Compiled in 13ms
-[00:51:05.274] Server  LOG      ✓ Compiled in 14ms
-[00:51:08.315] Server  LOG      ✓ Compiled in 13ms
-[00:51:36.214] Server  LOG      ✓ Compiled in 16ms
-[00:51:46.791] Server  LOG      ✓ Compiled in 15ms
-[00:51:52.724] Server  LOG      ✓ Compiled in 15ms
-[00:52:18.482] Browser LOG     %c[Vercel Web Analytics]%c [view] https://cherry-veinal-unsternly.ngrok-free.dev/politica_de_confidentialitate color: rgb(120, 120, 120) color: inherit {"dp":"/politica_de_confidentialitate","o":"https://cherry-veinal-unsternly.ngrok-free.dev/politica_de_confidentialitate","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1778574362101} /_vercel/insights/view
-[00:52:59.160] Server  LOG      ✓ Compiled in 15ms
-[00:56:49.534] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:56:49.534] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:56:49.534] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/checkout","route":"/checkout"}
-[00:56:49.534] Browser LOG     %c[Vercel Web Analytics]%c [view] https://cherry-veinal-unsternly.ngrok-free.dev/checkout color: rgb(120, 120, 120) color: inherit {"dp":"/checkout","o":"https://cherry-veinal-unsternly.ngrok-free.dev/checkout","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1778574633150} /_vercel/insights/view
-[00:56:49.643] Browser WARN    ObjectMultiplex - orphaned data for stream "metamask-multichain-provider"
-[00:56:49.643] Browser WARN    ObjectMultiplex - orphaned data for stream "metamask-multichain-provider"
-[01:00:08.308] Server  LOG      ✓ Compiled in 18ms
-[01:00:13.287] Server  LOG      ✓ Compiled in 18ms
-[01:00:19.874] Server  LOG      ✓ Compiled in 38ms
-[01:01:33.331] Server  ERROR   (node:2566) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
-(Use `node --trace-deprecation ...` to show where the warning was created)
-[01:02:24.769] Server  LOG     [webhook] Status: "paid" "| PaymentId:" "tr_bfQexWzoLNUhz3SeTf6RJ"
-[01:02:24.870] Server  ERROR   [webhook] Eroare generală: Error: No transactions support in neon-http driver
-[01:02:25.285] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:02:25.285] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:02:25.285] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/thank-you/1","route":"/thank-you/[orderId]"}
-[01:02:25.285] Browser LOG     %c[Vercel Web Analytics]%c [view] https://cherry-veinal-unsternly.ngrok-free.dev/thank-you/1 color: rgb(120, 120, 120) color: inherit {"dp":"/thank-you/[orderId]","o":"https://cherry-veinal-unsternly.ngrok-free.dev/thank-you/1","r":"https://www.mollie.com/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1778574968950} /_vercel/insights/view
-[01:02:25.285] Browser WARN    ObjectMultiplex - orphaned data for stream "metamask-multichain-provider"
-[01:02:25.285] Browser WARN    ObjectMultiplex - orphaned data for stream "metamask-multichain-provider"
-[01:09:49.590] Server  LOG      ✓ Compiled in 47ms
-[01:10:21.421] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:10:21.421] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:10:21.421] Browser WARN    Image with src "/ebook.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:10:21.421] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:10:21.421] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:10:21.421] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[01:10:21.421] Browser LOG     %c[Vercel Web Analytics]%c [view] https://cherry-veinal-unsternly.ngrok-free.dev/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"https://cherry-veinal-unsternly.ngrok-free.dev/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1778575445006} /_vercel/insights/view
-[01:10:21.421] Browser WARN    ObjectMultiplex - orphaned data for stream "metamask-multichain-provider"
-[01:10:21.421] Browser WARN    ObjectMultiplex - orphaned data for stream "metamask-multichain-provider"
-[01:10:23.684] Browser LOG     %c[Vercel Web Analytics]%c [view] https://cherry-veinal-unsternly.ngrok-free.dev/checkout color: rgb(120, 120, 120) color: inherit {"dp":"/checkout","o":"https://cherry-veinal-unsternly.ngrok-free.dev/checkout","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1778575447298} /_vercel/insights/view
-[01:10:49.538] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:10:49.538] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:10:49.538] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/thank-you/1","route":"/thank-you/[orderId]"}
-[01:10:49.538] Browser LOG     %c[Vercel Web Analytics]%c [view] https://cherry-veinal-unsternly.ngrok-free.dev/thank-you/1 color: rgb(120, 120, 120) color: inherit {"dp":"/thank-you/[orderId]","o":"https://cherry-veinal-unsternly.ngrok-free.dev/thank-you/1","r":"https://www.mollie.com/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1778575473233} /_vercel/insights/view
-[01:10:49.595] Server  LOG     [webhook] Status: "paid" "| PaymentId:" "tr_dQ4ULkm485JUp2DRPg6RJ"
-[01:10:49.676] Browser WARN    ObjectMultiplex - orphaned data for stream "metamask-multichain-provider"
-[01:10:49.676] Browser WARN    ObjectMultiplex - orphaned data for stream "metamask-multichain-provider"
-[01:10:50.267] Server  WARN    Not valid image extension
-[01:10:50.316] Server  WARN    Not valid image extension
-[01:10:51.502] Server  LOG     [webhook] Email trimis cu succes, Resend ID: "89ba9c85-2446-4c51-9e25-2362241c04ce"
-[01:13:43.848] Server  LOG      ✓ Compiled in 62ms
-[01:16:53.258] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:16:53.258] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:16:53.258] Browser WARN    Image with src "/ebook.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:16:53.258] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:16:53.258] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:16:53.258] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[01:16:53.258] Browser LOG     %c[Vercel Web Analytics]%c [view] https://cherry-veinal-unsternly.ngrok-free.dev/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"https://cherry-veinal-unsternly.ngrok-free.dev/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1778575836845} /_vercel/insights/view
-[01:16:53.429] Browser WARN    ObjectMultiplex - orphaned data for stream "metamask-multichain-provider"
-[01:16:53.429] Browser WARN    ObjectMultiplex - orphaned data for stream "metamask-multichain-provider"
-[01:16:58.726] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:16:58.726] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:16:58.726] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/thank-you/1","route":"/thank-you/[orderId]"}
-[01:16:58.726] Browser LOG     %c[Vercel Web Analytics]%c [view] https://cherry-veinal-unsternly.ngrok-free.dev/thank-you/1 color: rgb(120, 120, 120) color: inherit {"dp":"/thank-you/[orderId]","o":"https://cherry-veinal-unsternly.ngrok-free.dev/thank-you/1","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1778575842279} /_vercel/insights/view
-[01:16:58.817] Browser WARN    ObjectMultiplex - orphaned data for stream "metamask-multichain-provider"
-[01:16:58.817] Browser WARN    ObjectMultiplex - orphaned data for stream "metamask-multichain-provider"
-[01:17:06.944] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:17:06.944] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:17:06.944] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/thank-you/2","route":"/thank-you/[orderId]"}
-[01:17:06.944] Browser LOG     %c[Vercel Web Analytics]%c [view] https://cherry-veinal-unsternly.ngrok-free.dev/thank-you/2 color: rgb(120, 120, 120) color: inherit {"dp":"/thank-you/[orderId]","o":"https://cherry-veinal-unsternly.ngrok-free.dev/thank-you/2","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1778575850623} /_vercel/insights/view
-[01:17:07.052] Browser WARN    ObjectMultiplex - orphaned data for stream "metamask-multichain-provider"
-[01:17:07.052] Browser WARN    ObjectMultiplex - orphaned data for stream "metamask-multichain-provider"
-[01:17:09.367] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:17:09.368] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:17:09.368] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/thank-you/1","route":"/thank-you/[orderId]"}
-[01:17:09.368] Browser LOG     %c[Vercel Web Analytics]%c [view] https://cherry-veinal-unsternly.ngrok-free.dev/thank-you/1 color: rgb(120, 120, 120) color: inherit {"dp":"/thank-you/[orderId]","o":"https://cherry-veinal-unsternly.ngrok-free.dev/thank-you/1","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1778575852931} /_vercel/insights/view
-[01:17:09.553] Browser WARN    ObjectMultiplex - orphaned data for stream "metamask-multichain-provider"
-[01:17:09.553] Browser WARN    ObjectMultiplex - orphaned data for stream "metamask-multichain-provider"
-[01:26:29.027] Server  LOG      ✓ Compiled in 36ms
-[01:33:19.127] Server  LOG        Reload env: .env.local
-[01:33:19.210] Server  LOG      ✓ Compiled in 59ms
-[01:33:27.782] Server  LOG        Reload env: .env.local
-[01:44:55.388] Server  LOG      ✓ Compiled in 37ms
+[00:00:03.620] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:03.620] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:03.620] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:03.620] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1778589222244} /_vercel/insights/view
+[00:00:03.921] Browser WARN    ObjectMultiplex - orphaned data for stream "metamask-multichain-provider"
+[00:00:03.921] Browser WARN    ObjectMultiplex - orphaned data for stream "metamask-multichain-provider"
+[00:00:09.513] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:09.627] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:09.627] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/email-preview","route":"/email-preview"}
+[00:00:09.627] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/email-preview color: rgb(120, 120, 120) color: inherit {"dp":"/email-preview","o":"http://localhost:3000/email-preview","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1778589228251} /_vercel/insights/view
+[00:00:09.989] Browser WARN    ObjectMultiplex - orphaned data for stream "metamask-multichain-provider"
+[00:00:09.989] Browser WARN    ObjectMultiplex - orphaned data for stream "metamask-multichain-provider"
+[00:01:18.767] Server  LOG      ✓ Compiled in 136ms
+[00:01:19.133] Browser ERROR   In HTML, %s cannot be a child of <%s>.%s
+This will cause a hydration error.%s <div> html  
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndFocusHandler segmentPath={[...]}>
+        <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="email-prev..." loading={null}>
+              <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+                <RedirectBoundary>
+                  <RedirectErrorBoundary router={{...}}>
+                    <InnerLayoutRouter url="/email-pre..." tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
+                      <SegmentViewNode type="page" pagePath="email-prev...">
+                        <SegmentTrieNode>
+                        <ClientPageRoot Component={function EmailPreviewPage} serverProvidedParams={{...}}>
+                          <EmailPreviewPage params={Promise} searchParams={Promise}>
+                            <Html lang="ro">
+>                             <html dir="ltr" lang="ro" ref={null}>
+                                <Tailwind>
+                                  <head>
+                                  <Preview>
+>                                   <div
+>                                     style={{display:"none",overflow:"hidden",lineHeight:"1px",opacity:0,maxHeight:0,maxWidth:0}}
+>                                     data-skip-in-text={true}
+>                                     ref={null}
+>                                   >
+                                  ...
+                      ...
+                    ...
+          ...
+
+[00:01:19.133] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. html <div>
+[00:01:19.133] Browser ERROR   In HTML, %s cannot be a child of <%s>.%s
+This will cause a hydration error.%s <html> body  
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:"...", ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/email-pre..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+>                         <body
+>                           className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+>                         >
+                            ...
+                              <ClientPageRoot Component={function EmailPreviewPage} serverProvidedParams={{...}}>
+                                <EmailPreviewPage params={Promise} searchParams={Promise}>
+                                  <Html lang="ro">
+>                                   <html dir="ltr" lang="ro" ref={null}>
+                            ...
+                  ...
+
+[00:01:19.133] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. body <html>
+[00:01:19.133] Browser ERROR   You are mounting a new %s component when a previous one has not first unmounted. It is an error to render more than one %s component at a time and attributes and children of these components will likely fail in unpredictable ways. Please only render a single instance of <%s> and if you need to mount a new one, ensure any previous ones have unmounted first. html html html
+[00:01:19.133] Browser ERROR   You are mounting a new %s component when a previous one has not first unmounted. It is an error to render more than one %s component at a time and attributes and children of these components will likely fail in unpredictable ways. Please only render a single instance of <%s> and if you need to mount a new one, ensure any previous ones have unmounted first. body body body
+[00:02:21.556] Server  LOG      ✓ Compiled in 40ms
+[00:02:22.843] Server  LOG      ✓ Compiled in 18ms
+[00:02:31.473] Server  LOG      ✓ Compiled in 14ms
+[00:02:33.921] Server  LOG      ✓ Compiled in 19ms
+[00:02:36.117] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:36.267] Browser ERROR   In HTML, %s cannot be a child of <%s>.%s
+This will cause a hydration error.%s <div> html  
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndFocusHandler segmentPath={[...]}>
+        <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="email-prev..." loading={null}>
+              <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+                <RedirectBoundary>
+                  <RedirectErrorBoundary router={{...}}>
+                    <InnerLayoutRouter url="/email-pre..." tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
+                      <SegmentViewNode type="page" pagePath="email-prev...">
+                        <SegmentTrieNode>
+                        <ClientPageRoot Component={function EmailPreviewPage} serverProvidedParams={{...}}>
+                          <EmailPreviewPage params={Promise} searchParams={Promise}>
+                            <Html lang="ro">
+>                             <html dir="ltr" lang="ro" ref={null}>
+                                <Tailwind>
+                                  <head>
+                                  <Preview>
+>                                   <div
+>                                     style={{display:"none",overflow:"hidden",lineHeight:"1px",opacity:0,maxHeight:0,maxWidth:0}}
+>                                     data-skip-in-text={true}
+>                                     ref={null}
+>                                   >
+                                  ...
+                      ...
+                    ...
+          ...
+
+[00:02:36.267] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. html <div>
+[00:02:36.267] Browser ERROR   In HTML, %s cannot be a child of <%s>.%s
+This will cause a hydration error.%s <html> body  
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/email-pre..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+>                         <body
+>                           className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+>                         >
+                            ...
+                              <ClientPageRoot Component={function EmailPreviewPage} serverProvidedParams={{...}}>
+                                <EmailPreviewPage params={Promise} searchParams={Promise}>
+                                  <Html lang="ro">
+>                                   <html dir="ltr" lang="ro" ref={null}>
+                            ...
+                  ...
+
+[00:02:36.267] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. body <html>
+[00:02:36.267] Browser ERROR   You are mounting a new %s component when a previous one has not first unmounted. It is an error to render more than one %s component at a time and attributes and children of these components will likely fail in unpredictable ways. Please only render a single instance of <%s> and if you need to mount a new one, ensure any previous ones have unmounted first. html html html
+[00:02:36.267] Browser ERROR   You are mounting a new %s component when a previous one has not first unmounted. It is an error to render more than one %s component at a time and attributes and children of these components will likely fail in unpredictable ways. Please only render a single instance of <%s> and if you need to mount a new one, ensure any previous ones have unmounted first. body body body
+[00:02:36.267] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/email-pre..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         dir="ltr"
+                        >
+                          <body
+                            className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+-                           style={{background-color:"rgb(249, 2..."}}
+                          >
+                            ...
+                              <ClientPageRoot Component={function EmailPreviewPage} serverProvidedParams={{...}}>
+                                <EmailPreviewPage params={Promise} searchParams={Promise}>
+                                  <Html lang="ro">
+                                    <html
+                                      dir="ltr"
++                                     lang="ro"
+-                                     lang="en"
+                                      ref={null}
+                                    >
+                                      <Tailwind>
+                                        <head ref={undefined}>
+                                          <style>
++                                           
+-                                           {"@font-face{font-family:'__nextjs-Geist';font-style:normal;font-weight:..."}
+                                          ...
+                                        ...
+                            ...
+                  ...
+
+[00:02:36.267] Browser ERROR   You are mounting a new %s component when a previous one has not first unmounted. It is an error to render more than one %s component at a time and attributes and children of these components will likely fail in unpredictable ways. Please only render a single instance of <%s> and if you need to mount a new one, ensure any previous ones have unmounted first. html html html
+[00:02:36.267] Browser ERROR   You are mounting a new %s component when a previous one has not first unmounted. It is an error to render more than one %s component at a time and attributes and children of these components will likely fail in unpredictable ways. Please only render a single instance of <%s> and if you need to mount a new one, ensure any previous ones have unmounted first. body body body
+[00:02:36.267] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:02:36.267] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/email-preview","route":"/email-preview"}
+[00:02:36.267] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/email-preview","route":"/email-preview"}
+[00:02:36.267] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/email-preview color: rgb(120, 120, 120) color: inherit {"dp":"/email-preview","o":"http://localhost:3000/email-preview","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1778589374888} /_vercel/insights/view
+[00:02:36.267] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/email-preview color: rgb(120, 120, 120) color: inherit {"dp":"/email-preview","o":"http://localhost:3000/email-preview","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1778589374888} /_vercel/insights/view
+[00:02:36.498] Browser WARN    ObjectMultiplex - orphaned data for stream "metamask-multichain-provider"
+[00:02:36.498] Browser WARN    ObjectMultiplex - orphaned data for stream "metamask-multichain-provider"
+[00:02:45.261] Server  LOG      ✓ Compiled in 14ms
+[00:02:50.075] Server  LOG      ✓ Compiled in 22ms
+[00:02:53.721] Server  LOG      ✓ Compiled in 15ms
+[00:02:56.828] Server  LOG      ✓ Compiled in 52ms
+[00:03:01.262] Server  LOG      ✓ Compiled in 18ms
+[00:03:04.257] Server  LOG      ✓ Compiled in 13ms
+[00:03:08.766] Server  LOG      ✓ Compiled in 32ms
+[00:03:15.437] Server  LOG      ✓ Compiled in 14ms
+[00:03:17.174] Server  LOG      ✓ Compiled in 17ms
+[00:03:23.812] Server  LOG      ✓ Compiled in 13ms
+[00:03:31.300] Server  LOG      ✓ Compiled in 24ms
+[00:03:35.673] Server  LOG      ✓ Compiled in 18ms
+[00:04:23.393] Server  LOG      ✓ Compiled in 28ms
+[00:04:27.979] Server  LOG      ✓ Compiled in 14ms
+[00:04:44.407] Server  LOG      ✓ Compiled in 32ms
+[00:04:46.588] Server  LOG      ✓ Compiled in 39ms
+[00:04:48.523] Server  LOG      ✓ Compiled in 36ms
+[00:05:06.720] Server  LOG      ✓ Compiled in 14ms
+[00:05:24.418] Server  LOG      ✓ Compiled in 24ms
+[00:05:27.054] Server  LOG      ✓ Compiled in 16ms
+[00:05:30.909] Server  LOG      ✓ Compiled in 18ms
+[00:05:34.591] Server  LOG      ✓ Compiled in 20ms
+[00:05:39.703] Server  LOG      ✓ Compiled in 20ms
+[00:05:41.909] Server  LOG      ✓ Compiled in 19ms
+[00:05:45.232] Server  LOG      ✓ Compiled in 17ms
+[00:05:47.758] Server  LOG      ✓ Compiled in 19ms
+[00:05:49.204] Server  LOG      ✓ Compiled in 16ms
+[00:05:51.846] Server  LOG      ✓ Compiled in 19ms
+[00:08:16.315] Server  LOG      ✓ Compiled in 24ms
+[00:08:20.359] Server  LOG      ✓ Compiled in 18ms
+[00:08:22.658] Server  LOG      ✓ Compiled in 32ms
+[00:08:24.459] Server  LOG      ✓ Compiled in 20ms
+[00:08:26.267] Server  LOG      ✓ Compiled in 14ms
+[00:08:28.950] Server  LOG      ✓ Compiled in 18ms
+[00:08:34.677] Server  LOG      ✓ Compiled in 16ms
+[00:08:41.938] Server  LOG      ✓ Compiled in 15ms
+[00:08:49.964] Server  LOG      ✓ Compiled in 24ms
+[00:09:01.898] Server  LOG      ✓ Compiled in 11ms
+[00:09:11.212] Server  LOG      ✓ Compiled in 23ms
+[00:09:14.769] Server  LOG      ✓ Compiled in 16ms
+[00:09:17.129] Server  LOG      ✓ Compiled in 22ms
+[00:09:27.961] Server  LOG      ✓ Compiled in 20ms
+[00:09:31.845] Server  LOG      ✓ Compiled in 18ms
+[00:09:41.091] Server  LOG      ✓ Compiled in 17ms
+[00:17:00.337] Server  LOG      ✓ Compiled in 30ms
