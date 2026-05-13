@@ -27,12 +27,12 @@ export default function CTASection() {
             </div>
           </motion.div>
           <Link href="/checkout" className="group">
-          <Button className="bg-[#7dc142] cursor-pointer text-[#0a1a02] hover:bg-[#8ee04b] w-full shadow-[0_0_20px_rgba(125,193,66,0.3)] text-xl  p-8 font-bold w-full lg:w-xs">
-            VREAU GHIDUL PDF <ArrowRight className="inline ml-2 group-hover:translate-x-1 transition-transform" />
+          <Button className="bg-[#7dc142] max-w-xs cursor-pointer text-[#0a1a02] hover:bg-[#8ee04b]  shadow-[0_0_20px_rgba(125,193,66,0.3)] text-xl  p-8 font-bold w-xs">
+            VREAU GHIDUL PDF <ArrowRight className="inline ml-1 group-hover:translate-x-1  transition-transform" />
           </Button>
           </Link>
           <p className="text-[10px] flex items-center justify-center mt-3 gap-2 text-gray-500 uppercase tracking-widest tracking-tighter ">
-              <Download className="inline mr-1" size={12} />  Acces imediat PDF • Descarcă pe orice dispozitiv 
+              <Download className="inline mr-1 max-w-xs" size={12} />  Acces imediat PDF • Descarcă pe orice dispozitiv 
             </p>
         </div>
       </section>

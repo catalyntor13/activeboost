@@ -202,32 +202,34 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$vercel$2f$
 ;
 ;
 const metadata = {
-    title: 'Start Activ - Micul Dejun Nutritiv la doar 215 Calorii | Active Boost',
-    description: "Descoperă Start Activ: Micul dejun gustos și super nutritiv, bogat în proteine, fibre, vitamine și minerale. Tot ce are nevoie corpul tău într-o singură masă delicioasă in doar 215 calorii. Optimizează-ți sănătatea de la prima oră. Află mai multe!",
+    title: 'eBook-ul care te scapă de Oboseală, Pofte de Dulce și Kilograme în Plus',
+    description: "Descoperă ghidul practic bazat pe știință care îți stabilizează glicemia și îți transformă energia zilnică — fără diete restrictive, fără frustrări. 10 hack-uri simple, aplicabile imediat acasă sau la restaurant. Bonus gratuit inclus: Arta Hidratării (valoare 99 lei). Doar 99 lei",
     keywords: [
+        "glicemie stabila",
+        "cum sa iti stabilizezi glicemia",
+        "spike glicemic ce este",
+        "pofte de dulce cauza",
+        "oboseala dupa masa",
+        "cum sa slabesti fara dieta",
+        "energie constanta toata ziua",
+        "hack-uri glicemie",
+        "glucose goddess romana",
+        "ghid glicemie romana",
+        "ebook nutritie romania",
+        "cum sa mananci corect",
+        "ordinea alimentelor in farfurie",
+        "insulina si glicemie",
+        "cum sa controlezi glicemia natural",
         "Active Boost Romania",
-        "Start Activ mic dejun",
-        "Protocol Start Activ",
-        "Produse Active Boost",
-        "mic dejun nutritiv",
-        "shake proteic slabit",
-        "inlocuitor de masa sanatos",
-        "mic dejun bogat in proteine si fibre",
-        "suplimente vitamine si minerale mic dejun",
-        "Welness",
-        "shake nutritiv 200 calorii",
-        "ce sa mananci la micul dejun ca sa ai energie",
-        "mic dejun rapid pentru oameni ocupati",
-        "cum sa slabesti fara sa iti fie foame dimineata",
-        "mic dejun pentru energie si concentrare",
-        "cel mai bun shake proteic pentru digestie",
-        "mic dejun fara zahar adaugat",
-        "cum sa controlezi glicemia la micul dejun",
-        "optimizare metabolica mic dejun",
-        "biohacking romania nutritie",
-        "hrana pentru creier dimineata",
-        "longevitate prin nutritie",
-        "sanatatea microbiomului mic dejun"
+        "ebook sanatate romania",
+        "nutritie si energie",
+        "slabire fara dieta restrictiva",
+        "hidratare si energie",
+        "biohacking romania",
+        "longevitate nutritie romania",
+        "sanatate metabolica",
+        "cum sa eviti spike glicemic",
+        "oboseala cronica cauza"
     ],
     authors: [
         {
@@ -235,8 +237,8 @@ const metadata = {
         }
     ],
     openGraph: {
-        title: "Start Activ - Micul Dejun Nutritiv la doar 215 Calorii | Active Boost",
-        description: "Descoperă Start Activ: Micul dejun gustos și super nutritiv, bogat în proteine, fibre, vitamine și minerale. Tot ce are nevoie corpul tău într-o singură masă delicioasă in doar 215 calorii. Optimizează-ți sănătatea de la prima oră. Află mai multe!",
+        title: 'eBook-ul care te scapă de Oboseală, Pofte de Dulce și Kilograme în Plus',
+        description: "Descoperă ghidul practic bazat pe știință care îți stabilizează glicemia și îți transformă energia zilnică — fără diete restrictive, fără frustrări. 10 hack-uri simple, aplicabile imediat acasă sau la restaurant. Bonus gratuit inclus: Arta Hidratării (valoare 99 lei). Doar 99 lei",
         url: "https://www.activeboost.ro/",
         siteName: "Active Boost",
         images: [
@@ -260,23 +262,23 @@ function RootLayout({ children }) {
                 children,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$CookieBanner$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/app/layout.tsx",
-                    lineNumber: 69,
+                    lineNumber: 98,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$vercel$2f$analytics$2f$dist$2f$next$2f$index$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Analytics"], {}, void 0, false, {
                     fileName: "[project]/app/layout.tsx",
-                    lineNumber: 70,
+                    lineNumber: 99,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/layout.tsx",
-            lineNumber: 65,
+            lineNumber: 94,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/layout.tsx",
-        lineNumber: 64,
+        lineNumber: 93,
         columnNumber: 5
     }, this);
 }

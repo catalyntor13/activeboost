@@ -280,11 +280,11 @@ function CTASection() {
                         href: "/checkout",
                         className: "group",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
-                            className: "bg-[#7dc142] cursor-pointer text-[#0a1a02] hover:bg-[#8ee04b] w-full shadow-[0_0_20px_rgba(125,193,66,0.3)] text-xl  p-8 font-bold w-full lg:w-xs",
+                            className: "bg-[#7dc142] max-w-xs cursor-pointer text-[#0a1a02] hover:bg-[#8ee04b]  shadow-[0_0_20px_rgba(125,193,66,0.3)] text-xl  p-8 font-bold w-xs",
                             children: [
                                 "VREAU GHIDUL PDF ",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
-                                    className: "inline ml-2 group-hover:translate-x-1 transition-transform"
+                                    className: "inline ml-1 group-hover:translate-x-1  transition-transform"
                                 }, void 0, false, {
                                     fileName: "[project]/components/landing/CTA.tsx",
                                     lineNumber: 31,
@@ -305,7 +305,7 @@ function CTASection() {
                         className: "text-[10px] flex items-center justify-center mt-3 gap-2 text-gray-500 uppercase tracking-widest tracking-tighter ",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$download$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Download$3e$__["Download"], {
-                                className: "inline mr-1",
+                                className: "inline mr-1 max-w-xs",
                                 size: 12
                             }, void 0, false, {
                                 fileName: "[project]/components/landing/CTA.tsx",

@@ -32,13 +32,42 @@ const OpenSans = Open_Sans({
 
 
 export const metadata: Metadata = {
-  title: 'Start Activ - Micul Dejun Nutritiv la doar 215 Calorii | Active Boost',
-  description: "Descoperă Start Activ: Micul dejun gustos și super nutritiv, bogat în proteine, fibre, vitamine și minerale. Tot ce are nevoie corpul tău într-o singură masă delicioasă in doar 215 calorii. Optimizează-ți sănătatea de la prima oră. Află mai multe!",
-  keywords: ["Active Boost Romania", "Start Activ mic dejun", "Protocol Start Activ", "Produse Active Boost", "mic dejun nutritiv", "shake proteic slabit", "inlocuitor de masa sanatos", "mic dejun bogat in proteine si fibre", "suplimente vitamine si minerale mic dejun", "Welness", "shake nutritiv 200 calorii", "ce sa mananci la micul dejun ca sa ai energie", "mic dejun rapid pentru oameni ocupati", "cum sa slabesti fara sa iti fie foame dimineata", "mic dejun pentru energie si concentrare", "cel mai bun shake proteic pentru digestie", "mic dejun fara zahar adaugat", "cum sa controlezi glicemia la micul dejun", "optimizare metabolica mic dejun", "biohacking romania nutritie", "hrana pentru creier dimineata", "longevitate prin nutritie", "sanatatea microbiomului mic dejun"],
+  title: 'eBook-ul care te scapă de Oboseală, Pofte de Dulce și Kilograme în Plus',
+
+    description: "Descoperă ghidul practic bazat pe știință care îți stabilizează glicemia și îți transformă energia zilnică — fără diete restrictive, fără frustrări. 10 hack-uri simple, aplicabile imediat acasă sau la restaurant. Bonus gratuit inclus: Arta Hidratării (valoare 99 lei). Doar 99 lei",
+
+  keywords: ["glicemie stabila",
+  "cum sa iti stabilizezi glicemia",
+  "spike glicemic ce este",
+  "pofte de dulce cauza",
+  "oboseala dupa masa",
+  "cum sa slabesti fara dieta",
+  "energie constanta toata ziua",
+  "hack-uri glicemie",
+  "glucose goddess romana",
+  "ghid glicemie romana",
+  "ebook nutritie romania",
+  "cum sa mananci corect",
+  "ordinea alimentelor in farfurie",
+  "insulina si glicemie",
+  "cum sa controlezi glicemia natural",
+  "Active Boost Romania",
+  "ebook sanatate romania",
+  "nutritie si energie",
+  "slabire fara dieta restrictiva",
+  "hidratare si energie",
+  "biohacking romania",
+  "longevitate nutritie romania",
+  "sanatate metabolica",
+  "cum sa eviti spike glicemic",
+  "oboseala cronica cauza"
+],
   authors: [{ name: "Active Boost" }],
   openGraph: {
-    title: "Start Activ - Micul Dejun Nutritiv la doar 215 Calorii | Active Boost",
-    description: "Descoperă Start Activ: Micul dejun gustos și super nutritiv, bogat în proteine, fibre, vitamine și minerale. Tot ce are nevoie corpul tău într-o singură masă delicioasă in doar 215 calorii. Optimizează-ți sănătatea de la prima oră. Află mai multe!",
+     title: 'eBook-ul care te scapă de Oboseală, Pofte de Dulce și Kilograme în Plus',
+   
+       description: "Descoperă ghidul practic bazat pe știință care îți stabilizează glicemia și îți transformă energia zilnică — fără diete restrictive, fără frustrări. 10 hack-uri simple, aplicabile imediat acasă sau la restaurant. Bonus gratuit inclus: Arta Hidratării (valoare 99 lei). Doar 99 lei",
+       
     url: "https://www.activeboost.ro/",
     siteName: "Active Boost",
     images: [

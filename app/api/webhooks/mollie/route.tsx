@@ -105,8 +105,8 @@ export async function POST(req: NextRequest) {
 
     // 9. Trimitem email-ul prin Resend
     const { error: resendError } = await resend.emails.send({
-      from: "Active Boost <onboarding@resend.dev>", // ← domeniu verificat în Resend dashboard
-      to: 'activeboostfitclub@gmail.com',
+      from: "Active Boost <noreply@activeboost.ro>", // ← domeniu verificat în Resend dashboard
+      to: order.customer_email,
       subject: `Confirmare comandă #${order.id}`,
       html: htmlBody,
       attachments: [{

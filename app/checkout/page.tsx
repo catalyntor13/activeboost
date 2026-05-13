@@ -209,7 +209,7 @@ const onSubmit: SubmitHandler<paymentSchemaValues> = async (data) => {
 
                   {/* Bonusuri */}
                   <div className="space-y-3">
-                    <p className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">Bonusuri Incluse</p>
+                    <p className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">Ce Include</p>
 
                   
                  
@@ -289,7 +289,7 @@ const onSubmit: SubmitHandler<paymentSchemaValues> = async (data) => {
                 <CardFooter className="bg-muted/30 p-4 border-t border-border flex justify-center gap-6 grayscale opacity-70">
                    {/* Poti pune aici imagini cu Visa/Mastercard, sau text */}
                    <span className="text-xs font-bold flex items-center gap-1"><Lock className="w-3 h-3"/> SSL Encrypted</span>
-                   <span className="text-xs font-bold">30 Days Return</span>
+            
                 </CardFooter>
               </Card>
             </div>
