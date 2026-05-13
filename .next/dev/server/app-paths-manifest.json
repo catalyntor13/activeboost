@@ -2,5 +2,7 @@
   "/api/orders/create/route": "app/api/orders/create/route.js",
   "/checkout/page": "app/checkout/page.js",
   "/email/page": "app/email/page.js",
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/politica_de_confidentialitate/page": "app/politica_de_confidentialitate/page.js",
+  "/termeni_si_conditii/page": "app/termeni_si_conditii/page.js"
 }

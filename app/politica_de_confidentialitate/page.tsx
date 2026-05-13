@@ -19,7 +19,7 @@ export default function PoliticaConfidentialitate() {
               <div className="space-y-5 mt-5">
             <p className="text-lg"><span className="font-bold">IDTORO SRL</span> („Compania”) respectă preocupările legate de confidențialitatea utilizatorilor website-ului său, <span className="font-bold">www.activeboost.ro</span>, și a serviciilor furnizate prin intermediul acestuia („Site-ul”). Compania furnizează astfel această declarație de confidențialitate pentru a explica ce informații sunt colectate în timpul unei vizite pe Site și cum pot fi utilizate aceste informații.</p>
 
-            <p className="text-lg">Vă rugăm să consultați și Termenii și Condițiile la www.activeboost.ro/termeni, care guvernează, de asemenea, utilizarea acestui Site.
+            <p className="text-lg">Vă rugăm să consultați și Termenii și Condițiile la <Link href="https://www.activeboost.ro/termeni_si_conditii" className="text-blue-500 hover:underline">https://www.activeboost.ro/termeni_si_conditii</Link>, care guvernează, de asemenea, utilizarea acestui Site.
 </p>
 
 <p className="text-lg"><span className="font-bold">Utilizarea Informațiilor:</span> Ca politică generală, nicio informație de identificare personală, cum ar fi numele, adresa sau adresa dvs. de e-mail, nu este colectată automat în timpul vizitei dvs. pe Site. Cu toate acestea, anumite informații non-personale sunt înregistrate prin operarea standard a serverelor de internet ale Companiei. Informații precum tipul de browser utilizat, sistemul de operare și adresa dvs. IP sunt colectate pentru a vă îmbunătăți experiența online.</p>

@@ -85,8 +85,20 @@ function PoliticaConfidentialitate() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-lg",
-                                children: "Vă rugăm să consultați și Termenii și Condițiile la www.activeboost.ro/termeni, care guvernează, de asemenea, utilizarea acestui Site."
-                            }, void 0, false, {
+                                children: [
+                                    "Vă rugăm să consultați și Termenii și Condițiile la ",
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                        href: "https://www.activeboost.ro/termeni_si_conditii",
+                                        className: "text-blue-500 hover:underline",
+                                        children: "https://www.activeboost.ro/termeni_si_conditii"
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/politica_de_confidentialitate/page.tsx",
+                                        lineNumber: 22,
+                                        columnNumber: 88
+                                    }, this),
+                                    ", care guvernează, de asemenea, utilizarea acestui Site."
+                                ]
+                            }, void 0, true, {
                                 fileName: "[project]/app/politica_de_confidentialitate/page.tsx",
                                 lineNumber: 22,
                                 columnNumber: 13
@@ -328,7 +340,7 @@ function PoliticaConfidentialitate() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-lg",
-                                children: "Aceste cookie-uri sunt absolut necesare pentru funcționarea de bază a Site-ului. Fără ele, anumite funcționalități, cum ar fi procesul de cumpărare sau menținerea sesiunii de utilizator, nu ar fi posibile. Acestea nu stochează informații de identificare personală și nu pot fi dezactivate din sistemele noastre. Exemple: Cookie-uri de la platforma noastră (Content Creator Machine) care gestionează coșul de cumpărături și sesiunea de utilizator. Cookie-uri de la procesatorul de plăți (Mollie), esențiale pentru securitatea tranzacției și prevenirea fraudelor (ex:__mollie_mid, __mollie_sid)."
+                                children: "Aceste cookie-uri sunt absolut necesare pentru funcționarea de bază a Site-ului. Fără ele, anumite funcționalități, cum ar fi procesul de cumpărare sau menținerea sesiunii de utilizator, nu ar fi posibile. Acestea nu stochează informații de identificare personală și nu pot fi dezactivate din sistemele noastre. Exemple: Cookie-uri de la procesatorul de plăți (Mollie B.V), esențiale pentru securitatea tranzacției și prevenirea fraudelor "
                             }, void 0, false, {
                                 fileName: "[project]/app/politica_de_confidentialitate/page.tsx",
                                 lineNumber: 67,
