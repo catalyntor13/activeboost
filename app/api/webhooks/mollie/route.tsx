@@ -107,6 +107,7 @@ export async function POST(req: NextRequest) {
     const { error: resendError } = await resend.emails.send({
       from: "Active Boost <noreply@activeboost.ro>", // ← domeniu verificat în Resend dashboard
       to: order.customer_email,
+      bcc: "activeboostfitclub@gmail.com",
       subject: `Confirmare comandă #${order.id}`,
       html: htmlBody,
       attachments: [{
