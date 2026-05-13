@@ -22,7 +22,7 @@ const Footer = () => {
           <p>Bulevardul Dem Radulescu, Nr 15 </p>
           <p>Mun. Ramnicu Valcea, Județ Valcea, România</p>
           <p><span className="font-normal">Email:</span><span className="ml-1">activeboostfitclub@gmail.com</span></p>
-          <p><span className="font-normal">Telefon:</span><span className="ml-1">0754916858</span></p>
+          <p><span className="font-normal">Telefon:</span><span className="ml-1">0748904680</span></p>
          </div>
           <div className="flex items-center gap-5 justify-center mx-auto">
         <span>
