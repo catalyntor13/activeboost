@@ -82,13 +82,13 @@ const products = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_module
 "[project]/db/index.ts [app-route] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
-// lib/db.ts — înlocuiești complet
+// lib/db.ts
 __turbopack_context__.s([
     "db",
     ()=>db
 ]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$drizzle$2d$orm$2f$neon$2d$serverless$2f$driver$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/drizzle-orm/neon-serverless/driver.js [app-route] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$neondatabase$2f$serverless$2f$index$2e$mjs__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@neondatabase/serverless/index.mjs [app-route] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$drizzle$2d$orm$2f$neon$2d$serverless$2f$driver$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/drizzle-orm/neon-serverless/driver.js [app-route] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$db$2f$schema$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/db/schema.ts [app-route] (ecmascript)");
 ;
 ;
@@ -229,8 +229,8 @@ async function POST(req) {
                 value: PRICE.toFixed(2)
             },
             description: `${PRODUCT_NAME} - comanda #${orderId}`,
-            redirectUrl: `${("TURBOPACK compile-time value", "https://cherry-veinal-unsternly.ngrok-free.dev")}/thank-you/${orderId}`,
-            webhookUrl: `${("TURBOPACK compile-time value", "https://cherry-veinal-unsternly.ngrok-free.dev")}/api/webhooks/mollie`,
+            redirectUrl: `${("TURBOPACK compile-time value", "https://www.activeboost.ro")}/thank-you/${orderId}`,
+            webhookUrl: `${("TURBOPACK compile-time value", "https://www.activeboost.ro")}/api/webhooks/mollie`,
             metadata: {
                 orderId: String(orderId)
             }
