@@ -63,7 +63,7 @@ export default function TermenisiConditii() {
    <p className="text-lg">Acești Termeni de Utilizare pot fi revizuiți din când în când prin actualizarea acestei postări. Sunteți legat de orice astfel de revizuiri și, prin urmare, ar trebui să vizitați periodic această pagină pentru a revizui Termenii de Utilizare actuali de care sunteți legat.
    </p>
    
-   <p><span className="font-bold">Ultima Actualizare:</span> 15 Octombrie 2025</p>
+   <p><span className="font-bold">Ultima Actualizare:</span> 13 May 2026</p>
  
    
  

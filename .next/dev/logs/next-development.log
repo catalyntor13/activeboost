@@ -915,3 +915,4 @@ Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
 [00:56:07.248] Browser WARN    ObjectMultiplex - orphaned data for stream "metamask-multichain-provider"
 [00:56:07.248] Browser WARN    ObjectMultiplex - orphaned data for stream "metamask-multichain-provider"
 [00:56:07.997] Browser LOG     %c[Vercel Web Analytics]%c [view] https://cherry-veinal-unsternly.ngrok-free.dev/checkout color: rgb(120, 120, 120) color: inherit {"dp":"/checkout","o":"https://cherry-veinal-unsternly.ngrok-free.dev/checkout","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1778679141910} /_vercel/insights/view
+[01:04:59.624] Server  LOG      ✓ Compiled in 33ms
